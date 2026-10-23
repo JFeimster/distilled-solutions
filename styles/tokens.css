@@ -1,0 +1,16 @@
+:root{
+  --cream:#f4efe6;
+  --paper:#fffdf8;
+  --ink:#121212;
+  --orange:#ff5b2d;
+  --orange-dark:#c63c15;
+  --blue:#2149df;
+  --lime:#c6ff4a;
+  --muted:#5f5c56;
+  --rule:#c9c2b6;
+  --body:"DM Sans",Arial,sans-serif;
+  --display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --mono:Consolas,"Courier New",monospace;
+  --container:1280px;
+  --shadow-hard:8px 8px 0 var(--ink);
+}

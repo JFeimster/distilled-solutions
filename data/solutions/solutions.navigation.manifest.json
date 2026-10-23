@@ -1,0 +1,458 @@
+{
+  "menus": [
+    {
+      "label": "BUY OR SELL",
+      "links": [
+        {
+          "id": "buy-or-sell-a-business",
+          "title": "Buy or sell",
+          "route": "/buy-or-sell-a-business"
+        },
+        {
+          "id": "business-valuation",
+          "title": "Business valuation",
+          "route": "/business-valuation"
+        },
+        {
+          "id": "deal-analysis",
+          "title": "Deal analysis",
+          "route": "/deal-analysis"
+        },
+        {
+          "id": "exit-planning",
+          "title": "Exit planning",
+          "route": "/exit-planning"
+        }
+      ]
+    },
+    {
+      "label": "OPTIMIZE",
+      "links": [
+        {
+          "id": "automate-my-funding",
+          "title": "Automate funding",
+          "route": "/automate-my-funding"
+        },
+        {
+          "id": "business-credit-builder",
+          "title": "Business credit",
+          "route": "/business-credit-builder"
+        },
+        {
+          "id": "improve-cash-flow",
+          "title": "Improve cash flow",
+          "route": "/improve-cash-flow"
+        },
+        {
+          "id": "funding-readiness",
+          "title": "Funding readiness",
+          "route": "/funding-readiness"
+        }
+      ]
+    },
+    {
+      "label": "OPERATE",
+      "links": [
+        {
+          "id": "cfo-as-a-service",
+          "title": "CFO support",
+          "route": "/cfo-as-a-service"
+        },
+        {
+          "id": "finops-as-a-service",
+          "title": "Financial operations",
+          "route": "/finops-as-a-service"
+        },
+        {
+          "id": "finance-business-growth",
+          "title": "Finance growth",
+          "route": "/finance-business-growth"
+        }
+      ]
+    }
+  ],
+  "families": [
+    {
+      "id": "buy-or-sell-a-business",
+      "title": "Buy or sell a business",
+      "shortTitle": "Buy or sell",
+      "eyebrow": "TRANSACTIONS / 01",
+      "route": "/buy-or-sell-a-business",
+      "links": [
+        {
+          "id": "buy-a-business",
+          "title": "Buy a business",
+          "route": "/buy-a-business"
+        },
+        {
+          "id": "sell-a-business",
+          "title": "Sell a business",
+          "route": "/sell-a-business"
+        },
+        {
+          "id": "business-valuation",
+          "title": "Business valuation",
+          "route": "/business-valuation"
+        },
+        {
+          "id": "business-acquisition-readiness",
+          "title": "Acquisition readiness",
+          "route": "/business-acquisition-readiness"
+        },
+        {
+          "id": "seller-readiness",
+          "title": "Seller readiness",
+          "route": "/seller-readiness"
+        },
+        {
+          "id": "deal-analysis",
+          "title": "Deal analysis",
+          "route": "/deal-analysis"
+        },
+        {
+          "id": "due-diligence",
+          "title": "Due diligence",
+          "route": "/due-diligence"
+        },
+        {
+          "id": "deal-structure",
+          "title": "Deal structure",
+          "route": "/deal-structure"
+        },
+        {
+          "id": "business-acquisition-financing",
+          "title": "Acquisition financing",
+          "route": "/business-acquisition-financing"
+        },
+        {
+          "id": "exit-planning",
+          "title": "Exit planning",
+          "route": "/exit-planning"
+        }
+      ]
+    },
+    {
+      "id": "automate-my-funding",
+      "title": "Automate funding operations",
+      "shortTitle": "Automate funding",
+      "eyebrow": "WORKFLOW DESIGN / 02",
+      "route": "/automate-my-funding",
+      "links": [
+        {
+          "id": "funding-intake-automation",
+          "title": "Funding intake automation",
+          "route": "/funding-intake-automation"
+        },
+        {
+          "id": "funding-qualification-automation",
+          "title": "Funding qualification automation",
+          "route": "/funding-qualification-automation"
+        },
+        {
+          "id": "document-collection-automation",
+          "title": "Document collection automation",
+          "route": "/document-collection-automation"
+        },
+        {
+          "id": "funding-routing-automation",
+          "title": "Funding routing automation",
+          "route": "/funding-routing-automation"
+        },
+        {
+          "id": "funding-follow-up-automation",
+          "title": "Funding follow-up automation",
+          "route": "/funding-follow-up-automation"
+        },
+        {
+          "id": "crm-automation",
+          "title": "CRM automation",
+          "route": "/crm-automation"
+        },
+        {
+          "id": "funding-workflow-automation",
+          "title": "Funding workflow automation",
+          "route": "/funding-workflow-automation"
+        },
+        {
+          "id": "ai-funding-automation",
+          "title": "AI funding automation",
+          "route": "/ai-funding-automation"
+        }
+      ]
+    },
+    {
+      "id": "business-credit-builder",
+      "title": "Build business credit with a documented plan",
+      "shortTitle": "Business credit",
+      "eyebrow": "CREDIT FOUNDATION / 03",
+      "route": "/business-credit-builder",
+      "links": [
+        {
+          "id": "fundability-check",
+          "title": "Fundability check",
+          "route": "/fundability-check"
+        },
+        {
+          "id": "business-credit-roadmap",
+          "title": "Business credit roadmap",
+          "route": "/business-credit-roadmap"
+        },
+        {
+          "id": "business-credit-tiers",
+          "title": "Business credit tiers",
+          "route": "/business-credit-tiers"
+        },
+        {
+          "id": "business-credit-vendors",
+          "title": "Business credit vendors",
+          "route": "/business-credit-vendors"
+        },
+        {
+          "id": "net-30-vendors",
+          "title": "Net-30 vendors",
+          "route": "/net-30-vendors"
+        },
+        {
+          "id": "business-credit-monitoring",
+          "title": "Business credit monitoring",
+          "route": "/business-credit-monitoring"
+        },
+        {
+          "id": "business-credit-cards",
+          "title": "Business credit cards",
+          "route": "/business-credit-cards"
+        },
+        {
+          "id": "business-credit-readiness",
+          "title": "Business credit readiness",
+          "route": "/business-credit-readiness"
+        }
+      ]
+    },
+    {
+      "id": "improve-cash-flow",
+      "title": "Find the cash-flow bottleneck",
+      "shortTitle": "Improve cash flow",
+      "eyebrow": "CASH FLOW / 04",
+      "route": "/improve-cash-flow",
+      "links": [
+        {
+          "id": "cash-flow-analysis",
+          "title": "Cash-flow analysis",
+          "route": "/cash-flow-analysis"
+        },
+        {
+          "id": "cash-flow-forecast",
+          "title": "Cash-flow forecast",
+          "route": "/cash-flow-forecast"
+        },
+        {
+          "id": "working-capital-gap",
+          "title": "Working-capital gap",
+          "route": "/working-capital-gap"
+        },
+        {
+          "id": "payroll-gap",
+          "title": "Payroll gap",
+          "route": "/payroll-gap"
+        },
+        {
+          "id": "inventory-cash-flow",
+          "title": "Inventory cash flow",
+          "route": "/inventory-cash-flow"
+        },
+        {
+          "id": "accounts-receivable-cash-flow",
+          "title": "Accounts receivable cash flow",
+          "route": "/accounts-receivable-cash-flow"
+        },
+        {
+          "id": "seasonal-cash-flow",
+          "title": "Seasonal cash flow",
+          "route": "/seasonal-cash-flow"
+        },
+        {
+          "id": "cash-flow-stress-test",
+          "title": "Cash-flow stress test",
+          "route": "/cash-flow-stress-test"
+        }
+      ]
+    },
+    {
+      "id": "finance-business-growth",
+      "title": "Plan the capital move behind growth",
+      "shortTitle": "Finance growth",
+      "eyebrow": "GROWTH PLANNING / 05",
+      "route": "/finance-business-growth",
+      "links": [
+        {
+          "id": "fund-an-expansion",
+          "title": "Fund an expansion",
+          "route": "/fund-an-expansion"
+        },
+        {
+          "id": "open-a-new-location",
+          "title": "Open a new location",
+          "route": "/open-a-new-location"
+        },
+        {
+          "id": "hire-employees",
+          "title": "Hire employees",
+          "route": "/hire-employees"
+        },
+        {
+          "id": "buy-inventory",
+          "title": "Buy inventory",
+          "route": "/buy-inventory"
+        },
+        {
+          "id": "fund-marketing",
+          "title": "Fund marketing",
+          "route": "/fund-marketing"
+        },
+        {
+          "id": "finance-equipment",
+          "title": "Finance equipment",
+          "route": "/finance-equipment"
+        },
+        {
+          "id": "refinance-business-debt",
+          "title": "Refinance business debt",
+          "route": "/refinance-business-debt"
+        }
+      ]
+    },
+    {
+      "id": "cfo-as-a-service",
+      "title": "Build a stronger financial operating rhythm",
+      "shortTitle": "CFO support",
+      "eyebrow": "FINANCIAL LEADERSHIP / 06",
+      "route": "/cfo-as-a-service",
+      "links": [
+        {
+          "id": "cash-flow-management",
+          "title": "Cash-flow management",
+          "route": "/cash-flow-management"
+        },
+        {
+          "id": "financial-planning",
+          "title": "Financial planning",
+          "route": "/financial-planning"
+        },
+        {
+          "id": "budgeting-forecasting",
+          "title": "Budgeting and forecasting",
+          "route": "/budgeting-forecasting"
+        },
+        {
+          "id": "capital-planning",
+          "title": "Capital planning",
+          "route": "/capital-planning"
+        },
+        {
+          "id": "financial-reporting",
+          "title": "Financial reporting",
+          "route": "/financial-reporting"
+        },
+        {
+          "id": "profitability-analysis",
+          "title": "Profitability analysis",
+          "route": "/profitability-analysis"
+        },
+        {
+          "id": "growth-finance-strategy",
+          "title": "Growth finance strategy",
+          "route": "/growth-finance-strategy"
+        }
+      ]
+    },
+    {
+      "id": "finops-as-a-service",
+      "title": "Make financial operations easier to control",
+      "shortTitle": "Financial operations",
+      "eyebrow": "FINOPS / 07",
+      "route": "/finops-as-a-service",
+      "links": [
+        {
+          "id": "financial-operations",
+          "title": "Financial operations",
+          "route": "/financial-operations"
+        },
+        {
+          "id": "payment-operations",
+          "title": "Payment operations",
+          "route": "/payment-operations"
+        },
+        {
+          "id": "expense-management",
+          "title": "Expense management",
+          "route": "/expense-management"
+        },
+        {
+          "id": "revenue-operations",
+          "title": "Revenue operations",
+          "route": "/revenue-operations"
+        },
+        {
+          "id": "financial-workflow-automation",
+          "title": "Financial workflow automation",
+          "route": "/financial-workflow-automation"
+        },
+        {
+          "id": "financial-data-operations",
+          "title": "Financial data operations",
+          "route": "/financial-data-operations"
+        },
+        {
+          "id": "finops-ai-automation",
+          "title": "FinOps AI automation",
+          "route": "/finops-ai-automation"
+        }
+      ]
+    },
+    {
+      "id": "funding-readiness",
+      "title": "Prepare a clearer funding file",
+      "shortTitle": "Funding readiness",
+      "eyebrow": "PREPARATION / 08",
+      "route": "/funding-readiness",
+      "links": [
+        {
+          "id": "fundability-assessment",
+          "title": "Fundability assessment",
+          "route": "/fundability-assessment"
+        },
+        {
+          "id": "qualification-review",
+          "title": "Qualification review",
+          "route": "/qualification-review"
+        },
+        {
+          "id": "document-readiness",
+          "title": "Document readiness",
+          "route": "/document-readiness"
+        },
+        {
+          "id": "credit-readiness",
+          "title": "Credit readiness",
+          "route": "/credit-readiness"
+        },
+        {
+          "id": "revenue-readiness",
+          "title": "Revenue readiness",
+          "route": "/revenue-readiness"
+        },
+        {
+          "id": "application-readiness",
+          "title": "Application readiness",
+          "route": "/application-readiness"
+        },
+        {
+          "id": "funding-readiness-plan",
+          "title": "Funding readiness plan",
+          "route": "/funding-readiness-plan"
+        }
+      ]
+    }
+  ]
+}

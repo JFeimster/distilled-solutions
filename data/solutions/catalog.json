@@ -1,0 +1,155 @@
+{
+  "home": { "route": "/", "title": "Make the next business move with a clearer plan.", "summary": "Start with the operating constraint or outcome. Compare practical paths, readiness questions, and the right next resource without guessing at approvals or outcomes." },
+  "families": [
+    {
+      "id": "buy-or-sell-a-business", "title": "Buy or sell a business", "shortTitle": "Buy or sell", "eyebrow": "TRANSACTIONS / 01", "pageType": "hub",
+      "summary": "Move a business transaction forward with a clearer view of value, readiness, diligence, structure, and capital questions.",
+      "problem": "A transaction combines financial, operational, legal, and timing questions. Missing one can change the diligence plan or terms.",
+      "goal": "Build an evidence-based transaction plan before making or accepting a commitment.",
+      "signals": ["Value expectations are not tied to consistent financial records.", "The buyer or seller has not set a diligence scope.", "Financing, working capital, or transition needs are still assumptions."],
+      "questions": ["What must be verified before a letter of intent or price discussion?", "Which records and operating dependencies could change the decision?", "Who should independently review legal, tax, and financing terms?"],
+      "paths": ["Separate valuation assumptions from verified earnings and assets.", "Set a diligence workplan with owners, source records, and decision gates.", "Use qualified legal, tax, and financing professionals for transaction-specific advice."],
+      "children": [
+        ["buy-a-business","Buy a business","Clarify the buyer's goals, operating capacity, target criteria, and diligence plan before pursuing a transaction."],
+        ["sell-a-business","Sell a business","Prepare a seller's records, transition plan, and decision criteria before entering buyer discussions."],
+        ["business-valuation","Business valuation","Frame a valuation discussion around normalized earnings, assets, market evidence, and assumptions that need verification."],
+        ["business-acquisition-readiness","Acquisition readiness","Check whether the buyer's goals, capital plan, operator capacity, and diligence process are ready for a search."],
+        ["seller-readiness","Seller readiness","Organize financial records, operating dependencies, ownership decisions, and transition considerations ahead of a sale."],
+        ["deal-analysis","Deal analysis","Stress-test a proposed transaction using verified cash flow, purchase terms, transition costs, and downside cases."],
+        ["due-diligence","Due diligence","Plan a documented review of financial, legal, tax, customer, employee, and operating exposures."],
+        ["deal-structure","Deal structure","Compare how cash at close, seller financing, contingencies, and transition terms shift risk between parties."],
+        ["business-acquisition-financing","Acquisition financing","Map the transaction's sources, uses, timing, and documentation questions before discussing financing routes."],
+        ["exit-planning","Exit planning","Identify owner goals, business dependencies, value drivers, and transition work that can affect exit options."]
+      ]
+    },
+    {
+      "id": "automate-my-funding", "title": "Automate funding operations", "shortTitle": "Automate funding", "eyebrow": "WORKFLOW DESIGN / 02", "pageType": "service",
+      "summary": "Map funding workflows, handoffs, and data controls before deciding what to automate.",
+      "problem": "Manual intake, repeated document requests, and unclear ownership can create delays and inconsistent records across a funding workflow.",
+      "goal": "Make each workflow step, decision owner, exception path, and data boundary explicit before selecting automation.",
+      "signals": ["The same information is re-entered across forms and systems.", "Requests sit without a clear owner or next step.", "Automation proposals lack a documented exception and review path."],
+      "questions": ["Where does work wait, repeat, or lose context?", "Which decisions require a human review and what evidence do they need?", "What sensitive information should each system receive or retain?"],
+      "paths": ["Document the current workflow and its failure points.", "Define owners, service expectations, exception handling, and access controls.", "Pilot a narrow, reversible workflow and review quality before expanding."],
+      "children": [
+        ["funding-intake-automation","Funding intake automation","Capture complete, consistent intake with clear consent, validation, and a safe path for incomplete submissions."],
+        ["funding-qualification-automation","Funding qualification automation","Organize review inputs and routing logic while keeping eligibility and credit decisions with authorized people."],
+        ["document-collection-automation","Document collection automation","Track requested records, versions, ownership, and follow-up without exposing documents in ordinary messages."],
+        ["funding-routing-automation","Funding routing automation","Route work using documented purpose, product scope, geography, and human review rules."],
+        ["funding-follow-up-automation","Funding follow-up automation","Make follow-up timing and ownership visible while respecting consent, channel preferences, and opt-outs."],
+        ["crm-automation","CRM automation","Reduce duplicate entry and missed tasks by defining reliable field ownership, events, and exception handling."],
+        ["funding-workflow-automation","Funding workflow automation","Connect intake, review, documents, decisions, and follow-up through auditable handoffs."],
+        ["ai-funding-automation","AI funding automation","Evaluate bounded AI assistance for summarization and task support with human review, source traceability, and privacy controls."]
+      ]
+    },
+    {
+      "id": "business-credit-builder", "title": "Build business credit with a documented plan", "shortTitle": "Business credit", "eyebrow": "CREDIT FOUNDATION / 03", "pageType": "hub",
+      "summary": "Understand business identity, reporting, payment history, and file readiness before choosing credit products or vendors.",
+      "problem": "Business credit files can be incomplete, inconsistent, or confused with personal credit. Vendor claims do not guarantee reporting or a particular outcome.",
+      "goal": "Create a verifiable sequence for accurate business records, monitoring, and responsible credit use.",
+      "signals": ["Business identifiers differ across records.", "The business cannot confirm which accounts report to which bureaus.", "A vendor promises a score or outcome without verifiable terms."],
+      "questions": ["Are legal name, address, and business identifiers consistent?", "Which bureau files and tradeline details have been reviewed?", "Can the business manage the payment obligation under a conservative cash plan?"],
+      "paths": ["Verify the business identity and correct inaccurate records with the relevant source.", "Track reporting and payment history using primary account statements.", "Compare credit terms, fees, guarantees, and reporting claims before opening accounts."],
+      "children": [
+        ["fundability-check","Fundability check","Review foundational business records and reported information to identify items to verify or organize."],
+        ["business-credit-roadmap","Business credit roadmap","Sequence identity, record accuracy, monitoring, and responsible account management into a practical plan."],
+        ["business-credit-tiers","Business credit tiers","Understand common descriptions of credit-building stages and the limits of vendor-defined tier systems."],
+        ["business-credit-vendors","Business credit vendors","Evaluate vendor reporting claims, fees, eligibility, and cancellation terms using current written evidence."],
+        ["net-30-vendors","Net-30 vendors","Review payment terms, reporting evidence, minimum purchases, and cash impact before relying on trade credit."],
+        ["business-credit-monitoring","Business credit monitoring","Set a review cadence for business files, identity consistency, inquiries, and disputed information."],
+        ["business-credit-cards","Business credit cards","Compare fees, guarantees, utilization, and payment controls before adding a revolving account."],
+        ["business-credit-readiness","Business credit readiness","Check records, obligations, and payment controls before pursuing additional business credit."]
+      ]
+    },
+    {
+      "id": "improve-cash-flow", "title": "Find the cash-flow bottleneck", "shortTitle": "Improve cash flow", "eyebrow": "CASH FLOW / 04", "pageType": "hub",
+      "summary": "Trace the timing gap between cash in and cash out, then compare operating, customer, inventory, and financing options.",
+      "problem": "A cash shortage can come from timing, margin, growth, seasonality, or obligations. Borrowing may shift timing without fixing the underlying cause.",
+      "goal": "Identify the cause, size, and duration of the gap before choosing an operating or financing response.",
+      "signals": ["Collections regularly arrive after payroll or supplier dates.", "Forecasts omit taxes, debt service, or one-time cash needs.", "Revenue is rising while available cash is shrinking."],
+      "questions": ["When does the lowest cash point occur, and what drives it?", "Which receipts, payments, and assumptions can be verified?", "What changes if collections slow or costs rise?"],
+      "paths": ["Build a dated cash forecast from actual balances, receivables, payables, and committed costs.", "Test collection, purchasing, pricing, and expense changes before adding obligations.", "If a structural gap remains, compare suitable funding categories and repayment capacity."],
+      "children": [
+        ["cash-flow-analysis","Cash-flow analysis","Reconcile the cash position, timing, and operating drivers to locate the source of a shortfall."],
+        ["cash-flow-forecast","Cash-flow forecast","Project dated inflows and outflows with explicit assumptions, scenarios, and update owners."],
+        ["working-capital-gap","Working-capital gap","Measure the timing and duration between operating cash needs and expected collections."],
+        ["payroll-gap","Payroll gap","Plan for payroll timing using confirmed pay dates, collections, tax obligations, and available cash."],
+        ["inventory-cash-flow","Inventory cash flow","Understand how buying, holding, and selling inventory changes cash availability and reorder decisions."],
+        ["accounts-receivable-cash-flow","Accounts receivable cash flow","Review invoice aging, disputes, collection ownership, and the cost of delayed customer payment."],
+        ["seasonal-cash-flow","Seasonal cash flow","Prepare for recurring peaks and troughs with a dated plan for costs, receipts, and reserves."],
+        ["cash-flow-stress-test","Cash-flow stress test","Test how slower receipts, lower sales, or higher costs affect the lowest projected cash balance."]
+      ]
+    },
+    {
+      "id": "finance-business-growth", "title": "Plan the capital move behind growth", "shortTitle": "Finance growth", "eyebrow": "GROWTH PLANNING / 05", "pageType": "hub",
+      "summary": "Connect an expansion goal to its full cost, expected operating impact, timing, and a downside plan.",
+      "problem": "Growth spending can outrun the cash and management capacity needed to deliver the expected return.",
+      "goal": "Build a decision case that accounts for total investment, timing, execution capacity, and slower-than-planned results.",
+      "signals": ["The budget covers purchase price but misses setup or working capital.", "Demand assumptions do not have a source or downside case.", "Repayment or ongoing costs are not tied to a forecast."],
+      "questions": ["What costs arrive before the investment produces cash?", "What evidence supports the demand and margin assumptions?", "Can operations deliver the plan if revenue ramps more slowly?"],
+      "paths": ["Build a sources-and-uses plan that includes setup, contingency, and operating cash.", "Compare a base case with slower sales, higher cost, or delayed opening scenarios.", "Select any financing structure only after reviewing repayment, collateral, guarantees, and fit."],
+      "children": [
+        ["fund-an-expansion","Fund an expansion","Estimate the full investment and working-capital needs before committing to a new capacity plan."],
+        ["open-a-new-location","Open a new location","Stage site, buildout, staffing, launch, and reserve costs against a realistic opening schedule."],
+        ["hire-employees","Hire employees","Model recruiting, onboarding, payroll taxes, equipment, and the time before new capacity contributes."],
+        ["buy-inventory","Buy inventory","Match purchase quantities and payment timing to sell-through evidence, lead times, and replenishment cash."],
+        ["fund-marketing","Fund marketing","Set test budgets and measurable decision gates before committing cash to a campaign or channel."],
+        ["finance-equipment","Finance equipment","Compare ownership, lease, and financing costs against equipment use, useful life, and operating cash flow."],
+        ["refinance-business-debt","Refinance business debt","Compare total cost, term, collateral, prepayment charges, and cash-flow impact across existing obligations."]
+      ]
+    },
+    {
+      "id": "cfo-as-a-service", "title": "Build a stronger financial operating rhythm", "shortTitle": "CFO support", "eyebrow": "FINANCIAL LEADERSHIP / 06", "pageType": "service",
+      "summary": "Define the planning, reporting, and decision support a business needs before evaluating in-house or outside help.",
+      "problem": "Owners often need forward-looking financial decisions before the business needs or can support a full-time finance executive.",
+      "goal": "Clarify the decisions, reporting cadence, data quality, and accountability required for useful financial leadership.",
+      "signals": ["Reports arrive too late to guide current decisions.", "Budgets are not connected to cash forecasts or owners.", "Financial analysis depends on one person's undocumented spreadsheet."],
+      "questions": ["Which decisions need a forecast, scenario, or profitability view?", "Are accounting records timely and reconciled enough to support analysis?", "What scope, cadence, access, and deliverables should an advisor own?"],
+      "paths": ["List the recurring business decisions and information each requires.", "Improve close, forecast, and reporting ownership before adding advisory scope.", "Compare internal, fractional, and external support with explicit responsibilities and controls."],
+      "children": [
+        ["cash-flow-management","Cash-flow management","Set an operating cadence for cash forecasts, collections, commitments, and variance follow-up."],
+        ["financial-planning","Financial planning","Translate business priorities into financial assumptions, scenarios, milestones, and review points."],
+        ["budgeting-forecasting","Budgeting and forecasting","Connect budget owners and actual results to rolling projections and documented assumption changes."],
+        ["capital-planning","Capital planning","Sequence investment needs, liquidity, debt capacity questions, and decision timing in one plan."],
+        ["financial-reporting","Financial reporting","Define a timely, consistent reporting package that supports operating decisions and reconciled records."],
+        ["profitability-analysis","Profitability analysis","Compare contribution and cost-to-serve across products, customers, channels, or locations."],
+        ["growth-finance-strategy","Growth finance strategy","Evaluate growth priorities against cash needs, execution capacity, scenarios, and financing tradeoffs."]
+      ]
+    },
+    {
+      "id": "finops-as-a-service", "title": "Make financial operations easier to control", "shortTitle": "Financial operations", "eyebrow": "FINOPS / 07", "pageType": "service",
+      "summary": "Improve the workflows, ownership, and data controls behind payments, expenses, revenue, and finance systems.",
+      "problem": "Financial operations become fragile when transactions, approvals, and reconciliations rely on unclear handoffs or disconnected records.",
+      "goal": "Make recurring finance workflows visible, controlled, and easier to reconcile as transaction volume changes.",
+      "signals": ["Approvals happen outside the system of record.", "Reconciliations reveal missing context or recurring exceptions.", "Several tools hold conflicting versions of key financial data."],
+      "questions": ["Where are ownership, approval, and evidence captured?", "Which exceptions recur and what control should prevent them?", "How will a change affect reconciliation and audit trails?"],
+      "paths": ["Map the transaction from request through approval, posting, and reconciliation.", "Clarify policy, system-of-record fields, access, and exception ownership.", "Change one workflow at a time and measure error and rework from source records."],
+      "children": [
+        ["financial-operations","Financial operations","Map close, payables, receivables, reconciliations, and control ownership across the finance function."],
+        ["payment-operations","Payment operations","Review payment initiation, approval authority, account controls, settlement visibility, and reconciliation."],
+        ["expense-management","Expense management","Set clear expense policy, documentation, approval, coding, and exception handling."],
+        ["revenue-operations","Revenue operations","Align order, billing, collection, and customer records so revenue events reconcile across teams."],
+        ["financial-workflow-automation","Financial workflow automation","Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating."],
+        ["financial-data-operations","Financial data operations","Assign ownership and quality controls to financial data shared across accounting and operating systems."],
+        ["finops-ai-automation","FinOps AI automation","Assess bounded AI assistance for finance operations with permission controls, source links, and human review."]
+      ]
+    },
+    {
+      "id": "funding-readiness", "title": "Prepare a clearer funding file", "shortTitle": "Funding readiness", "eyebrow": "PREPARATION / 08", "pageType": "assessment",
+      "summary": "Organize business facts, records, obligations, and questions before discussing financing options.",
+      "problem": "Incomplete or inconsistent records make it harder to explain a business's needs and evaluate the obligations of a financing option.",
+      "goal": "Create a documented preparation plan that helps the business and its advisors have a more informed discussion.",
+      "signals": ["Revenue, ownership, or debt figures differ across documents.", "The requested amount is not linked to itemized uses and timing.", "Repayment capacity has not been considered under a slower-sales scenario."],
+      "questions": ["Can current financial statements be reconciled to source records?", "Are planned uses, timing, and existing obligations documented?", "Which questions require a lender, attorney, accountant, or other qualified advisor?"],
+      "paths": ["Assemble current, internally consistent business and financial records.", "Explain the funding purpose, amount, timing, and alternatives considered.", "Review costs, covenants, guarantees, and repayment scenarios with qualified professionals."],
+      "children": [
+        ["fundability-assessment","Fundability assessment","Organize business facts and records into a preparation review; it does not predict approval or eligibility."],
+        ["qualification-review","Qualification review","List questions a provider may ask and identify which business facts need verification before any application."],
+        ["document-readiness","Document readiness","Check whether core business and financial records are current, consistent, and easy for an authorized reviewer to follow."],
+        ["credit-readiness","Credit readiness","Review credit records, obligations, and identity details and plan how to resolve verified discrepancies."],
+        ["revenue-readiness","Revenue readiness","Reconcile revenue trends, customer concentration, seasonality, and deposits to reliable source records."],
+        ["application-readiness","Application readiness","Prepare an accurate application checklist with ownership, consent, document dates, and review responsibilities."],
+        ["funding-readiness-plan","Funding readiness plan","Turn identified documentation and planning gaps into a sequenced, owner-assigned preparation plan."]
+      ]
+    }
+  ]
+}

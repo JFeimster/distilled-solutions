@@ -1,0 +1,1005 @@
+[
+  {
+    "id": "home",
+    "parent": null,
+    "related": [
+      "buy-or-sell-a-business",
+      "automate-my-funding",
+      "business-credit-builder",
+      "improve-cash-flow",
+      "finance-business-growth",
+      "cfo-as-a-service",
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "buy-or-sell-a-business",
+    "parent": "home",
+    "related": [
+      "buy-a-business",
+      "sell-a-business",
+      "business-valuation",
+      "business-acquisition-readiness",
+      "seller-readiness",
+      "deal-analysis"
+    ],
+    "funding": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical destination for deeper acquisition workflows and deal tools."
+      }
+    ],
+    "tools": [],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "buy-a-business",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "sell-a-business",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "business-valuation",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [
+      {
+        "label": "Tools directory",
+        "href": "https://tools.distilledfunding.com",
+        "context": "Open the canonical Tools directory to find available calculators and preparation resources."
+      }
+    ],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "business-acquisition-readiness",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "seller-readiness",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "deal-analysis",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [
+      {
+        "label": "Tools directory",
+        "href": "https://tools.distilledfunding.com",
+        "context": "Open the canonical Tools directory to find available calculators and preparation resources."
+      }
+    ],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "due-diligence",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "deal-structure",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "business-acquisition-financing",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [
+      {
+        "label": "Acquisition financing",
+        "href": "https://funding.distilledfunding.com/acquisition-financing",
+        "context": "Review the canonical Funding overview for acquisition financing."
+      }
+    ],
+    "tools": [],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "exit-planning",
+    "parent": "buy-or-sell-a-business",
+    "related": [
+      "buy-or-sell-a-business",
+      "funding-readiness",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": [
+      {
+        "label": "Acquire",
+        "href": "https://acquire.distilledfunding.com",
+        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+      }
+    ]
+  },
+  {
+    "id": "automate-my-funding",
+    "parent": "home",
+    "related": [
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "funding-intake-automation",
+    "parent": "automate-my-funding",
+    "related": [
+      "automate-my-funding",
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "funding-qualification-automation",
+    "parent": "automate-my-funding",
+    "related": [
+      "automate-my-funding",
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "document-collection-automation",
+    "parent": "automate-my-funding",
+    "related": [
+      "automate-my-funding",
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "funding-routing-automation",
+    "parent": "automate-my-funding",
+    "related": [
+      "automate-my-funding",
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "funding-follow-up-automation",
+    "parent": "automate-my-funding",
+    "related": [
+      "automate-my-funding",
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "crm-automation",
+    "parent": "automate-my-funding",
+    "related": [
+      "automate-my-funding",
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "funding-workflow-automation",
+    "parent": "automate-my-funding",
+    "related": [
+      "automate-my-funding",
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "ai-funding-automation",
+    "parent": "automate-my-funding",
+    "related": [
+      "automate-my-funding",
+      "finops-as-a-service",
+      "funding-readiness"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "business-credit-builder",
+    "parent": "home",
+    "related": [
+      "fundability-check",
+      "business-credit-roadmap",
+      "business-credit-tiers",
+      "business-credit-vendors",
+      "net-30-vendors",
+      "business-credit-monitoring"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "fundability-check",
+    "parent": "business-credit-builder",
+    "related": [
+      "business-credit-builder",
+      "funding-readiness",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [
+      {
+        "label": "Tools directory",
+        "href": "https://tools.distilledfunding.com",
+        "context": "Open the canonical Tools directory to find available calculators and preparation resources."
+      }
+    ],
+    "acquire": []
+  },
+  {
+    "id": "business-credit-roadmap",
+    "parent": "business-credit-builder",
+    "related": [
+      "business-credit-builder",
+      "funding-readiness",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "business-credit-tiers",
+    "parent": "business-credit-builder",
+    "related": [
+      "business-credit-builder",
+      "funding-readiness",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "business-credit-vendors",
+    "parent": "business-credit-builder",
+    "related": [
+      "business-credit-builder",
+      "funding-readiness",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "net-30-vendors",
+    "parent": "business-credit-builder",
+    "related": [
+      "business-credit-builder",
+      "funding-readiness",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "business-credit-monitoring",
+    "parent": "business-credit-builder",
+    "related": [
+      "business-credit-builder",
+      "funding-readiness",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "business-credit-cards",
+    "parent": "business-credit-builder",
+    "related": [
+      "business-credit-builder",
+      "funding-readiness",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "business-credit-readiness",
+    "parent": "business-credit-builder",
+    "related": [
+      "business-credit-builder",
+      "funding-readiness",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "improve-cash-flow",
+    "parent": "home",
+    "related": [
+      "cash-flow-analysis",
+      "cash-flow-forecast",
+      "working-capital-gap",
+      "payroll-gap",
+      "inventory-cash-flow",
+      "accounts-receivable-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "cash-flow-analysis",
+    "parent": "improve-cash-flow",
+    "related": [
+      "improve-cash-flow",
+      "cfo-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [
+      {
+        "label": "Tools directory",
+        "href": "https://tools.distilledfunding.com",
+        "context": "Open the canonical Tools directory to find available calculators and preparation resources."
+      }
+    ],
+    "acquire": []
+  },
+  {
+    "id": "cash-flow-forecast",
+    "parent": "improve-cash-flow",
+    "related": [
+      "improve-cash-flow",
+      "cfo-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [
+      {
+        "label": "Tools directory",
+        "href": "https://tools.distilledfunding.com",
+        "context": "Open the canonical Tools directory to find available calculators and preparation resources."
+      }
+    ],
+    "acquire": []
+  },
+  {
+    "id": "working-capital-gap",
+    "parent": "improve-cash-flow",
+    "related": [
+      "improve-cash-flow",
+      "cfo-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [
+      {
+        "label": "Working capital",
+        "href": "https://funding.distilledfunding.com/working-capital",
+        "context": "Compare the canonical Funding overview after sizing the operating cash gap."
+      }
+    ],
+    "tools": [
+      {
+        "label": "Tools directory",
+        "href": "https://tools.distilledfunding.com",
+        "context": "Open the canonical Tools directory to find available calculators and preparation resources."
+      }
+    ],
+    "acquire": []
+  },
+  {
+    "id": "payroll-gap",
+    "parent": "improve-cash-flow",
+    "related": [
+      "improve-cash-flow",
+      "cfo-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "inventory-cash-flow",
+    "parent": "improve-cash-flow",
+    "related": [
+      "improve-cash-flow",
+      "cfo-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "accounts-receivable-cash-flow",
+    "parent": "improve-cash-flow",
+    "related": [
+      "improve-cash-flow",
+      "cfo-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [
+      {
+        "label": "Invoice financing",
+        "href": "https://funding.distilledfunding.com/invoice-financing",
+        "context": "Review the canonical Funding overview alongside collection and receivables options."
+      }
+    ],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "seasonal-cash-flow",
+    "parent": "improve-cash-flow",
+    "related": [
+      "improve-cash-flow",
+      "cfo-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "cash-flow-stress-test",
+    "parent": "improve-cash-flow",
+    "related": [
+      "improve-cash-flow",
+      "cfo-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "finance-business-growth",
+    "parent": "home",
+    "related": [
+      "fund-an-expansion",
+      "open-a-new-location",
+      "hire-employees",
+      "buy-inventory",
+      "fund-marketing",
+      "finance-equipment"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "fund-an-expansion",
+    "parent": "finance-business-growth",
+    "related": [
+      "finance-business-growth",
+      "cfo-as-a-service",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "open-a-new-location",
+    "parent": "finance-business-growth",
+    "related": [
+      "finance-business-growth",
+      "cfo-as-a-service",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "hire-employees",
+    "parent": "finance-business-growth",
+    "related": [
+      "finance-business-growth",
+      "cfo-as-a-service",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "buy-inventory",
+    "parent": "finance-business-growth",
+    "related": [
+      "finance-business-growth",
+      "cfo-as-a-service",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "fund-marketing",
+    "parent": "finance-business-growth",
+    "related": [
+      "finance-business-growth",
+      "cfo-as-a-service",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "finance-equipment",
+    "parent": "finance-business-growth",
+    "related": [
+      "finance-business-growth",
+      "cfo-as-a-service",
+      "improve-cash-flow"
+    ],
+    "funding": [
+      {
+        "label": "Equipment financing",
+        "href": "https://funding.distilledfunding.com/equipment-financing",
+        "context": "Review the canonical Funding overview after defining equipment cost and useful life."
+      }
+    ],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "refinance-business-debt",
+    "parent": "finance-business-growth",
+    "related": [
+      "finance-business-growth",
+      "cfo-as-a-service",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "cfo-as-a-service",
+    "parent": "home",
+    "related": [
+      "finops-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "cash-flow-management",
+    "parent": "cfo-as-a-service",
+    "related": [
+      "cfo-as-a-service",
+      "finops-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "financial-planning",
+    "parent": "cfo-as-a-service",
+    "related": [
+      "cfo-as-a-service",
+      "finops-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "budgeting-forecasting",
+    "parent": "cfo-as-a-service",
+    "related": [
+      "cfo-as-a-service",
+      "finops-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "capital-planning",
+    "parent": "cfo-as-a-service",
+    "related": [
+      "cfo-as-a-service",
+      "finops-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "financial-reporting",
+    "parent": "cfo-as-a-service",
+    "related": [
+      "cfo-as-a-service",
+      "finops-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "profitability-analysis",
+    "parent": "cfo-as-a-service",
+    "related": [
+      "cfo-as-a-service",
+      "finops-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "growth-finance-strategy",
+    "parent": "cfo-as-a-service",
+    "related": [
+      "cfo-as-a-service",
+      "finops-as-a-service",
+      "finance-business-growth"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "finops-as-a-service",
+    "parent": "home",
+    "related": [
+      "automate-my-funding",
+      "cfo-as-a-service"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "financial-operations",
+    "parent": "finops-as-a-service",
+    "related": [
+      "finops-as-a-service",
+      "automate-my-funding",
+      "cfo-as-a-service"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "payment-operations",
+    "parent": "finops-as-a-service",
+    "related": [
+      "finops-as-a-service",
+      "automate-my-funding",
+      "cfo-as-a-service"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "expense-management",
+    "parent": "finops-as-a-service",
+    "related": [
+      "finops-as-a-service",
+      "automate-my-funding",
+      "cfo-as-a-service"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "revenue-operations",
+    "parent": "finops-as-a-service",
+    "related": [
+      "finops-as-a-service",
+      "automate-my-funding",
+      "cfo-as-a-service"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "financial-workflow-automation",
+    "parent": "finops-as-a-service",
+    "related": [
+      "finops-as-a-service",
+      "automate-my-funding",
+      "cfo-as-a-service"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "financial-data-operations",
+    "parent": "finops-as-a-service",
+    "related": [
+      "finops-as-a-service",
+      "automate-my-funding",
+      "cfo-as-a-service"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "finops-ai-automation",
+    "parent": "finops-as-a-service",
+    "related": [
+      "finops-as-a-service",
+      "automate-my-funding",
+      "cfo-as-a-service"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "funding-readiness",
+    "parent": "home",
+    "related": [
+      "business-credit-builder",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "fundability-assessment",
+    "parent": "funding-readiness",
+    "related": [
+      "funding-readiness",
+      "business-credit-builder",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [
+      {
+        "label": "Tools directory",
+        "href": "https://tools.distilledfunding.com",
+        "context": "Open the canonical Tools directory to find available calculators and preparation resources."
+      }
+    ],
+    "acquire": []
+  },
+  {
+    "id": "qualification-review",
+    "parent": "funding-readiness",
+    "related": [
+      "funding-readiness",
+      "business-credit-builder",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "document-readiness",
+    "parent": "funding-readiness",
+    "related": [
+      "funding-readiness",
+      "business-credit-builder",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "credit-readiness",
+    "parent": "funding-readiness",
+    "related": [
+      "funding-readiness",
+      "business-credit-builder",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "revenue-readiness",
+    "parent": "funding-readiness",
+    "related": [
+      "funding-readiness",
+      "business-credit-builder",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "application-readiness",
+    "parent": "funding-readiness",
+    "related": [
+      "funding-readiness",
+      "business-credit-builder",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  },
+  {
+    "id": "funding-readiness-plan",
+    "parent": "funding-readiness",
+    "related": [
+      "funding-readiness",
+      "business-credit-builder",
+      "improve-cash-flow"
+    ],
+    "funding": [],
+    "tools": [],
+    "acquire": []
+  }
+]

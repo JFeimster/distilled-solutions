@@ -1,0 +1,6 @@
+import { ImageResponse } from "next/og";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
+export default function OpenGraphImage() {
+  return new ImageResponse(<div style={{ width: "100%", height: "100%", display: "flex", flexDirection: "column", justifyContent: "space-between", padding: "56px", background: "#f4efe6", color: "#121212", fontFamily: "Arial, sans-serif", border: "18px solid #121212" }}><div style={{ display: "flex", alignItems: "center", gap: "18px", fontSize: 24, fontWeight: 800, letterSpacing: "2px" }}><span style={{ display: "flex", width: 56, height: 56, alignItems: "center", justifyContent: "center", background: "#ff5b2d", border: "3px solid #121212", fontSize: 40 }}>d<span style={{ color: "white" }}>s</span></span>DISTILLED SOLUTIONS</div><div style={{ display: "flex", flexDirection: "column", fontSize: 82, fontWeight: 900, lineHeight: .9, textTransform: "uppercase" }}><span>Make the next</span><span style={{ color: "#c63c15" }}>business move</span><span>with a clearer plan.</span></div><div style={{ display: "flex", justifyContent: "space-between", fontSize: 18, fontWeight: 700, letterSpacing: "2px" }}><span>PROBLEMS → PATHS → NEXT STEPS</span><span>OPERATOR DECISION DESK / 01</span></div></div>, size);
+}
