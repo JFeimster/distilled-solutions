@@ -6,6 +6,12 @@ This roadmap prioritizes functional improvements while preserving the [architect
 
 The `/funding-workflow-automation` route now has a client-side, deterministic opportunity diagnostic. It turns five broad workflow choices into a first fix, three ordered actions, human-review and privacy controls, related guides, and a copyable plan. Its editorial fields are stored as an optional catalog override and survive regeneration. The parent `/automate-my-funding` route points to it.
 
+## Delivered second milestone: business-credit readiness and action roadmap
+
+The single diagnostic at `/business-credit-readiness#credit-readiness-diagnostic` evaluates six preparation dimensions and an objective using client-side selections. It distinguishes self-reported documentation, needed work, unknown information, and payment history that is not yet applicable. Results include dependency-aware tasks with evidence and completion checks, maintenance practices, account due diligence, canonical guides, official references, and a copyable plan with manual fallback. No identifiers or financial values are collected, and answers are not persisted. Pure recommendations live in `lib/solutions/business-credit-diagnostic.ts`.
+
+Catalog overrides now give `/business-credit-builder`, `/business-credit-readiness`, `/business-credit-roadmap`, and `/fundability-check` distinct guidance and contextual CTAs to the same diagnostic. Family records can use the existing editorial override fields through an optional `editorial` object. The 71-route contract and noindex controls remain unchanged.
+
 ## Prioritized next batches
 
 1. **Navigation and homepage:** Review the homepage console and header against the route map, improve discovery of the new diagnostic, and check desktop/mobile keyboard paths without expanding the navigation into all 71 links.

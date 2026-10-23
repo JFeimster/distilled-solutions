@@ -9,6 +9,7 @@ const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 type Family = {
   id: string; title: string; shortTitle: string; eyebrow: string; pageType: string; summary: string;
   problem: string; goal: string; signals: string[]; questions: string[]; paths: string[];
+  editorial?: ChildEditorial;
   children: [string, string, string, ChildEditorial?][];
 };
 type ChildEditorial = {
@@ -103,7 +104,7 @@ const makePage = (options: {
 const home = makePage({ id: "home", route: "/", title: source.home.title, shortTitle: "Solutions", eyebrow: "DISTILLED SOLUTIONS / OPERATOR DESK", pageType: "home", family: null, parent: null, summary: source.home.summary, problem: "A business goal can touch cash, people, systems, records, and timing at once. Starting with a product or tool can leave the underlying constraint unclear.", goal: "Name the outcome, see what needs to be understood, and choose a grounded next action.", signals: ["The desired outcome is clear but the first constraint is not.", "Several initiatives compete for the same cash or team capacity.", "The next step depends on records or decisions that are not yet organized."], questions: ["What are you trying to improve, build, buy, automate, or prepare?", "What is the current constraint: timing, information, workflow, or capital?", "Which facts need to be verified before a commitment?"], paths: ["Start with the outcome and identify the operating constraint.", "Use a relevant guide, tool, or qualified professional to test the assumptions.", "Move to the canonical Funding, Tools, or Acquire property when that deeper experience is needed."] });
 pages.push(home);
 for (const family of source.families) {
-  pages.push(makePage({ id: family.id, route: `/${family.id}`, title: family.title, shortTitle: family.shortTitle, eyebrow: family.eyebrow, pageType: family.pageType, family, parent: "home", summary: family.summary, problem: family.problem, goal: family.goal, signals: family.signals, questions: family.questions, paths: family.paths }));
+  pages.push(makePage({ id: family.id, route: `/${family.id}`, title: family.title, shortTitle: family.shortTitle, eyebrow: family.eyebrow, pageType: family.pageType, family, parent: "home", summary: family.summary, problem: family.problem, goal: family.goal, signals: family.signals, questions: family.questions, paths: family.paths, editorial: family.editorial }));
   for (const [id, title, purpose, editorial] of family.children) {
     const pageType = acquireRelevant.has(id) ? "acquisition" : /readiness|check|assessment|qualification|fundability/.test(id) ? "assessment" : "outcome";
     const titleSentence = purpose.endsWith(".") ? purpose : `${purpose}.`;

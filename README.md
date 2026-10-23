@@ -6,7 +6,7 @@ Distilled Solutions helps business owners and operators name an operating proble
 
 The app uses Next.js 16 App Router, React 19, TypeScript, Zod, CSS design tokens, and static generation. One optional catch-all route renders the homepage, eight family pages, and 62 child guides through shared components. `data/solutions/catalog.json` is the editorial source. `scripts/generate-solutions-manifest.ts` derives the page, navigation, relationship, route, and text sitemap artifacts. The generated page manifest is read by the application and validated against `schemas/solutions.ts`.
 
-The homepage intent console and the funding workflow diagnostic use client state. The diagnostic makes deterministic operational recommendations from broad choices; it does not collect customer records, call an API, store answers, or make funding decisions.
+The homepage intent console and the funding workflow and business-credit diagnostics use client state. Both diagnostics make deterministic operational recommendations from broad choices; they do not collect customer records, call an API, persist answers, or make funding decisions.
 
 ## Local setup
 
@@ -45,11 +45,15 @@ While `npm start` is running, use another terminal for `npm run audit:routes`. `
 
 Edit `data/solutions/catalog.json`, never the generated manifests directly. Each child is a three-item tuple `[id, title, purpose]`; a fourth optional object can override its headline, summary, problem statement, desired outcome, signals, questions, paths, process, considerations, FAQs, and primary CTA. The generator fills all unspecified fields. Use the existing `/funding-workflow-automation` entry as an example.
 
+A family can use the same optional override fields in an `editorial` object, as shown by `/business-credit-builder`. Existing families and three-item child tuples retain their default behavior.
+
 The route taxonomy is an approved contract: root homepage, eight families, and 62 children, with no `/solutions/` prefix. Any route change requires explicit review of the canonical reference, parent/related links, navigation, breadcrumbs, metadata, and redirect implications. After a catalog edit, run `npm run generate:manifest` and `npm run check`, then inspect the generated diff for unintended drift. The generator must remain the only way to update derived artifacts.
 
 ## Design and interaction
 
 The visual system uses warm paper, black ink, orange and lime signals, Barlow Condensed display type, DM Sans body type, and shared tokens in `styles/tokens.css`. The header, footer, editorial page template, and navigation are shared. New interactions should use the existing focus, responsive, and reduced-motion conventions. Recommendation rules for the funding workflow diagnostic live in `lib/solutions/funding-workflow-diagnostic.ts`; its UI lives in `components/solutions/FundingWorkflowDiagnostic.tsx`.
+
+The business-credit preparation diagnostic lives only at `/business-credit-readiness#credit-readiness-diagnostic`. Its six foundation checks and objective produce a self-reported preparation status, evidence register, three immediate tasks, subsequent actions, and a copyable roadmap. Pure rules and text export live in `lib/solutions/business-credit-diagnostic.ts`; the UI is `components/solutions/BusinessCreditDiagnostic.tsx` and extends the shared workflow styles. Answers remain in component memory and clear on leaving or reloading; copying exports the plan to the device clipboard, with a manual-copy fallback. No identifiers, financial values, personal credit data, or uploads are requested. The tool does not access bureau files, calculate credit scores, or determine lender eligibility.
 
 ## SEO, environment, and deployment
 

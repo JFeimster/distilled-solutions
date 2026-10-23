@@ -76,5 +76,37 @@
 .workflow-plan-text summary{cursor:pointer;font:700 11px var(--mono);text-decoration:underline;text-underline-offset:3px}
 .workflow-plan-text textarea{display:block;width:100%;max-height:300px;margin-top:12px;padding:12px;background:var(--paper);color:var(--ink);font:12px/1.5 var(--mono);resize:vertical}
 .workflow-disclaimer{max-width:850px;margin:17px 0 0;color:var(--muted);font-size:11px}
+/* Business-credit diagnostic extends the shared workflow form and result surface. */
+.credit-diagnostic .workflow-diagnostic-grid{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:start;background:var(--ink)}
+.credit-progress{display:grid;gap:9px;margin-bottom:25px;font:700 10px var(--mono)}
+.credit-progress progress{width:100%;height:9px;border:0;background:var(--rule);accent-color:var(--orange-dark)}
+.credit-progress progress::-webkit-progress-bar{background:var(--rule)}
+.credit-progress progress::-webkit-progress-value{background:var(--orange-dark)}
+.credit-form .workflow-option{min-height:44px}
+.credit-form .workflow-option input{flex-shrink:0}
+.credit-form-note{margin:16px 0 0;color:var(--muted);font-size:12px}
+.credit-empty{min-height:700px}
+.credit-result h3{font-size:clamp(36px,3.6vw,51px);line-height:1}
+.credit-rationale{margin:20px 0 0;color:#dedbd4;font-size:13px}
+.credit-result h4{margin:0;line-height:1.6}
+.credit-section-note,.credit-verification>p{color:#d3cfc7;font-size:12px}
+.credit-evidence{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:16px 0 0}
+.credit-evidence>div{padding:12px;border:1px solid #66645f;border-left:3px solid #bfc6a9}
+.credit-evidence>div[data-state=attention]{border-left-color:var(--orange)}
+.credit-evidence>div[data-state=unknown]{border-left-color:var(--lime)}
+.credit-evidence dt{font-size:12px;font-weight:700}
+.credit-evidence dd{margin:7px 0 0;color:#dedbd4;font-size:11px;line-height:1.5}
+.credit-result .credit-task-list{gap:19px;padding-left:24px}
+.credit-task-list h5{margin:0;font:800 24px/1.1 var(--display)}
+.credit-task-list p{margin:11px 0;color:#dedbd4;font-size:12px}
+.credit-task-list p strong{display:block;margin-bottom:4px;color:var(--lime);font:700 9px var(--mono)}
+.credit-task-list a{font-size:12px;font-weight:700;text-underline-offset:3px}
+.credit-practices{display:grid;gap:12px;margin:14px 0 0;padding-left:20px;color:#dedbd4;font-size:12px}
+.credit-verification{margin-top:25px;padding:17px;border:1px solid var(--lime)}
+.credit-verification summary{cursor:pointer;font:700 12px/1.5 var(--mono)}
+.credit-verification summary:focus-visible{outline:2px solid var(--lime);outline-offset:5px}
+.credit-diagnostic .workflow-guide-links{display:grid;gap:12px}
+@media(max-width:1000px){.credit-diagnostic .workflow-diagnostic-grid{grid-template-columns:1fr}.credit-empty{min-height:370px}}
+@media(max-width:650px){.credit-evidence{grid-template-columns:1fr}.credit-result h3{font-size:38px}.credit-form .workflow-options{margin-left:0}.credit-form .workflow-option{width:100%}.credit-result .credit-task-list{padding-left:18px}.credit-task-list h5{font-size:23px}}
 @media(max-width:1000px){.workflow-diagnostic-grid{grid-template-columns:1fr}.workflow-empty{min-height:370px}.workflow-preview-mark{margin:35px 0 18px}.workflow-preview-steps{padding-top:25px}}
 @media(max-width:650px){.workflow-diagnostic{padding-block:54px}.workflow-diagnostic-heading{grid-template-columns:1fr;gap:9px}.workflow-diagnostic-heading h2{font-size:45px}.workflow-form,.workflow-empty,.workflow-result{padding:18px}.workflow-question legend{font-size:23px}.workflow-question legend span{width:34px}.workflow-question p,.workflow-options{margin-left:34px}.workflow-controls{grid-template-columns:1fr}.workflow-form-foot{align-items:flex-start;flex-direction:column}.workflow-form-foot .button{width:100%}.workflow-next .button{width:100%}.workflow-preview-mark{width:85px;height:85px;font-size:60px}.workflow-empty h3,.workflow-result h3{font-size:43px}}

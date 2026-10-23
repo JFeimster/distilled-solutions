@@ -59,21 +59,80 @@
     },
     {
       "id": "business-credit-builder", "title": "Build business credit with a documented plan", "shortTitle": "Business credit", "eyebrow": "CREDIT FOUNDATION / 03", "pageType": "hub",
-      "summary": "Understand business identity, reporting, payment history, and file readiness before choosing credit products or vendors.",
-      "problem": "Business credit files can be incomplete, inconsistent, or confused with personal credit. Vendor claims do not guarantee reporting or a particular outcome.",
-      "goal": "Create a verifiable sequence for accurate business records, monitoring, and responsible credit use.",
-      "signals": ["Business identifiers differ across records.", "The business cannot confirm which accounts report to which bureaus.", "A vendor promises a score or outcome without verifiable terms."],
-      "questions": ["Are legal name, address, and business identifiers consistent?", "Which bureau files and tradeline details have been reviewed?", "Can the business manage the payment obligation under a conservative cash plan?"],
-      "paths": ["Verify the business identity and correct inaccurate records with the relevant source.", "Track reporting and payment history using primary account statements.", "Compare credit terms, fees, guarantees, and reporting claims before opening accounts."],
+      "summary": "Check business records, verify reporting claims, and put payment controls in place. Turn six foundation checks into a practical action roadmap.",
+      "problem": "An account marketed as business credit does not establish that it reports, fits the business, or justifies its cost. Inconsistent identity records and untracked obligations make the next decision harder to support.",
+      "goal": "Know which records are documented, which claims remain unverified, and which actions should come first. Maintain useful foundations without treating a new credit account as a required milestone.",
+      "signals": ["Legal names or identifying information disagree across records you can review.", "Reporting claims cannot be matched to current terms or available bureau files.", "Payment dates, fees, or the owner of a correction request are unclear."],
+      "questions": ["Which source records substantiate the business identity and any legitimate differences?", "What evidence supports each reporting claim, and what remains unconfirmed?", "Who reviews payment obligations, cash timing, and changes to account terms?"],
+      "paths": ["Use the readiness diagnostic to separate self-reported documentation, needed work, and open verification.", "Follow the roadmap to reconcile records, investigate reporting, and organize existing obligations.", "If an account serves a business purpose, evaluate written costs, guarantees, and reporting conditions before deciding."],
+      "editorial": {
+        "headline": "Build the foundations. Know your next move.",
+        "process": ["Start with the readiness diagnostic: select an objective and review six preparation areas without entering identifying information.", "Work through the first three actions using source records, a responsible owner, and a clear completion condition.", "Keep the plan current as information, account terms, or operating cash needs change; revisit unresolved reporting claims."],
+        "considerations": ["The diagnostic describes self-reported preparation, not a bureau score, lender requirement, or eligibility decision.", "Do not buy accounts solely on a claimed reporting relationship. Confirm current written terms and the evidence relevant to the business.", "No universal vendor ladder, number of accounts, or monitoring interval is required by this preparation plan."],
+        "FAQs": [
+          {"question": "Do I need to open accounts to complete the roadmap?", "answer": "No. The roadmap starts with records and existing obligations. New accounts are optional and should serve an actual business purpose after costs, terms, and payment capacity have been reviewed."},
+          {"question": "What does a documented result mean?", "answer": "It means you selected documented answers for the applicable preparation areas. The tool has not accessed records or independently verified your answers, and it does not determine creditworthiness."},
+          {"question": "Where should I start if reporting is unclear?", "answer": "Review available business-credit files and ask the provider for current written reporting details, including relevant bureaus and conditions. Keep unavailable or unconfirmed information marked as unresolved."}
+        ],
+        "CTA": {"label": "CHECK BUSINESS CREDIT READINESS", "href": "/business-credit-readiness#credit-readiness-diagnostic", "kind": "internal"}
+      },
       "children": [
-        ["fundability-check","Fundability check","Review foundational business records and reported information to identify items to verify or organize."],
-        ["business-credit-roadmap","Business credit roadmap","Sequence identity, record accuracy, monitoring, and responsible account management into a practical plan."],
+        ["fundability-check","Fundability check","Review foundational business records and reported information to identify items to verify or organize.", {
+          "headline": "Check the records behind the business.",
+          "summary": "Compare identity records, business information, and available credit files. Mark discrepancies for verification; this guide does not determine lender eligibility.",
+          "problemStatement": "A legal-name mismatch, outdated contact record, or unexplained reported entry needs a source check. Treating a generic checklist as a lender's approval standard can obscure the actual issue.",
+          "desiredOutcome": "Create a private record-verification log with a source, review date, unresolved issue, and follow-up owner for each item. Keep preparation findings separate from any lender's own requirements.",
+          "signals": ["The business cannot locate current registration or applicable identifier records.", "Different records contain information that cannot yet be reconciled or explained.", "A report entry disagrees with statements or payment confirmations."],
+          "questions": ["Which current source establishes each identity detail?", "Is a difference inaccurate, outdated, legitimate, or still unexplained?", "Which source, provider, or bureau owns the information that may need correction?"],
+          "paths": ["Build a source checklist for legal name, registration details, applicable identifiers, and contact information; keep values in your own secure records.", "Compare available files with account statements and confirmations; record what is visible, unavailable, or unverified.", "Use the responsible source's current correction process, retain supporting evidence, and confirm the outcome instead of assuming a request fixed the record."],
+          "process": ["Establish the authoritative source for each item before comparing copies or downstream credit files.", "Log the specific mismatch and supporting evidence. Assign the appropriate source or account owner for follow-up.", "Review the response and affected record again. Record an unresolved issue as open, with the next verification step."],
+          "considerations": ["Not knowing an answer is a reason to verify, not proof of a negative credit event.", "Business-credit files and lender requirements can differ. These preparation steps are not a universal approval checklist.", "The linked readiness diagnostic accepts broad selections only. Do not enter identifiers, account details, or personal credit data."],
+          "FAQs": [
+            {"question": "Is this a lender eligibility or Am I Fundable assessment?", "answer": "No. This page organizes foundational record verification. Its linked business-credit preparation diagnostic identifies tasks from your answers; it does not reproduce a specialized eligibility assessment or make a lender decision."},
+            {"question": "What if I cannot access a business-credit file?", "answer": "Keep file visibility marked as unverified and consult the relevant bureau's current official access process. An unavailable file does not by itself establish a negative finding or prove whether an account reports."},
+            {"question": "What should a correction log contain?", "answer": "In your own secure records, note the specific entry, source evidence, responsible organization, request date, response, and follow-up step. Recheck the affected record before marking the issue resolved."}
+          ],
+          "CTA": {"label": "OPEN BUSINESS-CREDIT PREPARATION DIAGNOSTIC", "href": "/business-credit-readiness#credit-readiness-diagnostic", "kind": "internal"}
+        }],
+        ["business-credit-roadmap","Business credit roadmap","Sequence identity, record accuracy, monitoring, and responsible account management into a practical plan.", {
+          "headline": "A credit roadmap built around evidence.",
+          "summary": "Sequence identity checks, reporting verification, and payment controls into practical work. Use this guide independently or build a plan from the readiness diagnostic.",
+          "problemStatement": "A list of vendors or credit tiers leaves the dependencies unresolved: records may disagree, reporting may be unconfirmed, and existing obligations may already need attention.",
+          "desiredOutcome": "Maintain an evidence-based worklist with a clear source, owner, next action, and completion check. Resolve foundational uncertainty before relying on reporting claims or evaluating an optional account.",
+          "signals": ["Tasks are organized around products instead of the records or controls that need work.", "A correction request has been submitted but its outcome has not been checked.", "A proposed account has no documented purpose, full cost review, or payment owner."],
+          "questions": ["What must be corrected or verified before the next task can be trusted?", "Which existing payment obligation needs immediate ownership?", "What evidence will show that an action is complete?"],
+          "paths": ["Foundation track: compare current identity and contact records; resolve source discrepancies before relying on downstream files.", "Reporting track: review available reports and written reporting conditions, then log unresolved claims and corrections.", "Control track: reconcile statements and due dates, review cash capacity and fees, and maintain a documented review process."],
+          "process": ["First, list current source records and explain or correct identity differences. Completion means each material discrepancy has been resolved or clearly marked for follow-up; do not silently assume a match.", "Next, review available business-credit files. Compare relevant entries with statements and provider reporting terms. Keep unconfirmed reporting separate from observed entries, and retain correction correspondence.", "Address existing obligations as an immediate operating task: assign payment ownership, reconcile confirmations, and investigate unexplained entries. Review cash timing and total costs before any additional commitment.", "Maintain the worklist: give each open issue an owner, next action, and completion check. Select report-review timing based on account activity and known issues, and recheck records after correction responses."],
+          "considerations": ["Urgent existing payment problems deserve prompt attention even while identity verification is underway. A numbered sequence is not a reason to delay an obligation.", "Before evaluating an account, obtain written fees, payment terms, guarantees, reporting conditions, and cancellation or renewal terms. Compare keeping existing arrangements as a valid option.", "There is no required vendor ladder, account purchase, or score target in this roadmap. Bureau processes and lender requirements must be checked with their respective owners."],
+          "FAQs": [
+            {"question": "Can I use the roadmap without completing the diagnostic?", "answer": "Yes. Use the foundation, reporting, and control tracks above as a worklist. For each task, record the evidence reviewed, unresolved question, owner, next action, and how completion will be confirmed."},
+            {"question": "How does the personalized plan change the sequence?", "answer": "The diagnostic prioritizes the gaps you identify, including unknown records and existing payment-control weaknesses. Documented foundations lead to maintenance tasks, while unverified information leads to specific checks rather than assumed failures."},
+            {"question": "When is an account-reporting claim verified?", "answer": "Retain current written details about the relevant bureau, what is reported, and any conditions. Compare those claims with available files and provider responses. Do not treat a business-credit label or an absent entry alone as proof."}
+          ],
+          "CTA": {"label": "PERSONALIZE MY PREPARATION ROADMAP", "href": "/business-credit-readiness#credit-readiness-diagnostic", "kind": "internal"}
+        }],
         ["business-credit-tiers","Business credit tiers","Understand common descriptions of credit-building stages and the limits of vendor-defined tier systems."],
         ["business-credit-vendors","Business credit vendors","Evaluate vendor reporting claims, fees, eligibility, and cancellation terms using current written evidence."],
         ["net-30-vendors","Net-30 vendors","Review payment terms, reporting evidence, minimum purchases, and cash impact before relying on trade credit."],
         ["business-credit-monitoring","Business credit monitoring","Set a review cadence for business files, identity consistency, inquiries, and disputed information."],
         ["business-credit-cards","Business credit cards","Compare fees, guarantees, utilization, and payment controls before adding a revolving account."],
-        ["business-credit-readiness","Business credit readiness","Check records, obligations, and payment controls before pursuing additional business credit."]
+        ["business-credit-readiness","Business credit readiness","Check records, obligations, and payment controls before pursuing additional business credit.", {
+          "headline": "Turn what you know into an action plan.",
+          "summary": "Assess six business-credit foundations. See what needs work or verification, then copy a prioritized roadmap with records to review and clear completion checks.",
+          "problemStatement": "An unchecked reporting claim is different from a known record problem, and having no credit accounts is different from mishandling payments. A useful assessment must keep those distinctions visible.",
+          "desiredOutcome": "Leave with a preparation status grounded in your own answers, three immediate actions, remaining verification tasks, and practices for maintaining records and obligations.",
+          "signals": ["Some records are documented while other information is uncertain or inconsistent.", "Reporting claims have not been checked against current terms and available files.", "Payment tracking, cash reviews, or correction follow-up lacks a practical process."],
+          "questions": ["What evidence supports each documented answer?", "Which information needs correction and which simply has not been checked?", "Are there existing obligations to reconcile before considering another account?"],
+          "paths": ["Choose an objective and answer six questions using documented, needs-attention, or not-sure selections.", "Review the evidence register and work through the immediate tasks; each includes what to review and how to recognize completion.", "Copy the plan into your own records and use the roadmap and monitoring guides to manage follow-up."],
+          "process": ["Complete the selections without entering names, identifiers, balances, or documents. No existing accounts is an available answer for payment history.", "Generate the plan and review its explanation. Documented answers remain self-reported; unknown answers create verification tasks.", "Act on the plan, save it if useful, and reassess when the underlying records change. Changing a selection clears the previous result to avoid a stale recommendation."],
+          "considerations": ["This tool never accesses bureau files or independently verifies your answers. Its operational status is not a bureau score, creditworthiness determination, or lender eligibility result.", "Answers live only in browser component memory and clear when you leave or reload. Copying exports the readable plan to your device's clipboard.", "No purchase, borrowing, vendor enrollment, or new account is required to complete the preparation actions."],
+          "FAQs": [
+            {"question": "What should I choose when I have not checked a record?", "answer": "Choose not sure / needs verification. The plan will identify evidence to review without inventing a negative finding. Use documented only when you have reviewed supporting records yourself."},
+            {"question": "Does the preparation status predict a credit score or approval?", "answer": "No. It describes the completeness of the preparation you reported. The tool does not obtain reports, calculate scores, assess underwriting, or predict a lender's decision."},
+            {"question": "How do I save the roadmap?", "answer": "Use Copy Action Plan, or open the readable plain-text plan and copy it manually. The plan includes your objective, preparation findings, tasks, completion criteria, and resource links. No account or email submission is involved."}
+          ],
+          "CTA": {"label": "BUILD MY ACTION ROADMAP", "href": "#credit-readiness-diagnostic", "kind": "internal"}
+        }]
       ]
     },
     {
