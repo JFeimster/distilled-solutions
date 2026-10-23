@@ -24,12 +24,12 @@
     },
     {
       "id": "automate-my-funding", "title": "Automate funding operations", "shortTitle": "Automate funding", "eyebrow": "WORKFLOW DESIGN / 02", "pageType": "service",
-      "summary": "Map funding workflows, handoffs, and data controls before deciding what to automate.",
-      "problem": "Manual intake, repeated document requests, and unclear ownership can create delays and inconsistent records across a funding workflow.",
-      "goal": "Make each workflow step, decision owner, exception path, and data boundary explicit before selecting automation.",
-      "signals": ["The same information is re-entered across forms and systems.", "Requests sit without a clear owner or next step.", "Automation proposals lack a documented exception and review path."],
-      "questions": ["Where does work wait, repeat, or lose context?", "Which decisions require a human review and what evidence do they need?", "What sensitive information should each system receive or retain?"],
-      "paths": ["Document the current workflow and its failure points.", "Define owners, service expectations, exception handling, and access controls.", "Pilot a narrow, reversible workflow and review quality before expanding."],
+      "summary": "Find the handoff slowing your funding operation, then design a small, reviewable improvement before connecting systems.",
+      "problem": "Funding work often crosses intake, review, documents, routing, and follow-up without a single visible owner for each handoff. Re-entry and unclear exceptions make delays hard to diagnose.",
+      "goal": "Map the current handoffs, assign decision and data owners, and pilot one reversible improvement with human review intact.",
+      "signals": ["Staff re-enter the same facts across forms, spreadsheets, and a CRM.", "A request waits because its next owner or required evidence is unclear.", "An automation proposal lacks an exception queue, access boundary, or review checkpoint."],
+      "questions": ["Which handoff loses the most time or context today?", "Who can approve a decision, and who resolves an exception?", "Which system owns each field, and who may access sensitive records?"],
+      "paths": ["Map one real workflow from intake to follow-up and mark wait states.", "Separate repeatable status and task updates from decisions reserved for authorized people.", "Pilot one reversible handoff with an owner, evidence check, and quality review."],
       "children": [
         ["funding-intake-automation","Funding intake automation","Capture complete, consistent intake with clear consent, validation, and a safe path for incomplete submissions."],
         ["funding-qualification-automation","Funding qualification automation","Organize review inputs and routing logic while keeping eligibility and credit decisions with authorized people."],
@@ -37,7 +37,23 @@
         ["funding-routing-automation","Funding routing automation","Route work using documented purpose, product scope, geography, and human review rules."],
         ["funding-follow-up-automation","Funding follow-up automation","Make follow-up timing and ownership visible while respecting consent, channel preferences, and opt-outs."],
         ["crm-automation","CRM automation","Reduce duplicate entry and missed tasks by defining reliable field ownership, events, and exception handling."],
-        ["funding-workflow-automation","Funding workflow automation","Connect intake, review, documents, decisions, and follow-up through auditable handoffs."],
+        ["funding-workflow-automation","Funding workflow automation","Connect intake, review, documents, decisions, and follow-up through auditable handoffs.", {
+          "headline": "Find the funding handoff worth fixing first.",
+          "summary": "Choose where work stalls, how your team operates, and what risk matters most. Get a three-step workflow improvement plan you can review with your team.",
+          "problemStatement": "A funding workflow breaks down at the handoff: missing information, unclear ownership, repeated entry, or follow-up that no one can see.",
+          "desiredOutcome": "Identify one bounded workflow fix, assign its owner and human review point, and protect the source records before automating more.",
+          "signals": ["A request waits without an owner, next action, or due date.", "The same applicant facts or document statuses are entered more than once.", "A workflow moves forward despite missing evidence or an unresolved exception."],
+          "questions": ["Where does the current request first stall or lose context?", "Which update can be automated safely, and which decision requires an authorized reviewer?", "What is the source of truth for each field and document status?"],
+          "paths": ["Trace one request from intake through follow-up and record each owner, wait state, and system.", "Define a narrow rule for the first repeatable handoff, with a visible exception queue.", "Review a small pilot against source records before expanding the workflow."],
+          "process": ["Map the current path with the people who perform each step; note missing information and manual re-entry.", "Name the system of record, the next owner, and the human approval point for the selected handoff.", "Pilot a reversible status or task update; sample results and resolve exceptions before expanding."],
+          "considerations": ["Do not automate eligibility, underwriting, approval, denial, pricing, or lender submission decisions.", "Limit access to sensitive information, document consent and retention, and keep source records in their approved system.", "Give every exception an owner and a way to stop or reverse the pilot."],
+          "FAQs": [
+            {"question": "What should be automated first in a funding workflow?", "answer": "Start with the handoff that repeatedly loses status, ownership, or required information. A bounded task or status update is easier to review than an end-to-end decision flow."},
+            {"question": "Can this diagnostic decide whether someone qualifies for funding?", "answer": "No. The diagnostic suggests operational improvements from broad workflow choices. Authorized people retain all eligibility, credit, underwriting, approval, pricing, and submission decisions."},
+            {"question": "Does the diagnostic store my answers?", "answer": "No. It runs in this browser session, asks for no customer records or credentials, and does not send responses to a server."}
+          ],
+          "CTA": {"label": "BUILD MY WORKFLOW PLAN", "href": "#workflow-diagnostic", "kind": "internal"}
+        }],
         ["ai-funding-automation","AI funding automation","Evaluate bounded AI assistance for summarization and task support with human review, source traceability, and privacy controls."]
       ]
     },

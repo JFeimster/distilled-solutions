@@ -92,11 +92,6 @@
         "label": "EXPLORE THE NEXT STEP",
         "href": "/buy-or-sell-a-business",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -1543,34 +1538,34 @@
     "title": "Automate funding operations",
     "shortTitle": "Automate funding",
     "metaTitle": "Automate funding | Distilled Solutions",
-    "metaDescription": "Map funding workflows, handoffs, and data controls before deciding what to automate.",
+    "metaDescription": "Find the handoff slowing your funding operation, then design a small, reviewable improvement before connecting systems.",
     "hero": {
       "headline": "Automate funding operations",
-      "summary": "Map funding workflows, handoffs, and data controls before deciding what to automate."
+      "summary": "Find the handoff slowing your funding operation, then design a small, reviewable improvement before connecting systems."
     },
-    "problemStatement": "Manual intake, repeated document requests, and unclear ownership can create delays and inconsistent records across a funding workflow.",
-    "desiredOutcome": "Make each workflow step, decision owner, exception path, and data boundary explicit before selecting automation.",
+    "problemStatement": "Funding work often crosses intake, review, documents, routing, and follow-up without a single visible owner for each handoff. Re-entry and unclear exceptions make delays hard to diagnose.",
+    "desiredOutcome": "Map the current handoffs, assign decision and data owners, and pilot one reversible improvement with human review intact.",
     "audience": "Automate funding operations planning automate funding with practical records and clear decision ownership.",
     "pains": [
-      "The same information is re-entered across forms and systems.",
-      "Requests sit without a clear owner or next step.",
-      "Automation proposals lack a documented exception and review path."
+      "Staff re-enter the same facts across forms, spreadsheets, and a CRM.",
+      "A request waits because its next owner or required evidence is unclear.",
+      "An automation proposal lacks an exception queue, access boundary, or review checkpoint."
     ],
     "goals": [
-      "Document the current workflow and its failure points.",
-      "Define owners, service expectations, exception handling, and access controls.",
-      "Pilot a narrow, reversible workflow and review quality before expanding."
+      "Map one real workflow from intake to follow-up and mark wait states.",
+      "Separate repeatable status and task updates from decisions reserved for authorized people.",
+      "Pilot one reversible handoff with an owner, evidence check, and quality review."
     ],
-    "overview": "Manual intake, repeated document requests, and unclear ownership can create delays and inconsistent records across a funding workflow. Make each workflow step, decision owner, exception path, and data boundary explicit before selecting automation. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
+    "overview": "Funding work often crosses intake, review, documents, routing, and follow-up without a single visible owner for each handoff. Re-entry and unclear exceptions make delays hard to diagnose. Map the current handoffs, assign decision and data owners, and pilot one reversible improvement with human review intact. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
     "keyQuestions": [
-      "Where does work wait, repeat, or lose context?",
-      "Which decisions require a human review and what evidence do they need?",
-      "What sensitive information should each system receive or retain?"
+      "Which handoff loses the most time or context today?",
+      "Who can approve a decision, and who resolves an exception?",
+      "Which system owns each field, and who may access sensitive records?"
     ],
     "solutionPaths": [
-      "Document the current workflow and its failure points.",
-      "Define owners, service expectations, exception handling, and access controls.",
-      "Pilot a narrow, reversible workflow and review quality before expanding."
+      "Map one real workflow from intake to follow-up and mark wait states.",
+      "Separate repeatable status and task updates from decisions reserved for authorized people.",
+      "Pilot one reversible handoff with an owner, evidence check, and quality review."
     ],
     "process": [
       "Define the decision, the people responsible, and the date by which it must be made.",
@@ -1578,9 +1573,9 @@
       "Compare options, risks, and next actions; update the plan when actual results differ."
     ],
     "benefits": [
-      "Document the current workflow and its failure points.",
-      "Define owners, service expectations, exception handling, and access controls.",
-      "Pilot a narrow, reversible workflow and review quality before expanding."
+      "Map one real workflow from intake to follow-up and mark wait states.",
+      "Separate repeatable status and task updates from decisions reserved for authorized people.",
+      "Pilot one reversible handoff with an owner, evidence check, and quality review."
     ],
     "considerations": [
       "The right path depends on current records, timing, operating capacity, and the specific terms available.",
@@ -1588,9 +1583,9 @@
       "Confirm legal, tax, credit, privacy, and financing questions with the qualified professional responsible for that decision."
     ],
     "readinessSignals": [
-      "The same information is re-entered across forms and systems.",
-      "Requests sit without a clear owner or next step.",
-      "Automation proposals lack a documented exception and review path."
+      "Staff re-enter the same facts across forms, spreadsheets, and a CRM.",
+      "A request waits because its next owner or required evidence is unclear.",
+      "An automation proposal lacks an exception queue, access boundary, or review checkpoint."
     ],
     "warningSignals": [
       "A promised score, approval, savings, or timeline cannot be tied to verified evidence.",
@@ -1606,7 +1601,7 @@
     "FAQs": [
       {
         "question": "What should I review first for automate funding?",
-        "answer": "Where does work wait, repeat, or lose context? Make each workflow step, decision owner, exception path, and data boundary explicit before selecting automation. Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms."
+        "answer": "Which handoff loses the most time or context today? Map the current handoffs, assign decision and data owners, and pilot one reversible improvement with human review intact. Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms."
       },
       {
         "question": "Does this page determine eligibility or guarantee an outcome?",
@@ -1618,15 +1613,9 @@
         "label": "MAP MY FUNDING WORKFLOW",
         "href": "/funding-workflow-automation",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
-      "home",
       "home",
       "automate-my-funding"
     ],
@@ -1738,11 +1727,6 @@
         "label": "MAP MY FUNDING WORKFLOW",
         "href": "/funding-workflow-automation",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -1857,11 +1841,6 @@
         "label": "MAP MY FUNDING WORKFLOW",
         "href": "/funding-workflow-automation",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -1976,11 +1955,6 @@
         "label": "MAP MY FUNDING WORKFLOW",
         "href": "/funding-workflow-automation",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -2095,11 +2069,6 @@
         "label": "MAP MY FUNDING WORKFLOW",
         "href": "/funding-workflow-automation",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -2214,11 +2183,6 @@
         "label": "MAP MY FUNDING WORKFLOW",
         "href": "/funding-workflow-automation",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -2333,11 +2297,6 @@
         "label": "MAP MY FUNDING WORKFLOW",
         "href": "/funding-workflow-automation",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -2376,54 +2335,54 @@
     "title": "Funding workflow automation",
     "shortTitle": "Funding workflow automation",
     "metaTitle": "Funding workflow automation | Distilled Solutions",
-    "metaDescription": "Connect intake, review, documents, decisions, and follow-up through auditable handoffs.",
+    "metaDescription": "Choose where work stalls, how your team operates, and what risk matters most. Get a three-step workflow improvement plan you can review with your team.",
     "hero": {
-      "headline": "Funding workflow automation",
-      "summary": "Connect intake, review, documents, decisions, and follow-up through auditable handoffs."
+      "headline": "Find the funding handoff worth fixing first.",
+      "summary": "Choose where work stalls, how your team operates, and what risk matters most. Get a three-step workflow improvement plan you can review with your team."
     },
-    "problemStatement": "Connect intake, review, documents, decisions, and follow-up through auditable handoffs. Without a defined scope, current evidence, and a clear decision owner, the next action can address the wrong constraint.",
-    "desiredOutcome": "Use funding workflow automation to clarify the decision, information needed, tradeoffs, and an appropriate next step.",
+    "problemStatement": "A funding workflow breaks down at the handoff: missing information, unclear ownership, repeated entry, or follow-up that no one can see.",
+    "desiredOutcome": "Identify one bounded workflow fix, assign its owner and human review point, and protect the source records before automating more.",
     "audience": "Automate funding operations planning funding workflow automation with practical records and clear decision ownership.",
     "pains": [
-      "Connect intake, review, documents, decisions, and follow-up through auditable handoffs.",
-      "The people involved do not yet share the same assumptions or timing for funding workflow automation.",
-      "The decision depends on information that has not been checked against current source records."
+      "A request waits without an owner, next action, or due date.",
+      "The same applicant facts or document statuses are entered more than once.",
+      "A workflow moves forward despite missing evidence or an unresolved exception."
     ],
     "goals": [
-      "Connect intake, review, documents, decisions, and follow-up through auditable handoffs.",
-      "Compare an operational change, professional guidance, and a relevant external resource against the same facts.",
-      "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."
+      "Trace one request from intake through follow-up and record each owner, wait state, and system.",
+      "Define a narrow rule for the first repeatable handoff, with a visible exception queue.",
+      "Review a small pilot against source records before expanding the workflow."
     ],
-    "overview": "Connect intake, review, documents, decisions, and follow-up through auditable handoffs. Without a defined scope, current evidence, and a clear decision owner, the next action can address the wrong constraint. Use funding workflow automation to clarify the decision, information needed, tradeoffs, and an appropriate next step. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
+    "overview": "A funding workflow breaks down at the handoff: missing information, unclear ownership, repeated entry, or follow-up that no one can see. Identify one bounded workflow fix, assign its owner and human review point, and protect the source records before automating more. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
     "keyQuestions": [
-      "What would need to be true for funding workflow automation to solve the stated problem?",
-      "Which information is verified, and which assumptions could materially change the decision?",
-      "Who owns the next review and how will the result be checked?"
+      "Where does the current request first stall or lose context?",
+      "Which update can be automated safely, and which decision requires an authorized reviewer?",
+      "What is the source of truth for each field and document status?"
     ],
     "solutionPaths": [
-      "Connect intake, review, documents, decisions, and follow-up through auditable handoffs.",
-      "Compare an operational change, professional guidance, and a relevant external resource against the same facts.",
-      "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."
+      "Trace one request from intake through follow-up and record each owner, wait state, and system.",
+      "Define a narrow rule for the first repeatable handoff, with a visible exception queue.",
+      "Review a small pilot against source records before expanding the workflow."
     ],
     "process": [
-      "Define the decision, the people responsible, and the date by which it must be made.",
-      "Gather current source records and mark assumptions that still need verification.",
-      "Compare options, risks, and next actions; update the plan when actual results differ."
+      "Map the current path with the people who perform each step; note missing information and manual re-entry.",
+      "Name the system of record, the next owner, and the human approval point for the selected handoff.",
+      "Pilot a reversible status or task update; sample results and resolve exceptions before expanding."
     ],
     "benefits": [
-      "Connect intake, review, documents, decisions, and follow-up through auditable handoffs.",
-      "Compare an operational change, professional guidance, and a relevant external resource against the same facts.",
-      "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."
+      "Trace one request from intake through follow-up and record each owner, wait state, and system.",
+      "Define a narrow rule for the first repeatable handoff, with a visible exception queue.",
+      "Review a small pilot against source records before expanding the workflow."
     ],
     "considerations": [
-      "The right path depends on current records, timing, operating capacity, and the specific terms available.",
-      "Model downside cases and ongoing costs before committing cash or taking on a new obligation.",
-      "Confirm legal, tax, credit, privacy, and financing questions with the qualified professional responsible for that decision."
+      "Do not automate eligibility, underwriting, approval, denial, pricing, or lender submission decisions.",
+      "Limit access to sensitive information, document consent and retention, and keep source records in their approved system.",
+      "Give every exception an owner and a way to stop or reverse the pilot."
     ],
     "readinessSignals": [
-      "Connect intake, review, documents, decisions, and follow-up through auditable handoffs.",
-      "The people involved do not yet share the same assumptions or timing for funding workflow automation.",
-      "The decision depends on information that has not been checked against current source records."
+      "A request waits without an owner, next action, or due date.",
+      "The same applicant facts or document statuses are entered more than once.",
+      "A workflow moves forward despite missing evidence or an unresolved exception."
     ],
     "warningSignals": [
       "A promised score, approval, savings, or timeline cannot be tied to verified evidence.",
@@ -2439,24 +2398,23 @@
     ],
     "FAQs": [
       {
-        "question": "What should I review first for funding workflow automation?",
-        "answer": "What would need to be true for funding workflow automation to solve the stated problem? Use funding workflow automation to clarify the decision, information needed, tradeoffs, and an appropriate next step. Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms."
+        "question": "What should be automated first in a funding workflow?",
+        "answer": "Start with the handoff that repeatedly loses status, ownership, or required information. A bounded task or status update is easier to review than an end-to-end decision flow."
       },
       {
-        "question": "Does this page determine eligibility or guarantee an outcome?",
-        "answer": "No. This guide organizes questions and next steps. It does not make underwriting, eligibility, approval, or service-availability decisions."
+        "question": "Can this diagnostic decide whether someone qualifies for funding?",
+        "answer": "No. The diagnostic suggests operational improvements from broad workflow choices. Authorized people retain all eligibility, credit, underwriting, approval, pricing, and submission decisions."
+      },
+      {
+        "question": "Does the diagnostic store my answers?",
+        "answer": "No. It runs in this browser session, asks for no customer records or credentials, and does not send responses to a server."
       }
     ],
     "CTAs": [
       {
-        "label": "MAP MY FUNDING WORKFLOW",
-        "href": "/funding-workflow-automation",
+        "label": "BUILD MY WORKFLOW PLAN",
+        "href": "#workflow-diagnostic",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -2571,11 +2529,6 @@
         "label": "MAP MY FUNDING WORKFLOW",
         "href": "/funding-workflow-automation",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -2693,11 +2646,6 @@
         "label": "BUILD MY CREDIT ROADMAP",
         "href": "/fundability-check",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -2821,11 +2769,6 @@
         "label": "BUILD MY CREDIT ROADMAP",
         "href": "/business-credit-roadmap",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -2940,11 +2883,6 @@
         "label": "BUILD MY CREDIT ROADMAP",
         "href": "/business-credit-roadmap",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -3059,11 +2997,6 @@
         "label": "BUILD MY CREDIT ROADMAP",
         "href": "/business-credit-roadmap",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -3178,11 +3111,6 @@
         "label": "BUILD MY CREDIT ROADMAP",
         "href": "/business-credit-roadmap",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -3297,11 +3225,6 @@
         "label": "BUILD MY CREDIT ROADMAP",
         "href": "/business-credit-roadmap",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -3416,11 +3339,6 @@
         "label": "BUILD MY CREDIT ROADMAP",
         "href": "/business-credit-roadmap",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -3535,11 +3453,6 @@
         "label": "BUILD MY CREDIT ROADMAP",
         "href": "/business-credit-roadmap",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -3654,11 +3567,6 @@
         "label": "BUILD MY CREDIT ROADMAP",
         "href": "/business-credit-roadmap",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -3776,11 +3684,6 @@
         "label": "FIND THE CASH-FLOW BOTTLENECK",
         "href": "/cash-flow-analysis",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -3904,11 +3807,6 @@
         "label": "FIND THE CASH-FLOW BOTTLENECK",
         "href": "/cash-flow-analysis",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -4029,11 +3927,6 @@
         "label": "FIND THE CASH-FLOW BOTTLENECK",
         "href": "/cash-flow-analysis",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -4160,11 +4053,6 @@
         "label": "FIND THE CASH-FLOW BOTTLENECK",
         "href": "/cash-flow-analysis",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -4279,11 +4167,6 @@
         "label": "FIND THE CASH-FLOW BOTTLENECK",
         "href": "/cash-flow-analysis",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -4398,11 +4281,6 @@
         "label": "FIND THE CASH-FLOW BOTTLENECK",
         "href": "/cash-flow-analysis",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -4523,11 +4401,6 @@
         "label": "FIND THE CASH-FLOW BOTTLENECK",
         "href": "/cash-flow-analysis",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -4642,11 +4515,6 @@
         "label": "FIND THE CASH-FLOW BOTTLENECK",
         "href": "/cash-flow-analysis",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -4761,11 +4629,6 @@
         "label": "FIND THE CASH-FLOW BOTTLENECK",
         "href": "/cash-flow-analysis",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -4883,11 +4746,6 @@
         "label": "PLAN THE CAPITAL MOVE",
         "href": "/fund-an-expansion",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -5005,11 +4863,6 @@
         "label": "PLAN THE CAPITAL MOVE",
         "href": "/capital-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -5124,11 +4977,6 @@
         "label": "PLAN THE CAPITAL MOVE",
         "href": "/capital-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -5243,11 +5091,6 @@
         "label": "PLAN THE CAPITAL MOVE",
         "href": "/capital-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -5362,11 +5205,6 @@
         "label": "PLAN THE CAPITAL MOVE",
         "href": "/capital-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -5481,11 +5319,6 @@
         "label": "PLAN THE CAPITAL MOVE",
         "href": "/capital-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -5606,11 +5439,6 @@
         "label": "PLAN THE CAPITAL MOVE",
         "href": "/capital-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -5725,11 +5553,6 @@
         "label": "PLAN THE CAPITAL MOVE",
         "href": "/capital-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -5843,15 +5666,9 @@
         "label": "BUILD THE FINANCIAL PLAN",
         "href": "/financial-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
-      "home",
       "home",
       "cfo-as-a-service"
     ],
@@ -5963,11 +5780,6 @@
         "label": "BUILD THE FINANCIAL PLAN",
         "href": "/financial-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -6082,11 +5894,6 @@
         "label": "BUILD THE FINANCIAL PLAN",
         "href": "/financial-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -6201,11 +6008,6 @@
         "label": "BUILD THE FINANCIAL PLAN",
         "href": "/financial-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -6320,11 +6122,6 @@
         "label": "BUILD THE FINANCIAL PLAN",
         "href": "/financial-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -6439,11 +6236,6 @@
         "label": "BUILD THE FINANCIAL PLAN",
         "href": "/financial-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -6558,11 +6350,6 @@
         "label": "BUILD THE FINANCIAL PLAN",
         "href": "/financial-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -6677,11 +6464,6 @@
         "label": "BUILD THE FINANCIAL PLAN",
         "href": "/financial-planning",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -6795,15 +6577,9 @@
         "label": "MAP THE FINANCE WORKFLOW",
         "href": "/financial-operations",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
-      "home",
       "home",
       "finops-as-a-service"
     ],
@@ -6915,11 +6691,6 @@
         "label": "MAP THE FINANCE WORKFLOW",
         "href": "/financial-operations",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -7034,11 +6805,6 @@
         "label": "MAP THE FINANCE WORKFLOW",
         "href": "/financial-operations",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -7153,11 +6919,6 @@
         "label": "MAP THE FINANCE WORKFLOW",
         "href": "/financial-operations",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -7272,11 +7033,6 @@
         "label": "MAP THE FINANCE WORKFLOW",
         "href": "/financial-operations",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -7391,11 +7147,6 @@
         "label": "MAP THE FINANCE WORKFLOW",
         "href": "/financial-operations",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -7510,11 +7261,6 @@
         "label": "MAP THE FINANCE WORKFLOW",
         "href": "/financial-operations",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -7629,11 +7375,6 @@
         "label": "MAP THE FINANCE WORKFLOW",
         "href": "/financial-operations",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -7747,15 +7488,9 @@
         "label": "CHECK FUNDING READINESS",
         "href": "/funding-readiness-plan",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
-      "home",
       "home",
       "funding-readiness"
     ],
@@ -7873,11 +7608,6 @@
         "label": "CHECK FUNDING READINESS",
         "href": "/funding-readiness-plan",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -7992,11 +7722,6 @@
         "label": "CHECK FUNDING READINESS",
         "href": "/funding-readiness-plan",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -8111,11 +7836,6 @@
         "label": "CHECK FUNDING READINESS",
         "href": "/funding-readiness-plan",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -8230,11 +7950,6 @@
         "label": "CHECK FUNDING READINESS",
         "href": "/funding-readiness-plan",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -8349,11 +8064,6 @@
         "label": "CHECK FUNDING READINESS",
         "href": "/funding-readiness-plan",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -8468,11 +8178,6 @@
         "label": "CHECK FUNDING READINESS",
         "href": "/funding-readiness-plan",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [
@@ -8587,11 +8292,6 @@
         "label": "CHECK FUNDING READINESS",
         "href": "/funding-readiness-plan",
         "kind": "internal"
-      },
-      {
-        "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
-        "kind": "external"
       }
     ],
     "breadcrumbs": [

@@ -9,7 +9,13 @@ const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 type Family = {
   id: string; title: string; shortTitle: string; eyebrow: string; pageType: string; summary: string;
   problem: string; goal: string; signals: string[]; questions: string[]; paths: string[];
-  children: [string, string, string][];
+  children: [string, string, string, ChildEditorial?][];
+};
+type ChildEditorial = {
+  headline?: string; summary?: string; problemStatement?: string; desiredOutcome?: string;
+  questions?: string[]; signals?: string[]; paths?: string[]; process?: string[];
+  considerations?: string[]; FAQs?: { question: string; answer: string }[];
+  CTA?: { label: string; href: string; kind: "internal" | "external" };
 };
 const source = catalog as unknown as { home: { route: string; title: string; summary: string }; families: Family[] };
 const familyLinks: Record<string, { label: string; href: string; context: string }[]> = {
@@ -48,9 +54,15 @@ const pages: Record<string, unknown>[] = [];
 const makePage = (options: {
   id: string; route: string; title: string; shortTitle: string; eyebrow: string; pageType: string;
   family: Family | null; parent: string | null; summary: string; problem: string; goal: string;
-  signals: string[]; questions: string[]; paths: string[];
+  signals: string[]; questions: string[]; paths: string[]; editorial?: ChildEditorial;
 }) => {
-  const { id, route, title, shortTitle, eyebrow, pageType, family, parent, summary, problem, goal, signals, questions, paths } = options;
+  const { id, route, title, shortTitle, eyebrow, pageType, family, parent, editorial } = options;
+  const summary = editorial?.summary ?? options.summary;
+  const problem = editorial?.problemStatement ?? options.problem;
+  const goal = editorial?.desiredOutcome ?? options.goal;
+  const signals = editorial?.signals ?? options.signals;
+  const questions = editorial?.questions ?? options.questions;
+  const paths = editorial?.paths ?? options.paths;
   const hub = family?.id ?? id;
   const canonicalUrl = `${site.siteUrl}${route === "/" ? "" : route}`;
   const isHome = route === "/";
@@ -59,7 +71,7 @@ const makePage = (options: {
   const tools = toolRelevant.has(id) ? [{ label: "Tools directory", href: site.toolsSite, context: "Open the canonical Tools directory to find available calculators and preparation resources." }] : [];
   const acquires = acquire ? [{ label: "Acquire", href: site.acquireSite, context: "Continue to the canonical Acquire destination for deeper transaction workflows and tools." }] : [];
   const related = isHome ? source.families.map(item => item.id) : pageType === "hub" ? (family?.children ?? []).slice(0, 6).map(item => item[0]) : [hub, ...(neighbors[hub] ?? [])];
-  const breadcrumbIds = isHome ? ["home"] : pageType === "hub" ? ["home", id] : ["home", ...(parent ? [parent, id] : [id])];
+  const breadcrumbIds = isHome ? ["home"] : parent === "home" ? ["home", id] : ["home", ...(parent ? [parent, id] : [id])];
   const benefits = paths.slice(0, 3);
   const question = questions[0] ?? "What evidence and constraints should be reviewed before choosing a next step?";
   const answer = `${goal} Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms.`;
@@ -67,20 +79,20 @@ const makePage = (options: {
     id, slug: isHome ? "home" : route.slice(1), route, canonicalUrl, pageType, solutionFamily: family?.id ?? null, parent,
     eyebrow, title, shortTitle, metaTitle: `${shortTitle} | Distilled Solutions`,
     metaDescription: summary.length > 155 ? `${summary.slice(0, 151).trimEnd()}…` : summary,
-    hero: { headline: title, summary }, problemStatement: problem, desiredOutcome: goal,
+    hero: { headline: editorial?.headline ?? title, summary }, problemStatement: problem, desiredOutcome: goal,
     audience: isHome ? "Owners and operators deciding what to improve, build, buy, automate, or prepare next." : `${family?.title ?? "Business operators"} planning ${shortTitle.toLowerCase()} with practical records and clear decision ownership.`,
     pains: signals, goals: paths, overview: `${problem} ${goal} A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.`,
     keyQuestions: questions, solutionPaths: paths,
-    process: ["Define the decision, the people responsible, and the date by which it must be made.", "Gather current source records and mark assumptions that still need verification.", "Compare options, risks, and next actions; update the plan when actual results differ."],
-    benefits, considerations: ["The right path depends on current records, timing, operating capacity, and the specific terms available.", "Model downside cases and ongoing costs before committing cash or taking on a new obligation.", "Confirm legal, tax, credit, privacy, and financing questions with the qualified professional responsible for that decision."],
+    process: editorial?.process ?? ["Define the decision, the people responsible, and the date by which it must be made.", "Gather current source records and mark assumptions that still need verification.", "Compare options, risks, and next actions; update the plan when actual results differ."],
+    benefits, considerations: editorial?.considerations ?? ["The right path depends on current records, timing, operating capacity, and the specific terms available.", "Model downside cases and ongoing costs before committing cash or taking on a new obligation.", "Confirm legal, tax, credit, privacy, and financing questions with the qualified professional responsible for that decision."],
     readinessSignals: signals.slice(0, 3), warningSignals: ["A promised score, approval, savings, or timeline cannot be tied to verified evidence.", "A proposed option has unclear fees, ownership, data access, or exception handling."],
     fundingConnections: funding, toolConnections: tools, acquireConnections: acquires,
     relatedSolutions: [...new Set(related.filter(item => item !== id))],
-    FAQs: [
+    FAQs: editorial?.FAQs ?? [
       { question: `What should I review first for ${shortTitle.toLowerCase()}?`, answer: `${question} ${answer}` },
       { question: `Does this page determine eligibility or guarantee an outcome?`, answer: "No. This guide organizes questions and next steps. It does not make underwriting, eligibility, approval, or service-availability decisions." }
     ],
-    CTAs: [{ label: ctaLabels[hub] ?? ctaLabels[family?.id ?? ""] ?? "EXPLORE THE NEXT STEP", href: pageType === "hub" ? `/${family?.children[0]?.[0] ?? hub}` : (ctaTargets[hub] ?? (route === "/" ? `/${source.families[0]!.id}` : `/${hub}`)), kind: "internal" }, ...(acquires ? [{ label: "OPEN ACQUIRE", href: site.acquireSite, kind: "external" as const }] : [])],
+    CTAs: [editorial?.CTA ?? { label: ctaLabels[hub] ?? ctaLabels[family?.id ?? ""] ?? "EXPLORE THE NEXT STEP", href: pageType === "hub" ? `/${family?.children[0]?.[0] ?? hub}` : (ctaTargets[hub] ?? (route === "/" ? `/${source.families[0]!.id}` : `/${hub}`)), kind: "internal" }, ...(acquire ? [{ label: "OPEN ACQUIRE", href: site.acquireSite, kind: "external" as const }] : [])],
     breadcrumbs: breadcrumbIds, internalLinks: [...new Set([...(parent ? [parent] : []), ...related])],
     structuredData: { includeFaq: true, service: false },
     indexStatus: "noindex", status: "noindex", lastReviewed: null,
@@ -92,10 +104,10 @@ const home = makePage({ id: "home", route: "/", title: source.home.title, shortT
 pages.push(home);
 for (const family of source.families) {
   pages.push(makePage({ id: family.id, route: `/${family.id}`, title: family.title, shortTitle: family.shortTitle, eyebrow: family.eyebrow, pageType: family.pageType, family, parent: "home", summary: family.summary, problem: family.problem, goal: family.goal, signals: family.signals, questions: family.questions, paths: family.paths }));
-  for (const [id, title, purpose] of family.children) {
+  for (const [id, title, purpose, editorial] of family.children) {
     const pageType = acquireRelevant.has(id) ? "acquisition" : /readiness|check|assessment|qualification|fundability/.test(id) ? "assessment" : "outcome";
     const titleSentence = purpose.endsWith(".") ? purpose : `${purpose}.`;
-    pages.push(makePage({ id, route: `/${id}`, title, shortTitle: title, eyebrow: `${family.eyebrow.split(" /")[0]} / FIELD GUIDE`, pageType, family, parent: family.id, summary: titleSentence, problem: `${purpose} Without a defined scope, current evidence, and a clear decision owner, the next action can address the wrong constraint.`, goal: `Use ${title.toLowerCase()} to clarify the decision, information needed, tradeoffs, and an appropriate next step.`, signals: [purpose, `The people involved do not yet share the same assumptions or timing for ${title.toLowerCase()}.`, "The decision depends on information that has not been checked against current source records."], questions: [`What would need to be true for ${title.toLowerCase()} to solve the stated problem?`, "Which information is verified, and which assumptions could materially change the decision?", "Who owns the next review and how will the result be checked?"], paths: [purpose, "Compare an operational change, professional guidance, and a relevant external resource against the same facts.", "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."] }));
+    pages.push(makePage({ id, route: `/${id}`, title, shortTitle: title, eyebrow: `${family.eyebrow.split(" /")[0]} / FIELD GUIDE`, pageType, family, parent: family.id, summary: titleSentence, problem: `${purpose} Without a defined scope, current evidence, and a clear decision owner, the next action can address the wrong constraint.`, goal: `Use ${title.toLowerCase()} to clarify the decision, information needed, tradeoffs, and an appropriate next step.`, signals: [purpose, `The people involved do not yet share the same assumptions or timing for ${title.toLowerCase()}.`, "The decision depends on information that has not been checked against current source records."], questions: [`What would need to be true for ${title.toLowerCase()} to solve the stated problem?`, "Which information is verified, and which assumptions could materially change the decision?", "Who owns the next review and how will the result be checked?"], paths: [purpose, "Compare an operational change, professional guidance, and a relevant external resource against the same facts.", "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."], editorial }));
   }
 }
 const errors = pages.flatMap((page, index) => { const result = pageSchema.safeParse(page); return result.success ? [] : [`Record ${index} (${String((page as { id?: string }).id)}): ${result.error.message}`]; });

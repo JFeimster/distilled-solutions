@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { SolutionPage } from "@/schemas/solutions";
 import { getChildren, getRelatedPages } from "@/lib/solutions/pages";
 import { OutcomeConsole } from "@/components/solutions/OutcomeConsole";
+import { FundingWorkflowDiagnostic } from "@/components/solutions/FundingWorkflowDiagnostic";
 import { site } from "@/lib/config";
 import { safeJsonLd, structuredData } from "@/lib/seo";
 
@@ -29,7 +30,8 @@ function PageBody({ page }: { page: SolutionPage }) {
   return <>
     <JsonLd page={page}/><Breadcrumbs page={page}/>
     <section className={`page-hero ${page.pageType === "hub" ? "hub-hero" : "detail-hero"}`}><div className="wrap page-hero-inner"><div><span className="eyebrow">{page.eyebrow}</span><h1>{page.hero.headline}</h1><p className="page-lede">{page.hero.summary}</p><div className="hero-actions"><Link className="button button-orange" href={page.CTAs[0]!.href}>{page.CTAs[0]!.label} <span aria-hidden="true">↗</span></Link>{page.pageType === "acquisition" && <a className="button button-outline" href={site.acquireSite}>Open Acquire <span aria-hidden="true">↗</span></a>}</div></div><aside className="page-hero-note"><span className="mono-label">DECISION CONTEXT</span><p>{page.desiredOutcome}</p><div className="note-rule"/><span className="mono-label">GUIDANCE / REVIEW CURRENT SOURCE RECORDS</span></aside></div></section>
-    <main className="wrap solution-content">
+    <div className="wrap solution-content">
+      {page.id === "funding-workflow-automation" && <FundingWorkflowDiagnostic/>}
       {children.length > 0 && <section className="content-section child-index"><div className="section-heading"><div><span className="eyebrow">01 / PATHS UNDER {page.shortTitle.toUpperCase()}</span><h2>Choose the question<br/>closest to the decision.</h2></div><p>Each guide narrows the scope and identifies what to verify next.</p></div><div className="child-list">{children.map((child, index) => <Link href={child.route} key={child.id} className="child-row"><span className="row-index">{String(index + 1).padStart(2,"0")}</span><span className="row-copy"><strong>{child.shortTitle}</strong><small>{child.hero.summary}</small></span><span className="row-arrow" aria-hidden="true">↗</span></Link>)}</div></section>}
       <section className="content-section overview-section"><div className="section-label"><span className="eyebrow">{children.length ? "02" : "01"} / START WITH THE PROBLEM</span><span className="section-code">{page.solutionFamily?.toUpperCase().replaceAll("-"," ")}</span></div><div className="overview-grid"><h2>{page.problemStatement}</h2><div><p>{page.overview}</p><div className="outcome-note"><span className="mono-label">DESIRED OUTCOME</span><p>{page.desiredOutcome}</p></div></div></div></section>
       <section className="content-section signals-section"><div className="section-heading compact-heading"><div><span className="eyebrow">{children.length ? "03" : "02"} / DIAGNOSTIC SIGNALS</span><h2>What to look for.</h2></div><p>Signals are prompts for investigation. They are not a score or a determination.</p></div><div className="signal-columns"><div><span className="mono-label">CURRENT FRICTION</span><ul className="signal-list">{page.pains.map((item) => <li key={item}><span>−</span>{item}</li>)}</ul></div><div><span className="mono-label">DECISION QUESTIONS</span><ul className="question-list">{page.keyQuestions.map((item) => <li key={item}>{item}</li>)}</ul></div></div></section>
@@ -40,7 +42,7 @@ function PageBody({ page }: { page: SolutionPage }) {
       {related.length > 0 && <section className="content-section related-section"><div className="section-heading compact-heading"><div><span className="eyebrow">RELATED SOLUTIONS</span><h2>Nearby decisions.</h2></div></div><div className="related-links">{related.map((item)=><Link href={item.route} key={item.id}><span className="mono-label">{item.eyebrow}</span><strong>{item.shortTitle}</strong><span aria-hidden="true">↗</span></Link>)}</div></section>}
       <section className="content-section faq-section"><div className="section-heading compact-heading"><div><span className="eyebrow">COMMON QUESTIONS</span><h2>Before you act.</h2></div></div><div className="faq-list">{page.FAQs.map((faq)=><details key={faq.question}><summary>{faq.question}<span aria-hidden="true">+</span></summary><p>{faq.answer}</p></details>)}</div></section>
       <section className="detail-cta"><div><span className="eyebrow">NEXT / {page.shortTitle.toUpperCase()}</span><h2>Make the next step<br/>specific and owned.</h2><p>Write down the decision, the source records, the open question, and who will review it.</p></div><div className="cta-actions">{page.CTAs.map((cta)=><Link className={`button ${cta.kind === "external" ? "button-outline-light" : "button-lime"}`} href={cta.href} key={cta.label}>{cta.label} <span aria-hidden="true">↗</span></Link>)}</div></section>
-    </main>
+    </div>
   </>;
 }
 export function PageRenderer({ page }: { page: SolutionPage }) {
