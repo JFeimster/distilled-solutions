@@ -4,6 +4,7 @@ import { getChildren, getRelatedPages } from "@/lib/solutions/pages";
 import { OutcomeConsole } from "@/components/solutions/OutcomeConsole";
 import { FundingWorkflowDiagnostic } from "@/components/solutions/FundingWorkflowDiagnostic";
 import { BusinessCreditDiagnostic } from "@/components/solutions/BusinessCreditDiagnostic";
+import { FinopsControlAudit } from "@/components/solutions/FinopsControlAudit";
 import { site } from "@/lib/config";
 import { safeJsonLd, structuredData } from "@/lib/seo";
 
@@ -34,6 +35,7 @@ function PageBody({ page }: { page: SolutionPage }) {
     <div className="wrap solution-content">
       {page.id === "funding-workflow-automation" && <FundingWorkflowDiagnostic/>}
       {page.id === "business-credit-readiness" && <BusinessCreditDiagnostic/>}
+      {page.id === "financial-operations" && <FinopsControlAudit/>}
       {children.length > 0 && <section className="content-section child-index"><div className="section-heading"><div><span className="eyebrow">01 / PATHS UNDER {page.shortTitle.toUpperCase()}</span><h2>Choose the question<br/>closest to the decision.</h2></div><p>Each guide narrows the scope and identifies what to verify next.</p></div><div className="child-list">{children.map((child, index) => <Link href={child.route} key={child.id} className="child-row"><span className="row-index">{String(index + 1).padStart(2,"0")}</span><span className="row-copy"><strong>{child.shortTitle}</strong><small>{child.hero.summary}</small></span><span className="row-arrow" aria-hidden="true">↗</span></Link>)}</div></section>}
       <section className="content-section overview-section"><div className="section-label"><span className="eyebrow">{children.length ? "02" : "01"} / START WITH THE PROBLEM</span><span className="section-code">{page.solutionFamily?.toUpperCase().replaceAll("-"," ")}</span></div><div className="overview-grid"><h2>{page.problemStatement}</h2><div><p>{page.overview}</p><div className="outcome-note"><span className="mono-label">DESIRED OUTCOME</span><p>{page.desiredOutcome}</p></div></div></div></section>
       <section className="content-section signals-section"><div className="section-heading compact-heading"><div><span className="eyebrow">{children.length ? "03" : "02"} / DIAGNOSTIC SIGNALS</span><h2>What to look for.</h2></div><p>Signals are prompts for investigation. They are not a score or a determination.</p></div><div className="signal-columns"><div><span className="mono-label">CURRENT FRICTION</span><ul className="signal-list">{page.pains.map((item) => <li key={item}><span>−</span>{item}</li>)}</ul></div><div><span className="mono-label">DECISION QUESTIONS</span><ul className="question-list">{page.keyQuestions.map((item) => <li key={item}>{item}</li>)}</ul></div></div></section>
