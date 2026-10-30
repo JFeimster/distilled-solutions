@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { recordMeasurement } from "@/lib/measurement";
 import { PropertyLink } from "@/components/solutions/PropertyLink";
@@ -28,10 +28,16 @@ export function BusinessCreditDiagnostic() {
   const [plan, setPlan] = useState("");
   const [copyStatus, setCopyStatus] = useState("");
   const [showPlan, setShowPlan] = useState(false);
-  const resultRef = useRef<HTMLDivElement>(null);
+  const resultHeadingRef = useRef<HTMLHeadingElement>(null);
   const planRef = useRef<HTMLTextAreaElement>(null);
   const revision = useRef(0);
   const completed = creditDimensions.filter(({ id }) => answers[id] !== undefined).length + Number(answers.objective !== undefined);
+
+  useEffect(() => {
+    if (!result) return;
+    resultHeadingRef.current?.focus({ preventScroll: true });
+    resultHeadingRef.current?.scrollIntoView({ block: "start", behavior: "instant" });
+  }, [result]);
 
   function select<K extends keyof CreditInput>(field: K, value: CreditInput[K]) {
     if (!started.current) { started.current = true; recordMeasurement({ name: "diagnostic_started", diagnostic_id: "business-credit", route: "/business-credit-readiness" }); }
@@ -54,10 +60,6 @@ export function BusinessCreditDiagnostic() {
     setResult(nextResult);
     setPlan(formatCreditActionPlan(input, nextResult));
     setCopyStatus("");
-    requestAnimationFrame(() => {
-      resultRef.current?.focus({ preventScroll: true });
-      resultRef.current?.scrollIntoView({ block: "start", behavior: "instant" });
-    });
   }
 
   async function copyPlan() {
@@ -108,9 +110,9 @@ export function BusinessCreditDiagnostic() {
         <p className="credit-form-note">Changing an answer clears the previous plan. Choose &ldquo;not sure&rdquo; when the supporting evidence has not been checked.</p>
       </form>
       <div className="workflow-output">
-        {result ? <div ref={resultRef} id="credit-readiness-result" tabIndex={-1} className="workflow-result credit-result" role="region" aria-labelledby="credit-status-title">
+        {result ? <div id="credit-readiness-result" className="workflow-result credit-result" role="region" aria-labelledby="credit-status-title">
           <span className="eyebrow">CURRENT PREPARATION STATUS</span>
-          <h3 id="credit-status-title">{result.status}</h3>
+          <h3 ref={resultHeadingRef} id="credit-status-title" tabIndex={-1}>{result.status}</h3>
           <p className="credit-rationale">{result.rationale}</p>
           <section className="workflow-result-block" aria-labelledby="credit-gaps-title">
             <h4 id="credit-gaps-title" className="mono-label">Priority gaps / evidence register</h4>

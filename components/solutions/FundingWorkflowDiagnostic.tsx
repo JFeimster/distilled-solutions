@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { recordMeasurement, recordRelatedGuide } from "@/lib/measurement";
 import {
@@ -37,7 +37,14 @@ export function FundingWorkflowDiagnostic() {
   const revision = useRef(0);
   const [showPlan, setShowPlan] = useState(false);
   const planRef = useRef<HTMLTextAreaElement>(null);
+  const resultHeadingRef = useRef<HTMLHeadingElement>(null);
   const completed = questions.filter(({ field }) => answers[field] !== undefined).length;
+
+  useEffect(() => {
+    if (!result) return;
+    resultHeadingRef.current?.focus({ preventScroll: true });
+    resultHeadingRef.current?.scrollIntoView({ block: "start", behavior: "instant" });
+  }, [result]);
 
   function select(field: keyof DiagnosticInput, value: string) {
     if (!started.current) { started.current = true; recordMeasurement({ name: "diagnostic_started", diagnostic_id: "funding-workflow", route: "/funding-workflow-automation" }); }
@@ -60,7 +67,6 @@ export function FundingWorkflowDiagnostic() {
     setResult(nextResult);
     setPlan(formatActionPlan(input, nextResult));
     setCopyStatus("");
-    requestAnimationFrame(() => document.getElementById("workflow-result")?.focus());
   }
 
   async function copyPlan() {
@@ -100,9 +106,9 @@ export function FundingWorkflowDiagnostic() {
         <div className="workflow-form-foot"><span className="mono-label">{completed} / 5 ANSWERS SELECTED</span><button type="submit" className="button button-orange" disabled={completed !== questions.length}>Build action plan <span aria-hidden="true">↗</span></button></div>
       </form>
       <div className="workflow-output" aria-live="polite">
-        {result ? <div id="workflow-result" tabIndex={-1} className="workflow-result">
+        {result ? <div id="workflow-result" className="workflow-result" role="region" aria-labelledby="workflow-result-title">
           <span className="eyebrow">YOUR WORKFLOW / FIRST MOVE</span>
-          <h3>{result.bottleneck}</h3>
+          <h3 ref={resultHeadingRef} id="workflow-result-title" tabIndex={-1}>{result.bottleneck}</h3>
           <p className="workflow-first-fix">{result.firstFix}</p>
           <p className="workflow-reasoning">{result.reasoning}</p>
           <div className="workflow-result-block"><span className="mono-label">THREE PRIORITIZED ACTIONS</span><ol>{result.actions.map((action) => <li key={action}>{action}</li>)}</ol></div>
