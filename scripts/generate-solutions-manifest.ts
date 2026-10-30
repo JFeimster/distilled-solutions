@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import catalog from "../data/solutions/catalog.json";
 import site from "../data/config/site.json";
 import { pageSchema, type SolutionPage } from "../schemas/solutions";
+import { playbookIndexSchema, playbookSchema, type Playbook, type PlaybookIndex } from "../schemas/playbooks";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 type Family = {
@@ -18,7 +19,20 @@ type ChildEditorial = {
   considerations?: string[]; FAQs?: { question: string; answer: string }[];
   CTA?: { label: string; href: string; kind: "internal" | "external" };
 };
-const source = catalog as unknown as { home: { route: string; title: string; summary: string }; families: Family[] };
+type PlaybookCategoryInput = { id: string; title: string; description: string; relatedRoutes: string[] };
+type PlaybookInput = {
+  id: string; route: string; categoryId: string; categoryTitle: string; title: string; summary: string; audience: string; outcome: string;
+  triggers: string[]; evidence: string[]; steps: { title: string; action: string; completeWhen: string }[];
+  decisionCriteria: string[]; failureModes: string[]; checklist: string[];
+  example: { title: string; disclosure: string; rows: { label: string; value: string }[] } | null;
+  relatedRoutes: string[]; sources: { label: string; href: string; context: string }[];
+};
+const source = catalog as unknown as {
+  home: { route: string; title: string; summary: string };
+  families: Family[];
+  playbookIndex: { title: string; summary: string; categories: PlaybookCategoryInput[] };
+  playbooks: PlaybookInput[];
+};
 const familyLinks: Record<string, { label: string; href: string; context: string }[]> = {
   "buy-or-sell-a-business": [{ label: "Acquire", href: site.acquireSite, context: "Continue to the canonical destination for deeper acquisition workflows and deal tools." }],
   "business-acquisition-financing": [{ label: "Acquisition financing", href: `${site.fundingSite}/acquisition-financing`, context: "Review the canonical Funding overview for acquisition financing." }],
@@ -115,8 +129,35 @@ const errors = pages.flatMap((page, index) => { const result = pageSchema.safePa
 if (errors.length) throw new Error(errors.join("\n"));
 const out = path.join(root, "data", "solutions");
 const typedPages = pages as SolutionPage[];
+const playbookCanonical = (route: string) => `${site.siteUrl}${route}`;
+const playbookProvenance = { canonicalSource: "Solutions Playbooks v1", sourceFile: "data/solutions/catalog.json", treatment: "manual" as const, notes: "New editorial content is review-required and noindex until source and editorial approval are recorded." };
+const playbookIndex: PlaybookIndex = playbookIndexSchema.parse({
+  id: "playbooks-index", route: "/playbooks", canonicalUrl: playbookCanonical("/playbooks"), kind: "index",
+  title: source.playbookIndex.title, metaTitle: "Business Playbooks | Distilled Solutions",
+  metaDescription: "Practical business playbooks with sequenced workflows, evidence checklists, decision criteria, and examples for operators.",
+  summary: source.playbookIndex.summary, categories: source.playbookIndex.categories,
+  status: "review", indexStatus: "noindex", lastReviewed: null, provenance: playbookProvenance
+});
+const playbooks: Playbook[] = source.playbooks.map((item) => playbookSchema.parse({
+  ...item, kind: "playbook", canonicalUrl: playbookCanonical(item.route),
+  metaTitle: `${item.title} | Distilled Solutions`, metaDescription: item.summary.length > 155 ? `${item.summary.slice(0, 151).trimEnd()}…` : item.summary,
+  breadcrumbs: [
+    { label: "Home", route: "/" },
+    { label: "Playbooks", route: "/playbooks" },
+    { label: item.categoryTitle, route: `/playbooks#${item.categoryId}` }
+  ],
+  status: "review", indexStatus: "noindex", lastReviewed: null, provenance: playbookProvenance
+}));
+const playbookRecords = [playbookIndex, ...playbooks];
+const playbookErrors = playbookRecords.flatMap((record, index) => {
+  const result = record.kind === "index" ? playbookIndexSchema.safeParse(record) : playbookSchema.safeParse(record);
+  return result.success ? [] : [`Playbook record ${index} (${record.id}): ${result.error.message}`];
+});
+if (playbookErrors.length) throw new Error(playbookErrors.join("\n"));
+if (new Set(playbookRecords.map((record) => record.route)).size !== 13) throw new Error("Playbooks must contain one index and twelve unique routes.");
 fs.mkdirSync(out, { recursive: true });
 fs.writeFileSync(path.join(out, "solutions.pages.manifest.json"), `${JSON.stringify(pages, null, 2)}\n`);
+fs.writeFileSync(path.join(out, "solutions.playbooks.manifest.json"), `${JSON.stringify(playbookRecords, null, 2)}\n`);
 const familyNavigation = source.families.map(({ id, title, shortTitle, eyebrow, children }) => ({ id, title, shortTitle, eyebrow, route: `/${id}`, links: children.map(([childId, childTitle]) => ({ id: childId, title: childTitle, route: `/${childId}` })) }));
 const navigationManifest = {
   menus: menuGroups.map((group) => ({ label: group.label, links: group.ids.map((id) => familyNavigation.find((family) => family.id === id) ?? familyNavigation.flatMap((family) => family.links).find((link) => link.id === id)).filter(Boolean).map((link) => ({ id: link!.id, title: link!.id === familyNavigation.find((family) => family.id === link!.id)?.id ? familyNavigation.find((family) => family.id === link!.id)!.shortTitle : link!.title, route: link!.route })) })),
@@ -124,6 +165,10 @@ const navigationManifest = {
 };
 fs.writeFileSync(path.join(out, "solutions.navigation.manifest.json"), `${JSON.stringify(navigationManifest, null, 2)}\n`);
 fs.writeFileSync(path.join(out, "solutions.relationships.json"), `${JSON.stringify(typedPages.map((page) => ({ id: page.id, parent: page.parent, related: page.relatedSolutions, funding: page.fundingConnections, tools: page.toolConnections, acquire: page.acquireConnections })), null, 2)}\n`);
-fs.writeFileSync(path.join(out, "solutions.routes.manifest.json"), `${JSON.stringify(typedPages.map((page) => page.route), null, 2)}\n`);
-fs.writeFileSync(path.join(root, "CANONICAL-SITEMAP.txt"), `${typedPages.map((page) => page.route).join("\n")}\n`);
-console.log(`Generated ${pages.length} canonical page records, navigation, relationships, and route contract.`);
+const coreRoutes = typedPages.map((page) => page.route);
+const playbookRoutes = playbookRecords.map((page) => page.route);
+const allRoutes = [...coreRoutes, ...playbookRoutes];
+fs.writeFileSync(path.join(out, "solutions.core-routes.manifest.json"), `${JSON.stringify(coreRoutes, null, 2)}\n`);
+fs.writeFileSync(path.join(out, "solutions.routes.manifest.json"), `${JSON.stringify(allRoutes, null, 2)}\n`);
+fs.writeFileSync(path.join(root, "CANONICAL-SITEMAP.txt"), `${allRoutes.join("\n")}\n`);
+console.log(`Generated ${pages.length} Solutions pages, ${playbookRecords.length} review/noindex Playbook pages, and ${allRoutes.length} unique canonical routes.`);

@@ -27,6 +27,7 @@ export function SiteHeader() {
           <button ref={(node) => { triggers.current[index] = node; }} className="nav-trigger" aria-expanded={active === index} aria-controls={`nav-${index}`} onClick={() => setActive(active === index ? null : index)}>{group.label}<span aria-hidden="true">{active === index ? "−" : "+"}</span></button>
           <div className="mega-menu" id={`nav-${index}`} hidden={active !== index}><div className="wrap mega-inner"><div className="mega-intro"><span className="eyebrow">ROUTE BY OUTCOME / 0{index + 1}</span><p>Start with the business decision. See the questions and practical paths behind it.</p></div><ul>{group.links.map((link) => <li key={link.id}><Link href={link.route} onClick={close}>{link.title}<span aria-hidden="true">↗</span></Link></li>)}</ul></div></div>
         </div>)}
+        <Link href="/playbooks" className="nav-playbooks" onClick={close}>Playbooks <span aria-hidden="true">↗</span></Link>
       </nav>
       <div className="ecosystem-links"><a href={site.fundingSite}>Funding <span aria-hidden="true">↗</span></a><a href={site.toolsSite}>Tools <span aria-hidden="true">↗</span></a><a href={site.acquireSite}>Acquire <span aria-hidden="true">↗</span></a><a href={site.brokersSite}>Brokers <span aria-hidden="true">↗</span></a></div>
       <Link href="/funding-readiness" className="button button-orange header-cta" onClick={close}>Check readiness <span aria-hidden="true">↗</span></Link>

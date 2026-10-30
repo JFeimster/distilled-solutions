@@ -6,7 +6,7 @@ Reviewed against the repository and connected GitHub/Vercel state on 2026-10-30.
 
 - GitHub `main` was `8f5a827294ecfbb9c80f8c896461ffca19582cde` at inspection; its latest production deployment was `READY` at the same commit.
 - The Vercel project is `distilled-solutions`. Its only attached domain is `distilled-solutions.vercel.app`; `solutions.distilledfunding.com` is not attached.
-- The deployment URL is account-protected. The Vercel project reports no custom production hostname, so public access at the intended canonical host is not established.
+- The stable `https://distilled-solutions.vercel.app` alias returned HTTP 200 without authentication during this review. The Vercel project reports no custom production hostname, and a direct HTTPS request to `solutions.distilledfunding.com` failed DNS resolution, so public access at the intended canonical host is not established.
 - `data/config/site.json` points canonical metadata at `https://solutions.distilledfunding.com`. This is the intended host, not a verified live custom domain.
 - The 71 existing routes use `status: noindex`, `indexStatus: noindex`, and `lastReviewed: null`. The default production sitemap is therefore empty. Preview/local output remains noindex even if `ALLOW_INDEXING=true`, because indexing now also requires `VERCEL_ENV=production` and both page approvals plus a review date.
 - Robots allows crawling and advertises the sitemap. Page-level noindex and the empty sitemap prevent search inclusion while indexing is disabled; Vercel deployment protection controls access to the deployment URL separately.
@@ -31,7 +31,7 @@ Other priorities from the original route audit, including `/`, `/improve-cash-fl
 ## Owner actions before public indexing
 
 1. Attach and verify `solutions.distilledfunding.com` to the existing Vercel project and configure DNS at the domain owner/provider. Confirm HTTPS and canonical-host redirects after propagation.
-2. Confirm the production site is publicly reachable without Vercel authentication at the intended domain. Decide separately whether deployment protection should remain on preview aliases.
+2. After DNS propagation, confirm the production site is publicly reachable without Vercel authentication at the intended domain. Decide separately whether deployment protection should remain on preview aliases.
 3. Complete and record editorial/source review for each selected page; change only the approved pages to `status: index`, `indexStatus: index`, with a real review date.
 4. Only after the domain and review gates are complete, deliberately set `ALLOW_INDEXING=true` in the Vercel Production environment. The code also requires Vercel's production environment, so previews remain noindex.
 5. Verify production canonical tags, robots metadata, `robots.txt`, and sitemap output. Then verify the domain in Google Search Console and Bing Webmaster Tools and submit the sitemap. No search-console account was connected and no URLs were submitted during this work.

@@ -1,7 +1,9 @@
 import records from "@/data/solutions/solutions.pages.manifest.json";
 import { pageSchema, type SolutionPage } from "@/schemas/solutions";
+import routes from "@/data/solutions/solutions.routes.manifest.json";
 
 export const pages: SolutionPage[] = records.map((record) => pageSchema.parse(record));
+export const canonicalRoutes: string[] = routes;
 const byId = new Map(pages.map((page) => [page.id, page]));
 const byRoute = new Map(pages.map((page) => [page.route, page]));
 export const getPage = (id: string) => byId.get(id);
