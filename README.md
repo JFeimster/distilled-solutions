@@ -6,7 +6,7 @@ Distilled Solutions helps business owners and operators name an operating proble
 
 The app uses Next.js 16 App Router, React 19, TypeScript, Zod, CSS design tokens, and static generation. One optional catch-all route renders the 71 Solutions pages and the 13 Playbooks pages (one index and twelve playbooks). `data/solutions/catalog.json` is the editorial source for both systems. `scripts/generate-solutions-manifest.ts` derives the Solutions pages, Playbooks records, navigation, relationships, route manifests, and text sitemap. The two publishing types use distinct schemas and shared route/metadata/indexing infrastructure.
 
-The homepage intent console and the funding workflow and business-credit diagnostics use client state. Both diagnostics make deterministic operational recommendations from broad choices; they do not collect customer records, call an API, persist answers, or make funding decisions.
+The homepage intent console and all three diagnostics use client state. The diagnostics make deterministic operational recommendations from broad choices; they do not collect customer records, call an API, persist answers, or make funding decisions.
 
 ## Local setup
 
@@ -64,3 +64,5 @@ The financial operations control audit lives at `/financial-operations#finops-co
 New Playbooks default to `review` plus `noindex`, with no review date. `ALLOW_INDEXING=true` is honored only when `VERCEL_ENV=production`; sitemap inclusion and robots metadata still require both editorial status fields and a review date. No public indexing is enabled by default.
 
 The app has no required secret or external service dependency. Deployment and environment instructions are in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). Deeper references: [architecture](docs/SOLUTIONS-ARCHITECTURE.md), [content model](docs/SOLUTIONS-CONTENT-MODEL.md), [route map](docs/SOLUTIONS-ROUTE-MAP.md), and [continuation roadmap](docs/CONTINUATION-ROADMAP.md).
+
+The provider-neutral measurement contract in `lib/measurement.ts` validates a narrow set of non-sensitive identifiers and currently discards all events. No analytics provider is connected. See [measurement and privacy](docs/SEO-AEO-CONTENT-STRATEGY.md#measurement-and-privacy-contract) before proposing an adapter.

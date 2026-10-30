@@ -9,3 +9,13 @@
 - Keep funding guidance evidence-based and human-reviewed. Never imply automated eligibility, approval, denial, pricing, lender submission, or guaranteed outcomes. Do not collect or transmit customer records in diagnostics.
 - Run `npm run generate:manifest` when the catalog changes, then `npm run check`. For route or SEO changes, run a local production server and `npm run audit:routes`. Report actual outcomes and inspect `git diff --check` plus changed paths.
 - No deployment, DNS, Vercel, Wix, or other external-state change without separate user authorization. Do not commit or push unless the user explicitly asks.
+
+## Batch delivery workflow
+
+- **Codex:** Implement scoped features and fixes, run local automated tests and builds, and prepare or execute GitHub release operations only when the task explicitly authorizes them.
+- **GitHub:** Own feature branches, commits, pull requests, required checks, squash merges, and release history.
+- **Vercel:** Use the existing GitHub integration for preview builds and automatic production deployment; inspect deployment health and logs after merge.
+- **ChatGPT:** Review the deployed site's visible layout, navigation, interactions, accessibility observations, and cross-property journeys; report concrete defects and verified behavior.
+- **Codex:** Apply scoped fixes from that review, rerun relevant regression checks, and follow the separately authorized GitHub release workflow.
+
+Keep lightweight automated Playwright coverage for critical functionality. Do not replace local tests, accessibility checks, or release gates with screenshots alone.

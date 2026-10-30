@@ -2,7 +2,7 @@
 
 Reviewed against the repository and connected GitHub/Vercel state on 2026-10-30.
 
-## Current production state
+## Historical production state (earlier review)
 
 - GitHub `main` was `8f5a827294ecfbb9c80f8c896461ffca19582cde` at inspection; its latest production deployment was `READY` at the same commit.
 - The Vercel project is `distilled-solutions`. Its only attached domain is `distilled-solutions.vercel.app`; `solutions.distilledfunding.com` is not attached.
@@ -37,3 +37,22 @@ Other priorities from the original route audit, including `/`, `/improve-cash-fl
 5. Verify production canonical tags, robots metadata, `robots.txt`, and sitemap output. Then verify the domain in Google Search Console and Bing Webmaster Tools and submit the sitemap. No search-console account was connected and no URLs were submitted during this work.
 
 Do not enable indexing globally or mark the candidates approved as part of the Playbooks release. New Playbooks remain review/noindex by default.
+
+
+## Batch 6 editorial shortlist — 2026-10-30
+
+These are preparation statuses, not approvals. All records remain noindex with no fabricated review date. Each requires a named editorial owner and independent reviewer to check accuracy, accessibility, references and canonical host before approval. The intended Solutions domain did not resolve during this review.
+
+| Route | Status | Required work before owner can approve |
+| --- | --- | --- |
+| `/` | Needs editorial improvement | Review updated assessment discovery, unique value and cross-property preview labels; name owner and reviewer. |
+| `/business-credit-builder` | Needs source verification | Check bureau/process references and all preparation claims; independently review family copy. |
+| `/business-credit-readiness` | Needs source verification | Recheck official resource destinations and guidance, including unknown and not-applicable handling; owner review. |
+| `/funding-workflow-automation` | Ready for owner review | Review privacy and human-control language, diagnostic recommendations and new playbook handoff. |
+| `/financial-operations` | Ready for owner review | Review operational controls, recommendations, copy and no-formal-audit boundary. |
+| `/playbooks` | Needs editorial improvement | Review category summaries, discovery and distinct purpose; appoint owner and reviewer. |
+| `/playbooks/cash-flow/diagnose-working-capital-gap` | Needs source verification | Recheck source, example assumptions and handoffs; independently review. |
+| `/playbooks/business-credit/evaluate-net-30-reporting` | Needs source verification | Verify current reporting claims and source; ensure offers are not implied. |
+| `/playbooks/automation/funding-intake-audit` | Needs source verification | Verify linked source, consent and exception-handling guidance; review data boundaries. |
+
+Metadata and structured data derive from the existing catalog and shared renderers. No `status`, `indexStatus`, `lastReviewed`, environment variable, DNS record, or custom domain was changed for this shortlist. Owner review, live canonical host verification and a separate indexing authorization remain required.

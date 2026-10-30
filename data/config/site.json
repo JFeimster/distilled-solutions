@@ -3,10 +3,12 @@
   "description": "Practical paths for business goals, financial operations, and capital readiness.",
   "siteUrl": "https://solutions.distilledfunding.com",
   "mainSite": "https://distilledfunding.com",
-  "fundingSite": "https://funding.distilledfunding.com",
+  "fundingSite": "https://funding-distilled.vercel.app",
   "toolsSite": "https://tools.distilledfunding.com",
-  "acquireSite": "https://acquire.distilledfunding.com",
-  "brokersSite": "https://brokers.distilledfunding.com",
+  "acquireSite": "https://acquire-distilled.vercel.app",
+  "brokersSite": null,
   "industriesSite": null,
-  "status": "preview-noindex"
+  "status": "preview-noindex",
+  "fundingCanonical": "https://funding.distilledfunding.com",
+  "acquireCanonical": "https://acquire.distilledfunding.com"
 }

@@ -50,7 +50,7 @@ Before a public launch, the owner must verify the custom domain, HTTPS, redirect
 
 ## Measurement and privacy contract
 
-No analytics SDK, tag manager, or site-level event tracker is present in this app. Until an approved privacy-aware analytics abstraction is selected, this contract is documentation only; it does not send events or create an external account.
+No analytics SDK, tag manager, or vendor is installed. `lib/measurement.ts` validates a strict subset of this contract and uses an inert adapter: it sends, stores, and logs nothing. Diagnostic starts and completions, successful playbook copies and checklist interactions, selected diagnostic guide links, and Funding/Tools/Acquire handoffs invoke it. Playbook opens, other resource links, and result categories remain uninstrumented.
 
 | Event | Trigger | Allowed payload |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ No analytics SDK, tag manager, or site-level event tracker is present in this ap
 | `related_resource_clicked` | An article, tool, template, video, or app link is selected | `source_route`, `resource_type`, `destination_host`, `resource_id` |
 | `cross_property_cta_selected` | A verified Funding, Acquire, or other property CTA is selected | `source_route`, `destination_property`, `cta_id` |
 
-Never include answers, financial values, business identifiers, names, email addresses, uploaded content, or free-text in event payloads. Do not log copied checklist contents. If implementation is later approved, extend the existing abstraction if one is added to the app; require consent where applicable, test payload allowlists, and document retention and ownership first.
+Never include answers, financial values, business identifiers, names, email addresses, uploaded content, or free-text in event payloads. Do not log copied checklist contents. Before connecting any provider, obtain owner approval, define the lawful consent and privacy controls, retention, access and ownership, and test the adapter against this allowlist. Do not add answer data, campaign parameters, or free text. A valid event currently only returns a boolean and is discarded; it cannot produce metrics.
 
 Campaign attribution may preserve only non-sensitive, approved campaign fields already present in the URL. Do not add user-entered answers or financial details to query strings. Do not invent cross-domain cookie behavior. Report Search Console and Bing discovery separately from on-site clicks and business conversions; AI citation counts do not establish clicks or business impact.
 
