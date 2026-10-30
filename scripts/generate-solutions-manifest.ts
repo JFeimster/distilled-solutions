@@ -78,7 +78,7 @@ const makePage = (options: {
   const answer = `${goal} Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms.`;
   return {
     id, slug: isHome ? "home" : route.slice(1), route, canonicalUrl, pageType, solutionFamily: family?.id ?? null, parent,
-    eyebrow, title, shortTitle, metaTitle: `${shortTitle} | Distilled Solutions`,
+    eyebrow, title, shortTitle, metaTitle: `${isHome ? shortTitle : title} | Distilled Solutions`,
     metaDescription: summary.length > 155 ? `${summary.slice(0, 151).trimEnd()}…` : summary,
     hero: { headline: editorial?.headline ?? title, summary }, problemStatement: problem, desiredOutcome: goal,
     audience: isHome ? "Owners and operators deciding what to improve, build, buy, automate, or prepare next." : `${family?.title ?? "Business operators"} planning ${shortTitle.toLowerCase()} with practical records and clear decision ownership.`,

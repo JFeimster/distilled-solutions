@@ -3,8 +3,12 @@ import { site } from "@/lib/config";
 import { getBreadcrumbs } from "@/lib/solutions/pages";
 import type { SolutionPage } from "@/schemas/solutions";
 
-export function isIndexable(page: SolutionPage, enabled = process.env.ALLOW_INDEXING === "true") {
-  return enabled && page.status === "index" && page.indexStatus === "index" && page.lastReviewed !== null;
+export function isIndexable(
+  page: SolutionPage,
+  enabled = process.env.ALLOW_INDEXING === "true",
+  deploymentEnvironment = process.env.VERCEL_ENV
+) {
+  return deploymentEnvironment === "production" && enabled && page.status === "index" && page.indexStatus === "index" && page.lastReviewed !== null;
 }
 export function pageMetadata(page: SolutionPage): Metadata {
   const indexable = isIndexable(page);
