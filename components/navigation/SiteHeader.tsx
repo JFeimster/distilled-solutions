@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import { PropertyLink } from "@/components/solutions/PropertyLink";
 import { useEffect, useRef, useState } from "react";
 import { site } from "@/lib/config";
 import navigation from "@/data/solutions/solutions.navigation.manifest.json";
@@ -29,7 +30,7 @@ export function SiteHeader() {
         </div>)}
         <Link href="/playbooks" className="nav-playbooks" onClick={close}>Playbooks <span aria-hidden="true">↗</span></Link>
       </nav>
-      <div className="ecosystem-links"><a href={site.fundingSite}>Funding <span aria-hidden="true">↗</span></a><a href={site.toolsSite}>Tools <span aria-hidden="true">↗</span></a><a href={site.acquireSite}>Acquire <span aria-hidden="true">↗</span></a><a href={site.brokersSite}>Brokers <span aria-hidden="true">↗</span></a></div>
+      <div className="ecosystem-links"><PropertyLink href={site.fundingSite}>Funding preview <span aria-hidden="true">↗</span></PropertyLink><PropertyLink href={site.toolsSite}>Tools <span aria-hidden="true">↗</span></PropertyLink><PropertyLink href={site.acquireSite}>Acquire preview <span aria-hidden="true">↗</span></PropertyLink></div>
       <Link href="/funding-readiness" className="button button-orange header-cta" onClick={close}>Check readiness <span aria-hidden="true">↗</span></Link>
       <button className="mobile-toggle" ref={mobileTrigger} aria-label={mobile ? "Close navigation" : "Open navigation"} aria-expanded={mobile} aria-controls="primary-navigation" onClick={() => { setMobile(!mobile); setActive(null); }}>{mobile ? "×" : "☰"}</button>
     </div>

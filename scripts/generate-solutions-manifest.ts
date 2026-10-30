@@ -34,11 +34,10 @@ const source = catalog as unknown as {
   playbooks: PlaybookInput[];
 };
 const familyLinks: Record<string, { label: string; href: string; context: string }[]> = {
-  "buy-or-sell-a-business": [{ label: "Acquire", href: site.acquireSite, context: "Continue to the canonical destination for deeper acquisition workflows and deal tools." }],
-  "business-acquisition-financing": [{ label: "Acquisition financing", href: `${site.fundingSite}/acquisition-financing`, context: "Review the canonical Funding overview for acquisition financing." }],
-  "working-capital-gap": [{ label: "Working capital", href: `${site.fundingSite}/working-capital`, context: "Compare the canonical Funding overview after sizing the operating cash gap." }],
-  "finance-equipment": [{ label: "Equipment financing", href: `${site.fundingSite}/equipment-financing`, context: "Review the canonical Funding overview after defining equipment cost and useful life." }],
-  "accounts-receivable-cash-flow": [{ label: "Invoice financing", href: `${site.fundingSite}/invoice-financing`, context: "Review the canonical Funding overview alongside collection and receivables options." }]
+  "business-acquisition-financing": [{ label: "Acquisition financing", href: `${site.fundingSite}/acquisition-financing`, context: "Review the Funding preview overview for acquisition financing." }],
+  "working-capital-gap": [{ label: "Working capital", href: `${site.fundingSite}/working-capital`, context: "Compare the Funding preview overview after sizing the operating cash gap." }],
+  "finance-equipment": [{ label: "Equipment financing", href: `${site.fundingSite}/equipment-financing`, context: "Review the Funding preview overview after defining equipment cost and useful life." }],
+  "accounts-receivable-cash-flow": [{ label: "Invoice financing", href: `${site.fundingSite}/invoice-financing`, context: "Review the Funding preview overview alongside collection and receivables options." }]
 };
 const toolRelevant = new Set(["cash-flow-analysis", "cash-flow-forecast", "working-capital-gap", "fundability-check", "fundability-assessment", "business-valuation", "deal-analysis"]);
 const acquireRelevant = new Set(["buy-or-sell-a-business", "buy-a-business", "sell-a-business", "business-valuation", "business-acquisition-readiness", "seller-readiness", "deal-analysis", "due-diligence", "deal-structure", "business-acquisition-financing", "exit-planning"]);
@@ -84,7 +83,7 @@ const makePage = (options: {
   const acquire = acquireRelevant.has(id);
   const funding = familyLinks[id] ?? [];
   const tools = toolRelevant.has(id) ? [{ label: "Tools directory", href: site.toolsSite, context: "Open the canonical Tools directory to find available calculators and preparation resources." }] : [];
-  const acquires = acquire ? [{ label: "Acquire", href: site.acquireSite, context: "Continue to the canonical Acquire destination for deeper transaction workflows and tools." }] : [];
+  const acquires = acquire ? [{ label: "Acquire", href: site.acquireSite, context: "Continue to the Acquire preview for deeper transaction workflows and tools." }] : [];
   const related = isHome ? source.families.map(item => item.id) : pageType === "hub" ? (family?.children ?? []).slice(0, 6).map(item => item[0]) : [hub, ...(neighbors[hub] ?? [])];
   const breadcrumbIds = isHome ? ["home"] : parent === "home" ? ["home", id] : ["home", ...(parent ? [parent, id] : [id])];
   const benefits = paths.slice(0, 3);

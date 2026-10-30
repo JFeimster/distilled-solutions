@@ -186,19 +186,13 @@
       "A promised score, approval, savings, or timeline cannot be tied to verified evidence.",
       "A proposed option has unclear fees, ownership, data access, or exception handling."
     ],
-    "fundingConnections": [
-      {
-        "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical destination for deeper acquisition workflows and deal tools."
-      }
-    ],
+    "fundingConnections": [],
     "toolConnections": [],
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -227,7 +221,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -328,8 +322,8 @@
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -355,7 +349,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -453,8 +447,8 @@
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -480,7 +474,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -584,8 +578,8 @@
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -611,7 +605,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -709,8 +703,8 @@
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -736,7 +730,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -834,8 +828,8 @@
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -861,7 +855,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -965,8 +959,8 @@
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -992,7 +986,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -1090,8 +1084,8 @@
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -1117,7 +1111,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -1215,8 +1209,8 @@
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -1242,7 +1236,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -1338,16 +1332,16 @@
     "fundingConnections": [
       {
         "label": "Acquisition financing",
-        "href": "https://funding.distilledfunding.com/acquisition-financing",
-        "context": "Review the canonical Funding overview for acquisition financing."
+        "href": "https://funding-distilled.vercel.app/acquisition-financing",
+        "context": "Review the Funding preview overview for acquisition financing."
       }
     ],
     "toolConnections": [],
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -1373,7 +1367,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -1471,8 +1465,8 @@
     "acquireConnections": [
       {
         "label": "Acquire",
-        "href": "https://acquire.distilledfunding.com",
-        "context": "Continue to the canonical Acquire destination for deeper transaction workflows and tools."
+        "href": "https://acquire-distilled.vercel.app",
+        "context": "Continue to the Acquire preview for deeper transaction workflows and tools."
       }
     ],
     "relatedSolutions": [
@@ -1498,7 +1492,7 @@
       },
       {
         "label": "OPEN ACQUIRE",
-        "href": "https://acquire.distilledfunding.com",
+        "href": "https://acquire-distilled.vercel.app",
         "kind": "external"
       }
     ],
@@ -4038,8 +4032,8 @@
     "fundingConnections": [
       {
         "label": "Working capital",
-        "href": "https://funding.distilledfunding.com/working-capital",
-        "context": "Compare the canonical Funding overview after sizing the operating cash gap."
+        "href": "https://funding-distilled.vercel.app/working-capital",
+        "context": "Compare the Funding preview overview after sizing the operating cash gap."
       }
     ],
     "toolConnections": [
@@ -4392,8 +4386,8 @@
     "fundingConnections": [
       {
         "label": "Invoice financing",
-        "href": "https://funding.distilledfunding.com/invoice-financing",
-        "context": "Review the canonical Funding overview alongside collection and receivables options."
+        "href": "https://funding-distilled.vercel.app/invoice-financing",
+        "context": "Review the Funding preview overview alongside collection and receivables options."
       }
     ],
     "toolConnections": [],
@@ -5430,8 +5424,8 @@
     "fundingConnections": [
       {
         "label": "Equipment financing",
-        "href": "https://funding.distilledfunding.com/equipment-financing",
-        "context": "Review the canonical Funding overview after defining equipment cost and useful life."
+        "href": "https://funding-distilled.vercel.app/equipment-financing",
+        "context": "Review the Funding preview overview after defining equipment cost and useful life."
       }
     ],
     "toolConnections": [],

@@ -2,6 +2,9 @@
 
 import { useRef, useState, type FormEvent } from "react";
 import Link from "next/link";
+import { recordMeasurement } from "@/lib/measurement";
+import { PropertyLink } from "@/components/solutions/PropertyLink";
+import { site } from "@/lib/config";
 import {
   creditObjectives, creditAnswers, noAccountsAnswer, creditDimensions,
   evaluateBusinessCredit, formatCreditActionPlan,
@@ -18,6 +21,8 @@ function TaskList({ tasks }: { tasks: CreditTask[] }) {
 }
 
 export function BusinessCreditDiagnostic() {
+  const started = useRef(false);
+  const completedRevision = useRef(false);
   const [answers, setAnswers] = useState<Partial<CreditInput>>({});
   const [result, setResult] = useState<CreditResult | null>(null);
   const [plan, setPlan] = useState("");
@@ -29,6 +34,8 @@ export function BusinessCreditDiagnostic() {
   const completed = creditDimensions.filter(({ id }) => answers[id] !== undefined).length + Number(answers.objective !== undefined);
 
   function select<K extends keyof CreditInput>(field: K, value: CreditInput[K]) {
+    if (!started.current) { started.current = true; recordMeasurement({ name: "diagnostic_started", diagnostic_id: "business-credit", route: "/business-credit-readiness" }); }
+    completedRevision.current = false;
     revision.current += 1;
     setAnswers((current) => ({ ...current, [field]: value }));
     setResult(null);
@@ -40,6 +47,7 @@ export function BusinessCreditDiagnostic() {
   function buildPlan(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (completed !== 7) return;
+    if (!completedRevision.current) { completedRevision.current = true; recordMeasurement({ name: "diagnostic_completed", diagnostic_id: "business-credit", route: "/business-credit-readiness" }); }
     const input = answers as CreditInput;
     const nextResult = evaluateBusinessCredit(input);
     revision.current += 1;
@@ -113,7 +121,7 @@ export function BusinessCreditDiagnostic() {
           <section className="workflow-result-block" aria-labelledby="credit-next-title"><h4 className="mono-label" id="credit-next-title">Next actions / after foundations</h4><TaskList tasks={result.next}/></section>
           <section className="workflow-result-block" aria-labelledby="credit-ongoing-title"><h4 className="mono-label" id="credit-ongoing-title">Ongoing practices</h4><ul className="credit-practices">{result.ongoing.map((item) => <li key={item}>{item}</li>)}</ul></section>
           <details className="credit-verification"><summary>What to verify before opening a credit account</summary><p>If you choose to evaluate an account, use this checklist. Adding credit is optional.</p><ul className="credit-practices">{result.accountVerification.map((item) => <li key={item}>{item}</li>)}</ul></details>
-          <section className="workflow-next" aria-labelledby="credit-resources-title"><h4 className="mono-label" id="credit-resources-title">Relevant resources</h4><div className="workflow-guide-links">{result.resources.map((resource) => resource.href.startsWith("/") ? <Link key={resource.href} href={resource.href}>{resource.label} <span aria-hidden="true">↗</span></Link> : <a key={resource.href} href={resource.href}>{resource.label} <span aria-hidden="true">↗</span></a>)}</div><p className="credit-section-note">Official external resources describe that provider&apos;s process. Check the relevant bureau or provider&apos;s current instructions for your specific record.</p><Link className="button button-lime" href="/business-credit-roadmap">Use the implementation guide <span aria-hidden="true">↗</span></Link></section>
+          <section className="workflow-next" aria-labelledby="credit-resources-title"><h4 className="mono-label" id="credit-resources-title">Relevant resources</h4><div className="workflow-guide-links">{result.resources.map((resource) => resource.href.startsWith("/") ? <Link key={resource.href} href={resource.href}>{resource.label} <span aria-hidden="true">↗</span></Link> : <a key={resource.href} href={resource.href}>{resource.label} <span aria-hidden="true">↗</span></a>)}</div><p className="credit-section-note">Official external resources describe that provider&apos;s process. Check the relevant bureau or provider&apos;s current instructions for your specific record.</p><Link className="button button-lime" href="/business-credit-roadmap">Use the implementation guide <span aria-hidden="true">↗</span></Link> <PropertyLink className="button button-outline-light" href={site.fundingSite}>Explore Funding preview <span aria-hidden="true">↗</span></PropertyLink></section>
           <div className="workflow-copy"><button className="button button-outline-light" type="button" onClick={copyPlan}>Copy Action Plan</button><p role="status" aria-live="polite">{copyStatus}</p></div>
           <details className="workflow-plan-text" open={showPlan} onToggle={(event) => setShowPlan(event.currentTarget.open)}><summary>View plain-text action plan</summary><textarea ref={planRef} aria-label="Business-credit action plan" value={plan} readOnly rows={18} onFocus={(event) => event.currentTarget.select()} /></details>
         </div> : <div className="workflow-empty credit-empty"><span className="eyebrow">YOUR OPERATING PLAN / READY WHEN YOU ARE</span><div className="workflow-preview-mark" aria-hidden="true">↘</div><h3>Know what&apos;s checked.<br/>Act on what&apos;s next.</h3><p>See your preparation status, a record of what needs verification, and three immediate actions with evidence to review and a clear completion condition.</p><div className="workflow-preview-steps"><span>01 / VERIFY THE FOUNDATIONS</span><span>02 / CONTROL EXISTING OBLIGATIONS</span><span>03 / MAINTAIN THE RECORDS</span></div></div>}

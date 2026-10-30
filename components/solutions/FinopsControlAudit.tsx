@@ -2,6 +2,7 @@
 
 import { useRef, useState, type FormEvent } from "react";
 import Link from "next/link";
+import { recordMeasurement, recordRelatedGuide } from "@/lib/measurement";
 import {
   controlAnswers, controlDimensions, evaluateFinopsControls, formatFinopsActionPlan,
   type ControlAnswer, type ControlId, type ControlInput, type ControlObjective, type ControlResult
@@ -15,6 +16,8 @@ const objectives: { value: ControlObjective; label: string }[] = [
 ];
 
 export function FinopsControlAudit() {
+  const started = useRef(false);
+  const completedRevision = useRef(false);
   const [answers, setAnswers] = useState<Partial<ControlInput>>({});
   const [result, setResult] = useState<ControlResult | null>(null);
   const [report, setReport] = useState("");
@@ -26,6 +29,8 @@ export function FinopsControlAudit() {
   const completed = controlDimensions.filter((item) => answers[item.id] !== undefined).length;
 
   function select(field: ControlId | "objective", value: ControlAnswer | ControlObjective) {
+    if (!started.current) { started.current = true; recordMeasurement({ name: "diagnostic_started", diagnostic_id: "finops-controls", route: "/financial-operations" }); }
+    completedRevision.current = false;
     revision.current += 1;
     setAnswers((current) => ({ ...current, [field]: value }));
     setResult(null);
@@ -37,13 +42,14 @@ export function FinopsControlAudit() {
   function build(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (completed !== controlDimensions.length) return;
+    if (!completedRevision.current) { completedRevision.current = true; recordMeasurement({ name: "diagnostic_completed", diagnostic_id: "finops-controls", route: "/financial-operations" }); }
     const input = answers as ControlInput;
     const next = evaluateFinopsControls(input);
     revision.current += 1;
     setResult(next);
     setReport(formatFinopsActionPlan(input, next));
     setCopyStatus("");
-    requestAnimationFrame(() => resultRef.current?.focus({ preventScroll: true }));
+    requestAnimationFrame(() => { resultRef.current?.focus({ preventScroll: true }); resultRef.current?.scrollIntoView({ block: "start", behavior: "instant" }); });
   }
 
   async function copy() {
@@ -82,7 +88,7 @@ export function FinopsControlAudit() {
         <div className="finops-timeline"><section className="workflow-result-block" aria-labelledby="finops-week-title"><h4 className="mono-label" id="finops-week-title">First 7 days</h4><ol>{result.firstSevenDays.map((item) => <li key={item}>{item}</li>)}</ol></section><section className="workflow-result-block" aria-labelledby="finops-month-title"><h4 className="mono-label" id="finops-month-title">Next 30 days</h4><ol>{result.nextThirtyDays.map((item) => <li key={item}>{item}</li>)}</ol></section></div>
         <section className="workflow-result-block" aria-labelledby="finops-rhythm-title"><h4 className="mono-label" id="finops-rhythm-title">Ongoing operating rhythm</h4><ul className="credit-practices">{result.rhythm.map((item) => <li key={item}>{item}</li>)}</ul><p className="credit-section-note">Set actual review frequency with the responsible team based on activity and risk.</p></section>
         <section className="workflow-result-block" aria-labelledby="finops-automation-title"><h4 className="mono-label" id="finops-automation-title">Automation opportunities + safeguards</h4><ul className="credit-practices">{result.automation.map((item) => <li key={item}>{item}</li>)}</ul></section>
-        <section className="workflow-next" aria-labelledby="finops-guides-title"><h4 className="mono-label" id="finops-guides-title">Continue with the relevant guide</h4><div className="workflow-guide-links">{result.guides.map((guide) => <Link href={guide.href} key={guide.href}>{guide.label} ↗</Link>)}</div></section>
+        <section className="workflow-next" aria-labelledby="finops-guides-title"><h4 className="mono-label" id="finops-guides-title">Continue with the relevant guide</h4><div className="workflow-guide-links">{result.guides.map((guide) => <Link href={guide.href} key={guide.href} onClick={() => recordRelatedGuide("/financial-operations", guide.href)}>{guide.label} ↗</Link>)}</div></section>
         <div className="workflow-copy"><button className="button button-outline-light" type="button" onClick={copy}>Copy Action Plan</button><p role="status" aria-live="polite">{copyStatus}</p></div><details className="workflow-plan-text" open={showReport} onToggle={(event) => setShowReport(event.currentTarget.open)}><summary>View plain-text summary</summary><textarea ref={reportRef} aria-label="Financial operations action plan" value={report} readOnly rows={18} onFocus={(event) => event.currentTarget.select()}/></details>
       </div> : <div className="workflow-empty finops-empty"><span className="eyebrow">CONTROL MAP / READY FOR INPUT</span><div className="workflow-preview-mark" aria-hidden="true">↘</div><h3>Seven controls.<br/>Three next moves.</h3><p>Map current practice, identify evidence gaps, and leave with a first workflow, accountable actions, and a 7/30-day sequence.</p><div className="workflow-preview-steps"><span>01 / CHECK THE CONTROLS</span><span>02 / ASSIGN EVIDENCE + OWNER</span><span>03 / STABILIZE BEFORE AUTOMATION</span></div></div>}</div>
     </div><p className="workflow-disclaimer">This self-assessment is planning guidance. It does not inspect your records or provide a formal audit, accounting opinion, or financial-health score.</p>
