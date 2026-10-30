@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, type FormEvent } from "react";
+import { useEffect, useRef, useState, type FormEvent } from "react";
 import Link from "next/link";
 import { recordMeasurement, recordRelatedGuide } from "@/lib/measurement";
 import {
@@ -23,10 +23,16 @@ export function FinopsControlAudit() {
   const [report, setReport] = useState("");
   const [copyStatus, setCopyStatus] = useState("");
   const [showReport, setShowReport] = useState(false);
-  const resultRef = useRef<HTMLDivElement>(null);
+  const resultHeadingRef = useRef<HTMLHeadingElement>(null);
   const reportRef = useRef<HTMLTextAreaElement>(null);
   const revision = useRef(0);
   const completed = controlDimensions.filter((item) => answers[item.id] !== undefined).length;
+
+  useEffect(() => {
+    if (!result) return;
+    resultHeadingRef.current?.focus({ preventScroll: true });
+    resultHeadingRef.current?.scrollIntoView({ block: "start", behavior: "instant" });
+  }, [result]);
 
   function select(field: ControlId | "objective", value: ControlAnswer | ControlObjective) {
     if (!started.current) { started.current = true; recordMeasurement({ name: "diagnostic_started", diagnostic_id: "finops-controls", route: "/financial-operations" }); }
@@ -49,7 +55,6 @@ export function FinopsControlAudit() {
     setResult(next);
     setReport(formatFinopsActionPlan(input, next));
     setCopyStatus("");
-    requestAnimationFrame(() => { resultRef.current?.focus({ preventScroll: true }); resultRef.current?.scrollIntoView({ block: "start", behavior: "instant" }); });
   }
 
   async function copy() {
@@ -80,8 +85,8 @@ export function FinopsControlAudit() {
         <div className="workflow-form-foot"><span className="mono-label" role="status">{completed === 7 ? "READY TO BUILD THE PLAN" : `${7 - completed} CONTROL CHECKS REMAIN`}</span><button className="button button-orange" type="submit" disabled={completed !== 7}>Build improvement plan <span aria-hidden="true">↗</span></button></div>
         <p className="credit-form-note">Choose “Unsure” when evidence has not been checked. Changing an answer clears the prior plan.</p>
       </form>
-      <div className="workflow-output">{result ? <div ref={resultRef} tabIndex={-1} className="workflow-result finops-result" role="region" aria-labelledby="finops-result-title">
-        <span className="eyebrow">SELF-REPORTED CONTROL POSITION</span><h3 id="finops-result-title">{result.classification}</h3><p className="credit-rationale">{result.explanation}</p>
+      <div className="workflow-output">{result ? <div className="workflow-result finops-result" role="region" aria-labelledby="finops-result-title">
+        <span className="eyebrow">SELF-REPORTED CONTROL POSITION</span><h3 ref={resultHeadingRef} id="finops-result-title" tabIndex={-1}>{result.classification}</h3><p className="credit-rationale">{result.explanation}</p>
         <section className="workflow-result-block" aria-labelledby="finops-matrix-title"><h4 className="mono-label" id="finops-matrix-title">Seven-control overview</h4><dl className="finops-matrix">{result.matrix.map((item) => <div key={item.id} data-state={item.answer}><dt>{item.label}</dt><dd>{item.status}</dd></div>)}</dl></section>
         <section className="workflow-result-block" aria-labelledby="finops-first-title"><h4 className="mono-label" id="finops-first-title">First workflow to improve</h4><p className="finops-first">{result.firstWorkflow}</p></section>
         <section className="workflow-result-block" aria-labelledby="finops-priority-title"><h4 className="mono-label" id="finops-priority-title">Three priority actions</h4><ol className="finops-priorities">{result.priorities.map((action) => <li key={action.id}><h5>{action.problem}</h5><p>{action.correction}</p><dl><div><dt>EVIDENCE</dt><dd>{action.evidence}</dd></div><div><dt>OWNER</dt><dd>{action.owner}</dd></div><div><dt>COMPLETE WHEN</dt><dd>{action.completion}</dd></div><div><dt>DEPENDENCY</dt><dd>{action.dependency}</dd></div></dl><Link href={action.guide.href}>{action.guide.label} ↗</Link></li>)}</ol></section>
