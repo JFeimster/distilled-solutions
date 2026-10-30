@@ -91,8 +91,8 @@
     "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/cash-flow/diagnose-working-capital-gap",
     "title": "Diagnose a Working Capital Gap",
     "metaTitle": "Diagnose a Working Capital Gap | Distilled Solutions",
-    "metaDescription": "Trace a cash shortfall to its timing, receivables, inventory, fixed obligations, and revenue variability before choosing a response.",
-    "summary": "Trace a cash shortfall to its timing, receivables, inventory, fixed obligations, and revenue variability before choosing a response.",
+    "metaDescription": "Estimate a near-term cash gap, check receipt timing against fixed obligations, and distinguish a temporary mismatch from a recurring operating deficit.",
+    "summary": "Estimate a near-term cash gap, check receipt timing against fixed obligations, and distinguish a temporary mismatch from a recurring operating deficit.",
     "status": "review",
     "indexStatus": "noindex",
     "lastReviewed": null,
@@ -106,18 +106,18 @@
     "categoryId": "cash-flow",
     "categoryTitle": "Cash Flow",
     "audience": "Owners and finance operators who see a near-term cash squeeze but need to separate a timing mismatch from a margin, demand, or cost problem.",
-    "outcome": "Leave with a dated cash-gap worksheet, the two or three assumptions that drive the low point, and a named owner for each verification task.",
+    "outcome": "Leave with a dated cash-gap worksheet, the estimated low point and buffer gap, a receipt-timing scenario to verify, and a named owner for each follow-up task.",
     "triggers": [
       "The bank balance is falling while sales or booked work appear healthy.",
       "Receivables, inventory purchases, payroll, taxes, or debt payments land in different weeks.",
       "A proposed financing or spending decision is being discussed before the size and duration of the gap are known."
     ],
     "evidence": [
-      "Current bank balances and reconciled cash activity by account.",
-      "Open invoices with amount, due date, dispute status, and expected collection evidence.",
-      "Inventory on hand, committed purchase orders, lead times, and expected sell-through assumptions.",
-      "Fixed obligations with amount, due date, recurrence, and owner.",
-      "Recent weekly sales and collections, separated from booked but uncollected revenue."
+      "Current bank balances and reconciled cash activity by account; separate restricted cash and the minimum operating buffer.",
+      "Open invoices with amount, due date, dispute status, customer confirmation, and expected collection evidence.",
+      "Payroll, rent, taxes, debt service, supplier invoices, committed purchase orders, and other fixed or one-time obligations with dates and owners.",
+      "Recent weekly sales and collections, separated from booked but uncollected revenue and from receipts at risk of delay.",
+      "Recent contribution margin and operating results to test whether the gap is timing-related or reflects a recurring loss."
     ],
     "steps": [
       {
@@ -127,18 +127,18 @@
       },
       {
         "title": "Map expected receipts by evidence",
-        "action": "List customer receipts by expected week using invoice due dates, payment history, disputes, and customer confirmation. Put uncertain collections in a separate scenario instead of treating a promise or booked sale as cash received.",
-        "completeWhen": "Every material receipt has a source, expected week, confidence note, and follow-up owner."
+        "action": "List customer receipts by expected week using invoice due dates, payment history, dispute status, and customer confirmation. Flag the amount of receipts that may arrive after the decision window and count that amount once in the delayed case; do not also subtract it from a receipt total that already excludes it.",
+        "completeWhen": "Every material receipt has a source, expected week, confidence note, and follow-up owner, and the delayed case removes each at-risk receipt only once."
       },
       {
-        "title": "Map obligations and inventory commitments",
-        "action": "Schedule payroll, rent, taxes, debt service, supplier invoices, purchase orders, and one-time costs in the week they are expected to clear. Show inventory buys separately from routine purchases so timing and sell-through can be tested.",
-        "completeWhen": "Known obligations appear once in the correct week and committed inventory cash is visible."
+        "title": "Map fixed obligations and protect the buffer",
+        "action": "Schedule payroll, rent, taxes, debt service, supplier invoices, purchase orders, and one-time costs on expected clearing dates. Define a minimum cash buffer and show fixed obligations separately from discretionary or movable spending; record any timing change only after the counterparty agrees.",
+        "completeWhen": "Known obligations appear once, the protected cash buffer is explicit, and proposed date changes remain labeled as unconfirmed."
       },
       {
-        "title": "Find the lowest point and its drivers",
-        "action": "Roll opening cash forward as receipts less payments for each week. Identify the first negative or operationally uncomfortable balance, then rank the receipts, costs, and timing assumptions that change it most.",
-        "completeWhen": "The low point, week, and top drivers are stated without treating the worksheet as an approval or funding result."
+        "title": "Find the low point and identify the type of gap",
+        "action": "Roll opening cash forward as receipts less payments by week. Compare the low point with the selected buffer, then inspect whether late receipts explain the dip or whether recurring costs exceed normal collected revenue. Period totals can hide an interim weekly trough, so review dates around payroll and large obligations.",
+        "completeWhen": "The low week, estimated buffer gap, effect of moving at-risk receipts to evidence-based dates, and timing-versus-structural diagnosis are documented without treating the worksheet as an approval or funding result."
       },
       {
         "title": "Test operating responses first",
@@ -147,9 +147,10 @@
       }
     ],
     "decisionCriteria": [
-      "A timing gap is plausible when dated receipts lag obligations and the underlying margin and demand assumptions remain supportable.",
-      "A recurring deficit or shrinking contribution margin needs an operating and pricing review; moving payment dates alone does not solve it.",
-      "Any new financing discussion should use the verified low-point amount, duration, total cost, repayment timing, and downside case."
+      "A timing gap is plausible when supported receipts arrive after obligations and normal operating margins remain supportable.",
+      "A recurring deficit or shrinking contribution margin points to a structural operating issue; shifting a due date or adding cash does not correct the underlying economics.",
+      "Aggregate receipts and obligations over a period do not reveal the date-specific weekly trough; use a dated weekly forecast before acting.",
+      "Any financing discussion should use a verified low-point amount, duration, total cost, repayment timing, and downside case, with a qualified human review."
     ],
     "failureModes": [
       "Counting invoices or booked sales as collected cash.",
@@ -195,7 +196,17 @@
       {
         "label": "SBA: Manage your finances",
         "href": "https://www.sba.gov/counseling/manage-your-business/",
-        "context": "General bookkeeping, balance-sheet, and cash-flow projection guidance."
+        "context": "General bookkeeping and cash-flow projection context; it does not validate a business-specific forecast."
+      },
+      {
+        "label": "Distilled Funding: AI Cash Flow Stress Test for Local Businesses",
+        "href": "https://www.distilledfunding.com/post/ai-cash-flow-stress-test-for-local-businesses",
+        "context": "Wix retains the canonical article. It explains multi-week disruption modeling; use it alongside a dated weekly forecast. This playbook provides initial cash-gap decision guidance."
+      },
+      {
+        "label": "YouTube: Can Your Business Survive One Bad Week? | Cash Flow Stress Test",
+        "href": "https://youtu.be/HAvLH0Qdljk",
+        "context": "Published video from the existing YouTube library; use as a short introduction to cash-flow stress testing, then build the dated weekly forecast."
       }
     ],
     "breadcrumbs": [
@@ -454,8 +465,8 @@
     "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/business-credit/evaluate-net-30-reporting",
     "title": "Evaluate Net-30 and Trade-Credit Offers",
     "metaTitle": "Evaluate Net-30 and Trade-Credit Offers | Distilled Solutions",
-    "metaDescription": "Compare written payment terms, total cost, business fit, reporting evidence, and cancellation conditions before accepting a trade-credit offer.",
-    "summary": "Compare written payment terms, total cost, business fit, reporting evidence, and cancellation conditions before accepting a trade-credit offer.",
+    "metaDescription": "Verify what a vendor reports, when and to whom; compare written terms and total cost; and track unresolved reporting claims before accepting an offer.",
+    "summary": "Verify what a vendor reports, when and to whom; compare written terms and total cost; and track unresolved reporting claims before accepting an offer.",
     "status": "review",
     "indexStatus": "noindex",
     "lastReviewed": null,
@@ -495,8 +506,8 @@
       },
       {
         "title": "Verify reporting without assumptions",
-        "action": "Ask which business-credit bureau receives information, which fields or payment events are sent, how often, and what account status or other conditions apply. Keep the claim unverified until current provider writing and an available business file support it.",
-        "completeWhen": "Reporting status is recorded as verified, unresolved, or not supported, with the source and date."
+        "action": "Ask which business-credit bureau receives information, which fields or payment events are sent, how often, what account conditions apply, and when the next expected reporting cycle occurs. Request current written confirmation; keep the claim unresolved until the provider's statement and the business file can be checked.",
+        "completeWhen": "Reporting status is recorded as verified, unresolved, or unsupported, with the source, contact date, expected follow-up date, and any file evidence."
       },
       {
         "title": "Check obligations and guarantees",
@@ -510,8 +521,9 @@
       }
     ],
     "decisionCriteria": [
-      "A reporting claim has value only if its bureau, content, timing, and conditions are sufficiently clear for the operator's purpose.",
-      "A credit product should not replace ordinary purchasing discipline or an affordability review.",
+      "A reporting claim has value only if the bureau, account type, furnished fields, timing, and conditions are sufficiently clear for the operator's purpose.",
+      "Compare required purchases, subscriptions, shipping, late fees, payment terms, cancellation rules, and a cash alternative; credit-building language is not a substitute for business value.",
+      "If reporting is still unconfirmed after the stated cycle, follow up with the provider and check the relevant business file before deciding whether to keep waiting or raise a dispute.",
       "If the account is useful only under unverified reporting assumptions, defer until the provider supplies current written terms."
     ],
     "failureModes": [
@@ -521,11 +533,11 @@
     ],
     "checklist": [
       "The business would buy the goods or service without a credit-building claim.",
-      "Total cost and payment timing are written down.",
-      "Reporting bureau and conditions are verified or labeled unknown.",
+      "Total cost, payment terms, late charges, renewal, and cancellation are compared with an alternative.",
+      "Reporting bureau, account type, reporting cadence, and conditions are verified or labeled unknown.",
+      "Provider, response date, expected cycle, file-check date, and next follow-up are recorded.",
       "Guarantee and cancellation clauses are reviewed.",
-      "Payment capacity is checked against expected cash timing.",
-      "The decision and review trigger are recorded."
+      "Payment capacity is checked against expected cash timing and the decision trigger is recorded."
     ],
     "example": null,
     "relatedRoutes": [
@@ -535,9 +547,19 @@
     ],
     "sources": [
       {
-        "label": "Experian: Correct or dispute business credit report items",
+        "label": "Distilled Funding: Primary Tradelines vs Net-30 Accounts",
+        "href": "https://www.distilledfunding.com/post/primary-tradelines-vs-net-30-accounts",
+        "context": "Wix retains the canonical article. It distinguishes payment terms from the reporting relationship; verify each provider's current account-specific claims independently."
+      },
+      {
+        "label": "Distilled Funding: Business Credit Reporting Timeline",
+        "href": "https://www.distilledfunding.com/post/business-credit-reporting-timeline",
+        "context": "Wix retains the canonical article. Its monitoring checkpoints are practical guidance rather than guaranteed bureau timelines."
+      },
+      {
+        "label": "Experian: Small Business Credit Information",
         "href": "https://www.experian.com/small-business/business-credit-information",
-        "context": "Use a bureau's own report and process to verify whether relevant information appears; it does not establish that a particular vendor reports."
+        "context": "Use the bureau's current report and dispute guidance to verify whether relevant information appears; this page does not establish that a specific vendor reports."
       }
     ],
     "breadcrumbs": [
@@ -591,9 +613,9 @@
     ],
     "steps": [
       {
-        "title": "Map the request from entry to human owner",
-        "action": "Draw each intake channel, acknowledgment, validation, review, assignment, and exception handoff in order. Mark the system and role at each step, the wait state, and any manual copy or re-entry.",
-        "completeWhen": "A reviewer can trace one request through every handoff without guessing who acts next."
+        "title": "Assign workflow ownership and map handoffs",
+        "action": "Draw each intake channel, acknowledgment, validation, review, assignment, and exception handoff in order. Name a business owner, system owner, data steward, privacy contact, and backup at the relevant steps; mark wait states and manual copy or re-entry.",
+        "completeWhen": "A reviewer can trace the workflow and identify one accountable owner plus a backup for each control and handoff."
       },
       {
         "title": "Define consent and collection purpose",
@@ -601,9 +623,9 @@
         "completeWhen": "Each intake field and channel has a documented purpose and access owner."
       },
       {
-        "title": "Name field ownership and duplicate rules",
-        "action": "Create a field list with definition, required status, source of truth, validation rule, and update authority. Define how staff identify potential duplicates and what human review is required before records are combined.",
-        "completeWhen": "No identity or applicant record is merged automatically based only on a name or reused email."
+        "title": "Validate data and define duplicate rules",
+        "action": "Create a field list with definition, required status, format/range checks, source of truth, correction path, and update authority. Test missing, malformed, conflicting, and repeated values with de-identified fixtures. Route potential duplicates to an authorized reviewer; do not combine records on a name or reused email alone.",
+        "completeWhen": "Validation tests have expected results and corrections are traceable; identity conflicts remain in a human-reviewed exception path."
       },
       {
         "title": "Inventory incomplete and exception cases",
@@ -611,9 +633,9 @@
         "completeWhen": "Every identified exception has an owner, status, next action, and escalation path."
       },
       {
-        "title": "Choose one reversible improvement",
-        "action": "Pick the most frequent or costly re-entry point that does not require automating eligibility or credit decisions. Define a small pilot, test cases, access boundaries, a rollback path, and a human quality check before any live data is connected.",
-        "completeWhen": "The pilot has a named approver, success measure, exception test, and rollback owner."
+        "title": "Set human approval, test, and rollback checkpoints",
+        "action": "Choose one reversible improvement that does not automate eligibility or credit decisions. Test the normal path, invalid input, consent gap, duplicate candidate, failed handoff, permission failure, and service interruption using synthetic or de-identified data. Require a named human approver before live release, log a safe rollback trigger, and assign post-release monitoring and rollback owners.",
+        "completeWhen": "The pilot has a named approver, privacy sign-off, pass/fail criteria, exception tests, rollback steps, and an owner for monitoring and recovery."
       }
     ],
     "decisionCriteria": [
@@ -624,15 +646,17 @@
     "failureModes": [
       "Treating a completed form as consent for every later use.",
       "Combining applicant records automatically based only on matching name or email.",
-      "Sending exceptions into an unowned queue with no visible pause or escalation."
+      "Sending exceptions into an unowned queue with no visible pause or escalation.",
+      "Releasing a workflow without exercising an invalid-input case and a rollback path."
     ],
     "checklist": [
-      "All intake channels and handoffs are mapped.",
-      "Consent, purpose, and access boundaries are documented.",
-      "Field definitions and source-of-truth owners are named.",
-      "Potential duplicates require human review.",
-      "Incomplete and exception paths have owners.",
-      "The proposed pilot is reversible and leaves financial decisions human-controlled."
+      "All intake channels, handoffs, business owners, system owners, data stewards, and backups are named.",
+      "Consent, purpose, access, retention, and correction boundaries are documented.",
+      "Field definitions, validation rules, and source-of-truth owners are tested.",
+      "Potential duplicates and conflicts require human review.",
+      "Incomplete and exception paths have owners and a safe pause.",
+      "Synthetic/de-identified test cases cover normal, invalid, privacy, and failure paths.",
+      "A named human approves release; monitoring and rollback responsibilities are assigned; financial decisions stay human-controlled."
     ],
     "example": null,
     "relatedRoutes": [
@@ -640,7 +664,23 @@
       "/funding-intake-automation",
       "/document-collection-automation"
     ],
-    "sources": [],
+    "sources": [
+      {
+        "label": "Distilled Funding: AI for Business Loan Brokers",
+        "href": "https://www.distilledfunding.com/post/ai-for-business-loan-brokers",
+        "context": "Wix retains the canonical article. It covers admin automation, sensitive-data handling, and human approval for funding-related judgment and communication."
+      },
+      {
+        "label": "Distilled Funding: AI Agents for Finance Operations",
+        "href": "https://www.distilledfunding.com/post/ai-agents-for-finance-operations",
+        "context": "Wix retains the canonical article. It argues for workflow-specific controls and human checkpoints; it does not authorize automated financial decisions."
+      },
+      {
+        "label": "YouTube: Stop Letting AI Make Funding Decisions — Here's Where to Draw the Line",
+        "href": "https://youtu.be/mhde7mpSHjw",
+        "context": "Published video from the existing YouTube library; relevant human-approval context. Keep any workflow decision with its authorized human owner."
+      }
+    ],
     "breadcrumbs": [
       {
         "label": "Home",
