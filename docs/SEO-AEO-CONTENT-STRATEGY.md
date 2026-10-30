@@ -139,33 +139,16 @@ I would treat `llms.txt` and Markdown mirrors as optional experiments, **not pri
 
 Add a new editorial/product layer\:
 
-## Distilled Solutions Playbooks
+### Distilled Solutions Playbooks
 
 Actionable intelligence for operators
 
-Cash Flow
-
-Diagnostics and recovery plans
-
-Business Credit
-
-Readiness and action roadmaps
-
-Automation
-
-Workflow maps and SOPs
-
-Growth
-
-Capital and expansion planning
-
-CFO / FinOps
-
-Financial operating systems
-
-Acquisitions
-
-Buyer and seller workplans
+- **Cash Flow**: Diagnostics and recovery plans
+- **Business Credit**: Readiness and action roadmaps
+- **Automation**: Workflow maps and SOPs
+- **Growth**: Capital and expansion planning
+- **CFO / FinOps**: Financial operating systems
+- **Acquisitions**: Buyer and seller workplans
 
 The architecture might be\:
 
@@ -183,9 +166,7 @@ solutions.distilledfunding.com/
 └── assessments/
 ```
 
-Start with **a dozen substantial playbooks**, not another 100 generated pages.
-
-A good playbook should contain a direct answer, practical diagnostic, actionable steps, decision criteria, downloadable checklist where useful, related tools, and links to the canonical Solutions and Funding routes.
+Start with **a dozen substantial playbooks**, not another 100 generated pages. A good playbook should contain a direct answer, practical diagnostic, actionable steps, decision criteria, downloadable checklist where useful, related tools, and links to the canonical Solutions and Funding routes.
 
 For example\:
 
