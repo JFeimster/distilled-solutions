@@ -198,12 +198,40 @@
       "signals": ["Approvals happen outside the system of record.", "Reconciliations reveal missing context or recurring exceptions.", "Several tools hold conflicting versions of key financial data."],
       "questions": ["Where are ownership, approval, and evidence captured?", "Which exceptions recur and what control should prevent them?", "How will a change affect reconciliation and audit trails?"],
       "paths": ["Map the transaction from request through approval, posting, and reconciliation.", "Clarify policy, system-of-record fields, access, and exception ownership.", "Change one workflow at a time and measure error and rework from source records."],
+      "editorial": {
+        "headline": "Make every finance handoff accountable.",
+        "summary": "Finance operations connect invoices, approvals, cash movement, records, and reporting. Map where ownership or evidence breaks before changing a tool.",
+        "problemStatement": "A transaction can look complete in one system while its approval, supporting invoice, or ledger entry is missing elsewhere. The operational problem is the handoff between people, records, and review.",
+        "desiredOutcome": "An owned finance workflow in which source records, approval decisions, exceptions, and reconciliations can be traced from start to finish.",
+        "process": ["Trace a recent transaction from request to approval, payment or receipt, posting, and reconciliation.", "Identify who can initiate, approve, release, edit, and review each step; record gaps in evidence.", "Use the financial operations control audit to prioritize the first repair and set a review date."],
+        "CTA": { "label": "RUN THE CONTROL AUDIT", "href": "/financial-operations#finops-control-audit", "kind": "internal" }
+      },
       "children": [
-        ["financial-operations","Financial operations","Map close, payables, receivables, reconciliations, and control ownership across the finance function."],
+        ["financial-operations","Financial operations","Map close, payables, receivables, reconciliations, and control ownership across the finance function.", {
+          "headline": "Find the first finance control to fix.",
+          "summary": "A seven-control, browser-local assessment turns your reported finance routines into a prioritized 7/30-day improvement plan with evidence and owners.",
+          "problemStatement": "A finance process may have a written policy but no current evidence that invoices were checked, accounts reconciled, or exceptions assigned. The control audit helps locate that gap without requesting confidential figures.",
+          "desiredOutcome": "A self-reported control map, three owned actions, a first workflow to improve, and a sequence for verifying the correction.",
+          "signals": ["The close depends on informal reminders rather than signed reconciliations.", "Payment approvals or vendor changes are hard to trace.", "Transactions disagree across accounting, payment, or operating systems."],
+          "questions": ["Which controls have current evidence, and which are only assumed?", "Where could an unauthorized payment or unreconciled transaction escape review?", "Who owns the first correction and its completion check?"],
+          "paths": ["Complete seven broad control checks without entering financial or personal information.", "Review the control matrix and three prioritized corrections with evidence and accountable roles.", "Use the 7/30-day plan and linked playbooks to verify the work in your own systems."],
+          "process": ["Choose the condition that best describes each finance control; mark unknown when evidence has not been checked.", "Review the resulting first workflow, evidence requests, owners, and dependencies.", "Copy the plan, verify source records privately, and update the process with the responsible team."],
+          "CTA": { "label": "START THE CONTROL AUDIT", "href": "/financial-operations#finops-control-audit", "kind": "internal" }
+        }],
         ["payment-operations","Payment operations","Review payment initiation, approval authority, account controls, settlement visibility, and reconciliation."],
         ["expense-management","Expense management","Set clear expense policy, documentation, approval, coding, and exception handling."],
         ["revenue-operations","Revenue operations","Align order, billing, collection, and customer records so revenue events reconcile across teams."],
-        ["financial-workflow-automation","Financial workflow automation","Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating."],
+        ["financial-workflow-automation","Financial workflow automation","Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating.", {
+          "headline": "Automate a stable finance workflow, not an unresolved exception.",
+          "summary": "Separate manual rework from missing controls. Use automation only after the source record, approval owner, reconciliation check, and failure path are clear.",
+          "problemStatement": "A manual step may be slow because it is repetitive, or because invoices, approvals, and system records disagree. Automating the second case can move an error faster and make it harder to trace.",
+          "desiredOutcome": "A bounded automation candidate with verified inputs, scoped permissions, human approval, exception routing, and a tested rollback path.",
+          "signals": ["Staff rekey already-verified fields between systems.", "A proposed bot would release payments or change ledger entries without independent review.", "Sync failures are discovered only at close."],
+          "questions": ["Is this step repetitive and stable, or is it compensating for missing evidence?", "Who reviews output and authorizes money movement or record changes?", "What happens when source data is incomplete or a sync fails?"],
+          "paths": ["Map the manual work and sample errors before selecting an automation candidate.", "Keep payment release, disputed items, and material record changes behind human review.", "Pilot read-only alerts or draft routing, then compare output with source records and log exceptions."],
+          "process": ["Use the control audit to verify ownership, authorization, reconciliation, and system-of-record rules.", "Choose one low-risk repetitive step and define its input, output, reviewer, access, and failure path.", "Run a bounded pilot; retain logs and compare results to manual source checks before expansion."],
+          "CTA": { "label": "CHECK CONTROL READINESS", "href": "/financial-operations#finops-control-audit", "kind": "internal" }
+        }],
         ["financial-data-operations","Financial data operations","Assign ownership and quality controls to financial data shared across accounting and operating systems."],
         ["finops-ai-automation","FinOps AI automation","Assess bounded AI assistance for finance operations with permission controls, source links, and human review."]
       ]

@@ -6519,13 +6519,13 @@
     "title": "Make financial operations easier to control",
     "shortTitle": "Financial operations",
     "metaTitle": "Make financial operations easier to control | Distilled Solutions",
-    "metaDescription": "Improve the workflows, ownership, and data controls behind payments, expenses, revenue, and finance systems.",
+    "metaDescription": "Finance operations connect invoices, approvals, cash movement, records, and reporting. Map where ownership or evidence breaks before changing a tool.",
     "hero": {
-      "headline": "Make financial operations easier to control",
-      "summary": "Improve the workflows, ownership, and data controls behind payments, expenses, revenue, and finance systems."
+      "headline": "Make every finance handoff accountable.",
+      "summary": "Finance operations connect invoices, approvals, cash movement, records, and reporting. Map where ownership or evidence breaks before changing a tool."
     },
-    "problemStatement": "Financial operations become fragile when transactions, approvals, and reconciliations rely on unclear handoffs or disconnected records.",
-    "desiredOutcome": "Make recurring finance workflows visible, controlled, and easier to reconcile as transaction volume changes.",
+    "problemStatement": "A transaction can look complete in one system while its approval, supporting invoice, or ledger entry is missing elsewhere. The operational problem is the handoff between people, records, and review.",
+    "desiredOutcome": "An owned finance workflow in which source records, approval decisions, exceptions, and reconciliations can be traced from start to finish.",
     "audience": "Make financial operations easier to control planning financial operations with practical records and clear decision ownership.",
     "pains": [
       "Approvals happen outside the system of record.",
@@ -6537,7 +6537,7 @@
       "Clarify policy, system-of-record fields, access, and exception ownership.",
       "Change one workflow at a time and measure error and rework from source records."
     ],
-    "overview": "Financial operations become fragile when transactions, approvals, and reconciliations rely on unclear handoffs or disconnected records. Make recurring finance workflows visible, controlled, and easier to reconcile as transaction volume changes. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
+    "overview": "A transaction can look complete in one system while its approval, supporting invoice, or ledger entry is missing elsewhere. The operational problem is the handoff between people, records, and review. An owned finance workflow in which source records, approval decisions, exceptions, and reconciliations can be traced from start to finish. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
     "keyQuestions": [
       "Where are ownership, approval, and evidence captured?",
       "Which exceptions recur and what control should prevent them?",
@@ -6549,9 +6549,9 @@
       "Change one workflow at a time and measure error and rework from source records."
     ],
     "process": [
-      "Define the decision, the people responsible, and the date by which it must be made.",
-      "Gather current source records and mark assumptions that still need verification.",
-      "Compare options, risks, and next actions; update the plan when actual results differ."
+      "Trace a recent transaction from request to approval, payment or receipt, posting, and reconciliation.",
+      "Identify who can initiate, approve, release, edit, and review each step; record gaps in evidence.",
+      "Use the financial operations control audit to prioritize the first repair and set a review date."
     ],
     "benefits": [
       "Map the transaction from request through approval, posting, and reconciliation.",
@@ -6582,7 +6582,7 @@
     "FAQs": [
       {
         "question": "What should I review first for financial operations?",
-        "answer": "Where are ownership, approval, and evidence captured? Make recurring finance workflows visible, controlled, and easier to reconcile as transaction volume changes. Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms."
+        "answer": "Where are ownership, approval, and evidence captured? An owned finance workflow in which source records, approval decisions, exceptions, and reconciliations can be traced from start to finish. Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms."
       },
       {
         "question": "Does this page determine eligibility or guarantee an outcome?",
@@ -6591,8 +6591,8 @@
     ],
     "CTAs": [
       {
-        "label": "MAP THE FINANCE WORKFLOW",
-        "href": "/financial-operations",
+        "label": "RUN THE CONTROL AUDIT",
+        "href": "/financial-operations#finops-control-audit",
         "kind": "internal"
       }
     ],
@@ -6632,44 +6632,44 @@
     "title": "Financial operations",
     "shortTitle": "Financial operations",
     "metaTitle": "Financial operations | Distilled Solutions",
-    "metaDescription": "Map close, payables, receivables, reconciliations, and control ownership across the finance function.",
+    "metaDescription": "A seven-control, browser-local assessment turns your reported finance routines into a prioritized 7/30-day improvement plan with evidence and owners.",
     "hero": {
-      "headline": "Financial operations",
-      "summary": "Map close, payables, receivables, reconciliations, and control ownership across the finance function."
+      "headline": "Find the first finance control to fix.",
+      "summary": "A seven-control, browser-local assessment turns your reported finance routines into a prioritized 7/30-day improvement plan with evidence and owners."
     },
-    "problemStatement": "Map close, payables, receivables, reconciliations, and control ownership across the finance function. Without a defined scope, current evidence, and a clear decision owner, the next action can address the wrong constraint.",
-    "desiredOutcome": "Use financial operations to clarify the decision, information needed, tradeoffs, and an appropriate next step.",
+    "problemStatement": "A finance process may have a written policy but no current evidence that invoices were checked, accounts reconciled, or exceptions assigned. The control audit helps locate that gap without requesting confidential figures.",
+    "desiredOutcome": "A self-reported control map, three owned actions, a first workflow to improve, and a sequence for verifying the correction.",
     "audience": "Make financial operations easier to control planning financial operations with practical records and clear decision ownership.",
     "pains": [
-      "Map close, payables, receivables, reconciliations, and control ownership across the finance function.",
-      "The people involved do not yet share the same assumptions or timing for financial operations.",
-      "The decision depends on information that has not been checked against current source records."
+      "The close depends on informal reminders rather than signed reconciliations.",
+      "Payment approvals or vendor changes are hard to trace.",
+      "Transactions disagree across accounting, payment, or operating systems."
     ],
     "goals": [
-      "Map close, payables, receivables, reconciliations, and control ownership across the finance function.",
-      "Compare an operational change, professional guidance, and a relevant external resource against the same facts.",
-      "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."
+      "Complete seven broad control checks without entering financial or personal information.",
+      "Review the control matrix and three prioritized corrections with evidence and accountable roles.",
+      "Use the 7/30-day plan and linked playbooks to verify the work in your own systems."
     ],
-    "overview": "Map close, payables, receivables, reconciliations, and control ownership across the finance function. Without a defined scope, current evidence, and a clear decision owner, the next action can address the wrong constraint. Use financial operations to clarify the decision, information needed, tradeoffs, and an appropriate next step. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
+    "overview": "A finance process may have a written policy but no current evidence that invoices were checked, accounts reconciled, or exceptions assigned. The control audit helps locate that gap without requesting confidential figures. A self-reported control map, three owned actions, a first workflow to improve, and a sequence for verifying the correction. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
     "keyQuestions": [
-      "What would need to be true for financial operations to solve the stated problem?",
-      "Which information is verified, and which assumptions could materially change the decision?",
-      "Who owns the next review and how will the result be checked?"
+      "Which controls have current evidence, and which are only assumed?",
+      "Where could an unauthorized payment or unreconciled transaction escape review?",
+      "Who owns the first correction and its completion check?"
     ],
     "solutionPaths": [
-      "Map close, payables, receivables, reconciliations, and control ownership across the finance function.",
-      "Compare an operational change, professional guidance, and a relevant external resource against the same facts.",
-      "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."
+      "Complete seven broad control checks without entering financial or personal information.",
+      "Review the control matrix and three prioritized corrections with evidence and accountable roles.",
+      "Use the 7/30-day plan and linked playbooks to verify the work in your own systems."
     ],
     "process": [
-      "Define the decision, the people responsible, and the date by which it must be made.",
-      "Gather current source records and mark assumptions that still need verification.",
-      "Compare options, risks, and next actions; update the plan when actual results differ."
+      "Choose the condition that best describes each finance control; mark unknown when evidence has not been checked.",
+      "Review the resulting first workflow, evidence requests, owners, and dependencies.",
+      "Copy the plan, verify source records privately, and update the process with the responsible team."
     ],
     "benefits": [
-      "Map close, payables, receivables, reconciliations, and control ownership across the finance function.",
-      "Compare an operational change, professional guidance, and a relevant external resource against the same facts.",
-      "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."
+      "Complete seven broad control checks without entering financial or personal information.",
+      "Review the control matrix and three prioritized corrections with evidence and accountable roles.",
+      "Use the 7/30-day plan and linked playbooks to verify the work in your own systems."
     ],
     "considerations": [
       "The right path depends on current records, timing, operating capacity, and the specific terms available.",
@@ -6677,9 +6677,9 @@
       "Confirm legal, tax, credit, privacy, and financing questions with the qualified professional responsible for that decision."
     ],
     "readinessSignals": [
-      "Map close, payables, receivables, reconciliations, and control ownership across the finance function.",
-      "The people involved do not yet share the same assumptions or timing for financial operations.",
-      "The decision depends on information that has not been checked against current source records."
+      "The close depends on informal reminders rather than signed reconciliations.",
+      "Payment approvals or vendor changes are hard to trace.",
+      "Transactions disagree across accounting, payment, or operating systems."
     ],
     "warningSignals": [
       "A promised score, approval, savings, or timeline cannot be tied to verified evidence.",
@@ -6696,7 +6696,7 @@
     "FAQs": [
       {
         "question": "What should I review first for financial operations?",
-        "answer": "What would need to be true for financial operations to solve the stated problem? Use financial operations to clarify the decision, information needed, tradeoffs, and an appropriate next step. Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms."
+        "answer": "Which controls have current evidence, and which are only assumed? A self-reported control map, three owned actions, a first workflow to improve, and a sequence for verifying the correction. Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms."
       },
       {
         "question": "Does this page determine eligibility or guarantee an outcome?",
@@ -6705,8 +6705,8 @@
     ],
     "CTAs": [
       {
-        "label": "MAP THE FINANCE WORKFLOW",
-        "href": "/financial-operations",
+        "label": "START THE CONTROL AUDIT",
+        "href": "/financial-operations#finops-control-audit",
         "kind": "internal"
       }
     ],
@@ -7088,44 +7088,44 @@
     "title": "Financial workflow automation",
     "shortTitle": "Financial workflow automation",
     "metaTitle": "Financial workflow automation | Distilled Solutions",
-    "metaDescription": "Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating.",
+    "metaDescription": "Separate manual rework from missing controls. Use automation only after the source record, approval owner, reconciliation check, and failure path are c…",
     "hero": {
-      "headline": "Financial workflow automation",
-      "summary": "Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating."
+      "headline": "Automate a stable finance workflow, not an unresolved exception.",
+      "summary": "Separate manual rework from missing controls. Use automation only after the source record, approval owner, reconciliation check, and failure path are clear."
     },
-    "problemStatement": "Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating. Without a defined scope, current evidence, and a clear decision owner, the next action can address the wrong constraint.",
-    "desiredOutcome": "Use financial workflow automation to clarify the decision, information needed, tradeoffs, and an appropriate next step.",
+    "problemStatement": "A manual step may be slow because it is repetitive, or because invoices, approvals, and system records disagree. Automating the second case can move an error faster and make it harder to trace.",
+    "desiredOutcome": "A bounded automation candidate with verified inputs, scoped permissions, human approval, exception routing, and a tested rollback path.",
     "audience": "Make financial operations easier to control planning financial workflow automation with practical records and clear decision ownership.",
     "pains": [
-      "Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating.",
-      "The people involved do not yet share the same assumptions or timing for financial workflow automation.",
-      "The decision depends on information that has not been checked against current source records."
+      "Staff rekey already-verified fields between systems.",
+      "A proposed bot would release payments or change ledger entries without independent review.",
+      "Sync failures are discovered only at close."
     ],
     "goals": [
-      "Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating.",
-      "Compare an operational change, professional guidance, and a relevant external resource against the same facts.",
-      "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."
+      "Map the manual work and sample errors before selecting an automation candidate.",
+      "Keep payment release, disputed items, and material record changes behind human review.",
+      "Pilot read-only alerts or draft routing, then compare output with source records and log exceptions."
     ],
-    "overview": "Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating. Without a defined scope, current evidence, and a clear decision owner, the next action can address the wrong constraint. Use financial workflow automation to clarify the decision, information needed, tradeoffs, and an appropriate next step. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
+    "overview": "A manual step may be slow because it is repetitive, or because invoices, approvals, and system records disagree. Automating the second case can move an error faster and make it harder to trace. A bounded automation candidate with verified inputs, scoped permissions, human approval, exception routing, and a tested rollback path. A useful first step is to make the current facts, timing, and decision owner visible. From there, compare operating changes, professional guidance, and any relevant financing or tool resources against the same assumptions.",
     "keyQuestions": [
-      "What would need to be true for financial workflow automation to solve the stated problem?",
-      "Which information is verified, and which assumptions could materially change the decision?",
-      "Who owns the next review and how will the result be checked?"
+      "Is this step repetitive and stable, or is it compensating for missing evidence?",
+      "Who reviews output and authorizes money movement or record changes?",
+      "What happens when source data is incomplete or a sync fails?"
     ],
     "solutionPaths": [
-      "Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating.",
-      "Compare an operational change, professional guidance, and a relevant external resource against the same facts.",
-      "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."
+      "Map the manual work and sample errors before selecting an automation candidate.",
+      "Keep payment release, disputed items, and material record changes behind human review.",
+      "Pilot read-only alerts or draft routing, then compare output with source records and log exceptions."
     ],
     "process": [
-      "Define the decision, the people responsible, and the date by which it must be made.",
-      "Gather current source records and mark assumptions that still need verification.",
-      "Compare options, risks, and next actions; update the plan when actual results differ."
+      "Use the control audit to verify ownership, authorization, reconciliation, and system-of-record rules.",
+      "Choose one low-risk repetitive step and define its input, output, reviewer, access, and failure path.",
+      "Run a bounded pilot; retain logs and compare results to manual source checks before expansion."
     ],
     "benefits": [
-      "Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating.",
-      "Compare an operational change, professional guidance, and a relevant external resource against the same facts.",
-      "Document the decision, owner, timing, costs, risks, and conditions that would trigger another review."
+      "Map the manual work and sample errors before selecting an automation candidate.",
+      "Keep payment release, disputed items, and material record changes behind human review.",
+      "Pilot read-only alerts or draft routing, then compare output with source records and log exceptions."
     ],
     "considerations": [
       "The right path depends on current records, timing, operating capacity, and the specific terms available.",
@@ -7133,9 +7133,9 @@
       "Confirm legal, tax, credit, privacy, and financing questions with the qualified professional responsible for that decision."
     ],
     "readinessSignals": [
-      "Identify repeatable financial tasks and define approvals, audit history, and exception handling before automating.",
-      "The people involved do not yet share the same assumptions or timing for financial workflow automation.",
-      "The decision depends on information that has not been checked against current source records."
+      "Staff rekey already-verified fields between systems.",
+      "A proposed bot would release payments or change ledger entries without independent review.",
+      "Sync failures are discovered only at close."
     ],
     "warningSignals": [
       "A promised score, approval, savings, or timeline cannot be tied to verified evidence.",
@@ -7152,7 +7152,7 @@
     "FAQs": [
       {
         "question": "What should I review first for financial workflow automation?",
-        "answer": "What would need to be true for financial workflow automation to solve the stated problem? Use financial workflow automation to clarify the decision, information needed, tradeoffs, and an appropriate next step. Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms."
+        "answer": "Is this step repetitive and stable, or is it compensating for missing evidence? A bounded automation candidate with verified inputs, scoped permissions, human approval, exception routing, and a tested rollback path. Start with current records, make assumptions explicit, and involve qualified professionals when a decision depends on legal, tax, credit, or financing terms."
       },
       {
         "question": "Does this page determine eligibility or guarantee an outcome?",
@@ -7161,8 +7161,8 @@
     ],
     "CTAs": [
       {
-        "label": "MAP THE FINANCE WORKFLOW",
-        "href": "/financial-operations",
+        "label": "CHECK CONTROL READINESS",
+        "href": "/financial-operations#finops-control-audit",
         "kind": "internal"
       }
     ],
