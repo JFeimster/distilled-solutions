@@ -69,5 +69,18 @@
   "/credit-readiness",
   "/revenue-readiness",
   "/application-readiness",
-  "/funding-readiness-plan"
+  "/funding-readiness-plan",
+  "/playbooks",
+  "/playbooks/cash-flow/diagnose-working-capital-gap",
+  "/playbooks/cash-flow/13-week-cash-flow-forecast",
+  "/playbooks/business-credit/verify-business-credit-records",
+  "/playbooks/business-credit/evaluate-net-30-reporting",
+  "/playbooks/automation/funding-intake-audit",
+  "/playbooks/automation/funding-follow-up-workflow",
+  "/playbooks/growth/inventory-cash-gap-plan",
+  "/playbooks/growth/expansion-funding-readiness",
+  "/playbooks/financial-operations/month-end-financeops-checklist",
+  "/playbooks/financial-operations/financial-controls-for-small-business",
+  "/playbooks/acquisitions/buyer-readiness-checklist",
+  "/playbooks/acquisitions/seller-due-diligence-prep"
 ]

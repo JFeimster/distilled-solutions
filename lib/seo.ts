@@ -2,13 +2,24 @@ import type { Metadata } from "next";
 import { site } from "@/lib/config";
 import { getBreadcrumbs } from "@/lib/solutions/pages";
 import type { SolutionPage } from "@/schemas/solutions";
+import type { PlaybookPage } from "@/schemas/playbooks";
 
+type IndexablePage = Pick<SolutionPage | PlaybookPage, "status" | "indexStatus" | "lastReviewed">;
 export function isIndexable(
-  page: SolutionPage,
+  page: IndexablePage,
   enabled = process.env.ALLOW_INDEXING === "true",
   deploymentEnvironment = process.env.VERCEL_ENV
 ) {
   return deploymentEnvironment === "production" && enabled && page.status === "index" && page.indexStatus === "index" && page.lastReviewed !== null;
+}
+export function playbookMetadata(page: PlaybookPage): Metadata {
+  const indexable = isIndexable(page);
+  return {
+    title: { absolute: page.metaTitle }, description: page.metaDescription,
+    alternates: { canonical: page.canonicalUrl }, robots: { index: indexable, follow: true },
+    openGraph: { type: page.kind === "playbook" ? "article" : "website", siteName: site.name, title: page.metaTitle, description: page.metaDescription, url: page.canonicalUrl, images: [{ url: `${site.siteUrl}/opengraph-image`, width: 1200, height: 630, alt: "Distilled Solutions — practical operator playbooks" }] },
+    twitter: { card: "summary_large_image", title: page.metaTitle, description: page.metaDescription, images: [`${site.siteUrl}/opengraph-image`] }
+  };
 }
 export function pageMetadata(page: SolutionPage): Metadata {
   const indexable = isIndexable(page);

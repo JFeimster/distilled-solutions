@@ -2,6 +2,8 @@
 
 This roadmap prioritizes functional improvements while preserving the [architecture](SOLUTIONS-ARCHITECTURE.md), [content model](SOLUTIONS-CONTENT-MODEL.md), and [canonical route map](SOLUTIONS-ROUTE-MAP.md). Work remains within the existing eight families and 71 routes unless the canonical contract is separately revised.
 
+The approved Playbooks extension is additive: it retains the original eight families and 71 Solutions routes and adds one index plus twelve playbook routes, for 84 total.
+
 ## Delivered first milestone: funding workflow diagnostic
 
 The `/funding-workflow-automation` route now has a client-side, deterministic opportunity diagnostic. It turns five broad workflow choices into a first fix, three ordered actions, human-review and privacy controls, related guides, and a copyable plan. Its editorial fields are stored as an optional catalog override and survive regeneration. The parent `/automate-my-funding` route points to it.
@@ -11,6 +13,10 @@ The `/funding-workflow-automation` route now has a client-side, deterministic op
 The single diagnostic at `/business-credit-readiness#credit-readiness-diagnostic` evaluates six preparation dimensions and an objective using client-side selections. It distinguishes self-reported documentation, needed work, unknown information, and payment history that is not yet applicable. Results include dependency-aware tasks with evidence and completion checks, maintenance practices, account due diligence, canonical guides, official references, and a copyable plan with manual fallback. No identifiers or financial values are collected, and answers are not persisted. Pure recommendations live in `lib/solutions/business-credit-diagnostic.ts`.
 
 Catalog overrides now give `/business-credit-builder`, `/business-credit-readiness`, `/business-credit-roadmap`, and `/fundability-check` distinct guidance and contextual CTAs to the same diagnostic. Family records can use the existing editorial override fields through an optional `editorial` object. The 71-route contract and noindex controls remain unchanged.
+
+## Delivered third milestone: Playbooks v1
+
+The `/playbooks` index and twelve category-organized operator playbooks extend the same catch-all publishing architecture. The catalog remains the editorial source; distinct Playbook Zod records and one reusable renderer provide evidence lists, sequenced actions with completion criteria, decision checks, failure modes, relevant internal/source references, worked hypothetical cash examples, and browser-local copyable checklists. The original route contract is validated separately from the 84-route combined manifest. Every new record starts `review`/`noindex` with no review date.
 
 ## Prioritized next batches
 

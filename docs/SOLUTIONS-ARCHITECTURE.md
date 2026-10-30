@@ -12,9 +12,9 @@ Interaction thesis: the command console changes its question and guide choices b
 
 Funding (`_reference/funding-distilled`) is the technical and visual precedent. This app adapts its Next.js App Router, typed Zod records, JSON content, parent-derived breadcrumbs, centralized metadata/index policy, static route generation, design tokens, noindex default, and route validation. Solutions has its own taxonomy, content catalog, relationship model, templates, and interaction. The reference subtree is excluded from TypeScript, lint, and Git; no application import reaches it.
 
-`data/solutions/catalog.json` is the editorial source for the fixed canonical taxonomy and route-specific intent. `npm run generate:manifest` derives the full page, route, navigation, relationship, and text sitemap artifacts. The generated page manifest is the application runtime source. Update the catalog, regenerate artifacts, then validate.
+`data/solutions/catalog.json` is the editorial source for the fixed 71-route Solutions taxonomy and the additive Playbooks index and twelve workflow records. `npm run generate:manifest` derives Solutions pages, Playbooks pages, the original core route set, the combined route set, navigation, relationships, and text sitemap artifacts. The generated manifests are application runtime sources. Update the catalog, regenerate artifacts, then validate.
 
-One optional catch-all route renders the root, hubs, and guides. The renderer selects homepage, family-index, or focused-guide composition from page type and relationships. Children, breadcrumbs, related solutions, metadata, JSON-LD and sitemap all resolve from the same page records.
+One optional catch-all route renders the root, hubs, guides, Playbooks index, and playbooks. Solutions and Playbooks use separate Zod schemas and renderers while sharing the route, canonical metadata, noindex, and sitemap gates. Playbooks have a six-category discovery index, one reusable step/checklist renderer, copyable local checklists, and HowTo structured data. The original eight-family taxonomy remains unchanged; the combined publishing architecture has 84 routes.
 
 ## Ownership boundaries
 
@@ -26,4 +26,4 @@ One optional catch-all route renders the root, hubs, and guides. The renderer se
 
 ## Privacy and indexing
 
-The intent console holds choices in component state and stores or transmits no profile data. The app introduces no database, application submission, analytics vendor, financial credential, lender integration, or external service. All catalog records start `noindex`; indexing requires a reviewed `index` record, a review date, and `ALLOW_INDEXING=true`. Robots permits crawling so page-level directives can be read. Preview sitemap is intentionally empty.
+The intent console and Playbook checklist hold choices in component state and transmit or persist no profile data. The app introduces no database, application submission, analytics vendor, financial credential, lender integration, or external service. Existing Solutions records remain noindex; new Playbooks start `review`/`noindex` without review dates. Indexing requires production `VERCEL_ENV`, `ALLOW_INDEXING=true`, both editorial status fields set to `index`, and a review date. Robots permits crawling so page-level directives can be read. The sitemap remains empty until eligible pages are explicitly approved.

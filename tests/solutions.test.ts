@@ -1,7 +1,8 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import records from "../data/solutions/solutions.pages.manifest.json";
-import requiredRoutes from "../data/solutions/solutions.routes.manifest.json";
+import requiredRoutes from "../data/solutions/solutions.core-routes.manifest.json";
+import canonicalRoutes from "../data/solutions/solutions.routes.manifest.json";
 import navigation from "../data/solutions/solutions.navigation.manifest.json";
 import { pages, getPage, getBreadcrumbs } from "../lib/solutions/pages";
 import { validateSolutions } from "../lib/solutions/validate";
@@ -10,6 +11,7 @@ import { isIndexable, pageMetadata, safeJsonLd, structuredData } from "../lib/se
 test("all 71 canonical records match the route contract and solution-family counts", () => {
   assert.equal(pages.length, 71);
   assert.equal(requiredRoutes.length, 71);
+  assert.equal(canonicalRoutes.length, 84);
   assert.deepEqual(validateSolutions(records, requiredRoutes), []);
   assert.equal(pages.filter((page) => page.pageType === "hub").length, 4);
   assert.equal(pages.filter((page) => page.parent && page.parent !== "home").length, 62);

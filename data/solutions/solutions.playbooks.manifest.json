@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "playbooks-index",
+    "route": "/playbooks",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks",
+    "title": "Practical playbooks for the work behind the decision",
+    "metaTitle": "Business Playbooks | Distilled Solutions",
+    "metaDescription": "Practical business playbooks with sequenced workflows, evidence checklists, decision criteria, and examples for operators.",
+    "summary": "Use these operator guides to move from a business problem to an owned workflow, the evidence to gather, a decision check, and a practical next action.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "index",
+    "categories": [
+      {
+        "id": "cash-flow",
+        "title": "Cash Flow",
+        "description": "Map timing, forecast near-term movement, and test the operating assumptions behind a cash gap.",
+        "relatedRoutes": [
+          "improve-cash-flow",
+          "cash-flow-analysis",
+          "cash-flow-forecast",
+          "working-capital-gap"
+        ]
+      },
+      {
+        "id": "business-credit",
+        "title": "Business Credit",
+        "description": "Verify business records and account reporting claims before changing or expanding credit activity.",
+        "relatedRoutes": [
+          "business-credit-builder",
+          "business-credit-readiness",
+          "business-credit-vendors",
+          "net-30-vendors"
+        ]
+      },
+      {
+        "id": "automation",
+        "title": "Automation",
+        "description": "Map people, consent, records, handoffs, and exceptions before automating a funding workflow.",
+        "relatedRoutes": [
+          "automate-my-funding",
+          "funding-workflow-automation",
+          "funding-intake-automation",
+          "funding-follow-up-automation"
+        ]
+      },
+      {
+        "id": "growth",
+        "title": "Growth",
+        "description": "Test inventory and expansion plans against operating capacity, cash timing, and downside assumptions.",
+        "relatedRoutes": [
+          "finance-business-growth",
+          "fund-an-expansion",
+          "inventory-cash-flow"
+        ]
+      },
+      {
+        "id": "financial-operations",
+        "title": "Financial Operations",
+        "description": "Make month-end close, controls, reconciliations, and responsibility clear enough to review.",
+        "relatedRoutes": [
+          "cfo-as-a-service",
+          "finops-as-a-service",
+          "financial-operations",
+          "cash-flow-analysis"
+        ]
+      },
+      {
+        "id": "acquisitions",
+        "title": "Acquisitions",
+        "description": "Prepare buyer and seller workplans around criteria, source records, diligence owners, and decision gates.",
+        "relatedRoutes": [
+          "buy-or-sell-a-business",
+          "buy-a-business",
+          "sell-a-business",
+          "due-diligence"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "diagnose-working-capital-gap",
+    "route": "/playbooks/cash-flow/diagnose-working-capital-gap",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/cash-flow/diagnose-working-capital-gap",
+    "title": "Diagnose a Working Capital Gap",
+    "metaTitle": "Diagnose a Working Capital Gap | Distilled Solutions",
+    "metaDescription": "Trace a cash shortfall to its timing, receivables, inventory, fixed obligations, and revenue variability before choosing a response.",
+    "summary": "Trace a cash shortfall to its timing, receivables, inventory, fixed obligations, and revenue variability before choosing a response.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "cash-flow",
+    "categoryTitle": "Cash Flow",
+    "audience": "Owners and finance operators who see a near-term cash squeeze but need to separate a timing mismatch from a margin, demand, or cost problem.",
+    "outcome": "Leave with a dated cash-gap worksheet, the two or three assumptions that drive the low point, and a named owner for each verification task.",
+    "triggers": [
+      "The bank balance is falling while sales or booked work appear healthy.",
+      "Receivables, inventory purchases, payroll, taxes, or debt payments land in different weeks.",
+      "A proposed financing or spending decision is being discussed before the size and duration of the gap are known."
+    ],
+    "evidence": [
+      "Current bank balances and reconciled cash activity by account.",
+      "Open invoices with amount, due date, dispute status, and expected collection evidence.",
+      "Inventory on hand, committed purchase orders, lead times, and expected sell-through assumptions.",
+      "Fixed obligations with amount, due date, recurrence, and owner.",
+      "Recent weekly sales and collections, separated from booked but uncollected revenue."
+    ],
+    "steps": [
+      {
+        "title": "Set the window and starting cash",
+        "action": "Choose the next 13 weeks or a shorter decision window that covers the expected low point. Reconcile the opening cash figure to bank activity and list restrictions or transfers that make part of the balance unavailable.",
+        "completeWhen": "The opening amount is tied to a dated bank reconciliation and restricted cash is shown separately."
+      },
+      {
+        "title": "Map expected receipts by evidence",
+        "action": "List customer receipts by expected week using invoice due dates, payment history, disputes, and customer confirmation. Put uncertain collections in a separate scenario instead of treating a promise or booked sale as cash received.",
+        "completeWhen": "Every material receipt has a source, expected week, confidence note, and follow-up owner."
+      },
+      {
+        "title": "Map obligations and inventory commitments",
+        "action": "Schedule payroll, rent, taxes, debt service, supplier invoices, purchase orders, and one-time costs in the week they are expected to clear. Show inventory buys separately from routine purchases so timing and sell-through can be tested.",
+        "completeWhen": "Known obligations appear once in the correct week and committed inventory cash is visible."
+      },
+      {
+        "title": "Find the lowest point and its drivers",
+        "action": "Roll opening cash forward as receipts less payments for each week. Identify the first negative or operationally uncomfortable balance, then rank the receipts, costs, and timing assumptions that change it most.",
+        "completeWhen": "The low point, week, and top drivers are stated without treating the worksheet as an approval or funding result."
+      },
+      {
+        "title": "Test operating responses first",
+        "action": "Model collection follow-up, purchase timing, inventory quantities, customer deposits, staffing shifts, and discretionary spend as separate changes. Record who must agree and what customer, supplier, legal, or tax terms need confirmation.",
+        "completeWhen": "Each proposed response has an owner, a measurable assumption, and a review date."
+      }
+    ],
+    "decisionCriteria": [
+      "A timing gap is plausible when dated receipts lag obligations and the underlying margin and demand assumptions remain supportable.",
+      "A recurring deficit or shrinking contribution margin needs an operating and pricing review; moving payment dates alone does not solve it.",
+      "Any new financing discussion should use the verified low-point amount, duration, total cost, repayment timing, and downside case."
+    ],
+    "failureModes": [
+      "Counting invoices or booked sales as collected cash.",
+      "Double-counting a supplier payment and the purchase order that it settles.",
+      "Treating all bank cash as available while ignoring restricted funds, payroll, tax, or other commitments."
+    ],
+    "checklist": [
+      "Opening cash ties to a recent reconciliation.",
+      "Receipt dates are supported and uncertain items are labeled.",
+      "Fixed and one-time obligations are assigned to the correct weeks.",
+      "Inventory buys and sell-through assumptions are separated.",
+      "The low point and its drivers are written down.",
+      "Each follow-up has an owner and date."
+    ],
+    "example": {
+      "title": "Hypothetical timing-gap sketch",
+      "disclosure": "Illustrative numbers only; this is not a forecast or financial advice.",
+      "rows": [
+        {
+          "label": "Opening available cash",
+          "value": "$18,000"
+        },
+        {
+          "label": "Week 1 net movement: $12,000 receipts less $14,000 payments",
+          "value": "-$2,000; closing $16,000"
+        },
+        {
+          "label": "Week 2 net movement: $8,000 receipts less $15,000 payments",
+          "value": "-$7,000; closing $9,000"
+        },
+        {
+          "label": "Week 3 net movement: $16,000 receipts less $11,000 payments",
+          "value": "+$5,000; closing $14,000"
+        }
+      ]
+    },
+    "relatedRoutes": [
+      "/improve-cash-flow",
+      "/cash-flow-analysis",
+      "/working-capital-gap"
+    ],
+    "sources": [
+      {
+        "label": "SBA: Manage your finances",
+        "href": "https://www.sba.gov/counseling/manage-your-business/",
+        "context": "General bookkeeping, balance-sheet, and cash-flow projection guidance."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Cash Flow",
+        "route": "/playbooks#cash-flow"
+      }
+    ]
+  },
+  {
+    "id": "13-week-cash-flow-forecast",
+    "route": "/playbooks/cash-flow/13-week-cash-flow-forecast",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/cash-flow/13-week-cash-flow-forecast",
+    "title": "Build a 13-Week Cash Flow Forecast",
+    "metaTitle": "Build a 13-Week Cash Flow Forecast | Distilled Solutions",
+    "metaDescription": "Build a weekly cash rollforward from opening cash, dated receipts, and dated payments, then compare assumptions with actuals.",
+    "summary": "Build a weekly cash rollforward from opening cash, dated receipts, and dated payments, then compare assumptions with actuals.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "cash-flow",
+    "categoryTitle": "Cash Flow",
+    "audience": "Operators and finance leads who need a short-horizon view of cash timing to coordinate collections, purchases, payroll, and management decisions.",
+    "outcome": "Produce a 13-column forecast with source-linked assumptions, a visible low-cash case, and a weekly actual-versus-forecast review routine.",
+    "triggers": [
+      "Monthly financial statements arrive too late to show a cash pinch in the next few weeks.",
+      "The business has seasonal receipts, uneven customer payments, or lumpy inventory and payroll costs.",
+      "Leaders are discussing a large purchase or financing path without an agreed near-term cash view."
+    ],
+    "evidence": [
+      "Opening reconciled cash by account and any cash restrictions.",
+      "Accounts receivable aging, invoices due, customer payment patterns, and known disputes.",
+      "Payroll calendar, vendor bills, debt obligations, tax dates, and approved purchase orders.",
+      "A recent sales or bookings pipeline with explicit conversion and collection assumptions."
+    ],
+    "steps": [
+      {
+        "title": "Create 13 weekly columns",
+        "action": "Use one row per cash driver and one column for each week. Start with a reconciled opening balance and carry each week's closing cash into the following week's opening cash.",
+        "completeWhen": "Each week has one opening and one closing cash balance, with no unexplained breaks in the rollforward."
+      },
+      {
+        "title": "Separate receipts by source and confidence",
+        "action": "List customer collections, deposits, refunds, taxes received, and other inflows on expected cash dates. Keep confirmed, likely, and uncertain amounts distinguishable and avoid counting revenue before the cash date.",
+        "completeWhen": "Every material inflow has a source record, expected date, confidence, and owner."
+      },
+      {
+        "title": "Schedule payments on expected clearing dates",
+        "action": "List payroll, rent, suppliers, inventory, taxes, debt service, refunds, and one-time items. Use expected payment dates and existing contractual terms; label proposed timing changes as assumptions until agreed.",
+        "completeWhen": "Recurring, committed, and discretionary outflows are separately identified and assigned."
+      },
+      {
+        "title": "Build base and downside cases",
+        "action": "Keep the base case tied to the best current evidence. In a downside case, change only the assumptions that could reasonably move cash, such as slower collections, lower conversion, delayed delivery, or a cost increase, and state why each changed.",
+        "completeWhen": "A reviewer can see which assumptions differ between cases and what evidence would update them."
+      },
+      {
+        "title": "Compare actuals weekly",
+        "action": "At the same point each week, replace completed forecast weeks with actual bank-cleared receipts and payments. Explain meaningful variances, revise remaining weeks, and assign actions for the next low point.",
+        "completeWhen": "Each review has a dated variance note, revised forecast, and named action owner."
+      }
+    ],
+    "decisionCriteria": [
+      "A cash forecast describes timing and assumptions; it is not a profit forecast, loan decision, or guarantee.",
+      "Keep restricted, escrowed, or otherwise unavailable cash separate from deployable operating cash.",
+      "If the downside case crosses an operating threshold, escalate early and evaluate operational responses and qualified advice."
+    ],
+    "failureModes": [
+      "Using accrual revenue as a receipt date.",
+      "Updating assumptions without preserving actual-versus-forecast variances.",
+      "Using one optimistic collection date for all receivables."
+    ],
+    "checklist": [
+      "Opening cash ties to the bank reconciliation.",
+      "All 13 weeks roll forward mathematically.",
+      "Receipts and payments have source notes.",
+      "Base and downside assumptions are explicit.",
+      "Actuals replace completed weeks every review.",
+      "The lowest projected cash week has an owner and next action."
+    ],
+    "example": {
+      "title": "Hypothetical three-week rollforward",
+      "disclosure": "Illustrative figures only. Amounts are made up to demonstrate the rollforward, not expected business results.",
+      "rows": [
+        {
+          "label": "Opening cash",
+          "value": "$18,000"
+        },
+        {
+          "label": "Week 1: $12,000 receipts - $14,000 payments",
+          "value": "$16,000 closing cash"
+        },
+        {
+          "label": "Week 2: $8,000 receipts - $15,000 payments",
+          "value": "$9,000 closing cash"
+        },
+        {
+          "label": "Week 3: $16,000 receipts - $11,000 payments",
+          "value": "$14,000 closing cash"
+        }
+      ]
+    },
+    "relatedRoutes": [
+      "/cash-flow-forecast",
+      "/cash-flow-analysis",
+      "/improve-cash-flow"
+    ],
+    "sources": [
+      {
+        "label": "SBA: Manage your finances",
+        "href": "https://www.sba.gov/counseling/manage-your-business/",
+        "context": "Background on bookkeeping and cash-flow projections."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Cash Flow",
+        "route": "/playbooks#cash-flow"
+      }
+    ]
+  },
+  {
+    "id": "verify-business-credit-records",
+    "route": "/playbooks/business-credit/verify-business-credit-records",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/business-credit/verify-business-credit-records",
+    "title": "Verify Business Credit Foundations",
+    "metaTitle": "Verify Business Credit Foundations | Distilled Solutions",
+    "metaDescription": "Check business identity, available files, account entries, and reporting claims against records before making credit-building decisions.",
+    "summary": "Check business identity, available files, account entries, and reporting claims against records before making credit-building decisions.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "business-credit",
+    "categoryTitle": "Business Credit",
+    "audience": "Owners and operators who want to understand what is documented, what appears on available business-credit files, and what still needs independent verification.",
+    "outcome": "Leave with a source-linked record checklist and a discrepancy log that distinguishes verified facts, unresolved questions, and confirmed errors.",
+    "triggers": [
+      "Business information differs between state records, tax records, bank records, invoices, or credit files.",
+      "A vendor or product claims to report payment history, but bureau coverage or reporting conditions are unclear.",
+      "An operator is considering an account or dispute based on a score, file entry, or marketing claim that has not been checked."
+    ],
+    "evidence": [
+      "Current formation or registration records and official business name details.",
+      "Business identifiers held privately by the owner; do not enter them into this tool or share them in an unsecured worksheet.",
+      "Business contact information from records the operator controls.",
+      "Available business-credit reports and dated account statements.",
+      "Current written reporting terms from each provider, including bureaus and account conditions."
+    ],
+    "steps": [
+      {
+        "title": "Set a private evidence folder",
+        "action": "Create a restricted-access folder for the business records, report copies, provider terms, and correspondence used in this review. Keep identifiers and reports out of public tools, email threads with broad access, and unsecured notes.",
+        "completeWhen": "The folder has an owner, access boundary, naming convention, and record date."
+      },
+      {
+        "title": "Compare identity records",
+        "action": "Compare the legal name, registration status, address or contact details where applicable, and other business facts across current official records and records the business controls. Record each mismatch and its source rather than choosing a value from memory.",
+        "completeWhen": "Every material mismatch has a primary source, correction owner, and follow-up date."
+      },
+      {
+        "title": "Review available business-credit files",
+        "action": "Use the current official access process for each relevant bureau or provider. Compare business identifiers and listed accounts with original statements; mark inaccessible files and unmatched entries as unresolved instead of treating absence as proof.",
+        "completeWhen": "The review log shows which files were checked, when, and what could not be accessed."
+      },
+      {
+        "title": "Verify account reporting claims",
+        "action": "Ask the provider for current written details about what is reported, to which business-credit bureau, under what account status or timing conditions, and how corrections are handled. Compare those claims with available reports after the applicable reporting period rather than relying on product labels.",
+        "completeWhen": "Each claim is labeled observed, confirmed in current writing, unresolved, or contradicted by available evidence."
+      },
+      {
+        "title": "Handle verified discrepancies carefully",
+        "action": "Save a copy of the relevant report and source record, contact the reporting source using its current official process, and track submission dates and responses. Ask a qualified professional when a disputed identity, legal, or financial issue needs advice.",
+        "completeWhen": "A discrepancy has a complete evidence packet, current status, response date, and next owner."
+      }
+    ],
+    "decisionCriteria": [
+      "An account label or vendor promise does not establish that any bureau has received or published a trade reference.",
+      "An unavailable report or missing account entry is an unresolved question unless the relevant source confirms what it means.",
+      "Only change a business record after checking the controlling source and retaining the correction evidence."
+    ],
+    "failureModes": [
+      "Sharing EIN values, report credentials, account numbers, or private reports in an unsecured checklist.",
+      "Treating a marketing claim as verified bureau reporting.",
+      "Opening or paying for an account solely to create a presumed reporting entry."
+    ],
+    "checklist": [
+      "Identity fields are compared to current source records.",
+      "Each checked file has a review date and access method.",
+      "Reported accounts are matched to statements.",
+      "Reporting claims have written evidence and conditions.",
+      "Unknown items remain explicitly unresolved.",
+      "Disputes have documentation and follow-up owners."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/business-credit-readiness",
+      "/business-credit-roadmap",
+      "/fundability-check",
+      "/business-credit-monitoring"
+    ],
+    "sources": [
+      {
+        "label": "Experian: Correct or dispute business credit report items",
+        "href": "https://www.experian.com/small-business/business-credit-information",
+        "context": "Current bureau instructions for reviewing and disputing Experian business-report information; follow the bureau's live process."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Business Credit",
+        "route": "/playbooks#business-credit"
+      }
+    ]
+  },
+  {
+    "id": "evaluate-net-30-reporting",
+    "route": "/playbooks/business-credit/evaluate-net-30-reporting",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/business-credit/evaluate-net-30-reporting",
+    "title": "Evaluate Net-30 and Trade-Credit Offers",
+    "metaTitle": "Evaluate Net-30 and Trade-Credit Offers | Distilled Solutions",
+    "metaDescription": "Compare written payment terms, total cost, business fit, reporting evidence, and cancellation conditions before accepting a trade-credit offer.",
+    "summary": "Compare written payment terms, total cost, business fit, reporting evidence, and cancellation conditions before accepting a trade-credit offer.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "business-credit",
+    "categoryTitle": "Business Credit",
+    "audience": "Business buyers reviewing vendor or net-terms offers marketed as a way to build business credit or extend operating cash.",
+    "outcome": "Document whether the offer solves a real purchasing need, what it costs, what reporting is confirmed, and what conditions make the offer unsuitable.",
+    "triggers": [
+      "An offer emphasizes business-credit reporting but does not name the bureau or reporting conditions.",
+      "Fees, required purchases, subscriptions, guarantees, or renewal terms are not clear in one current written agreement.",
+      "The business is considering a vendor account it would not otherwise need."
+    ],
+    "evidence": [
+      "Current offer, application, agreement, fee schedule, and renewal/cancellation terms.",
+      "Ordinary vendor pricing and a comparable cash-purchase alternative.",
+      "Payment due date, late charges, return rules, and any personal guarantee language.",
+      "Written statement of bureau reporting scope and the account conditions that affect reporting.",
+      "A cash plan showing the obligation can be met under a slower-collection scenario."
+    ],
+    "steps": [
+      {
+        "title": "State the operating purchase need",
+        "action": "Write the item or service the business actually needs, the quantity, timing, and approved budget. Compare the offer with a realistic supplier or cash alternative so credit-building language does not substitute for business value.",
+        "completeWhen": "The purchase has a business purpose and a documented alternative price."
+      },
+      {
+        "title": "Translate terms into total cost",
+        "action": "List required purchases, membership fees, shipping, setup costs, interest or late charges, minimums, renewal terms, and cancellation steps. Calculate the cost across the time the business expects to use the offer, using current written terms.",
+        "completeWhen": "A reviewer can identify total expected cost, payment dates, and exit conditions from the documents."
+      },
+      {
+        "title": "Verify reporting without assumptions",
+        "action": "Ask which business-credit bureau receives information, which fields or payment events are sent, how often, and what account status or other conditions apply. Keep the claim unverified until current provider writing and an available business file support it.",
+        "completeWhen": "Reporting status is recorded as verified, unresolved, or not supported, with the source and date."
+      },
+      {
+        "title": "Check obligations and guarantees",
+        "action": "Read the agreement for due dates, dispute handling, return obligations, personal guarantees, data use, renewal, and termination. Route legal language to qualified counsel when its effect is unclear.",
+        "completeWhen": "A decision owner has resolved material term questions before accepting the offer."
+      },
+      {
+        "title": "Make a documented accept, defer, or decline decision",
+        "action": "Compare business need, total cost, cash timing, supplier reliability, and verified reporting facts. Record why the choice fits and what condition would trigger another review.",
+        "completeWhen": "The decision is documented without treating account opening as a required credit step."
+      }
+    ],
+    "decisionCriteria": [
+      "A reporting claim has value only if its bureau, content, timing, and conditions are sufficiently clear for the operator's purpose.",
+      "A credit product should not replace ordinary purchasing discipline or an affordability review.",
+      "If the account is useful only under unverified reporting assumptions, defer until the provider supplies current written terms."
+    ],
+    "failureModes": [
+      "Assuming every net-30 account reports to a business bureau.",
+      "Comparing only the headline price while ignoring mandatory subscriptions or minimums.",
+      "Missing guarantee, auto-renewal, late-fee, or cancellation language."
+    ],
+    "checklist": [
+      "The business would buy the goods or service without a credit-building claim.",
+      "Total cost and payment timing are written down.",
+      "Reporting bureau and conditions are verified or labeled unknown.",
+      "Guarantee and cancellation clauses are reviewed.",
+      "Payment capacity is checked against expected cash timing.",
+      "The decision and review trigger are recorded."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/business-credit-vendors",
+      "/net-30-vendors",
+      "/business-credit-readiness"
+    ],
+    "sources": [
+      {
+        "label": "Experian: Correct or dispute business credit report items",
+        "href": "https://www.experian.com/small-business/business-credit-information",
+        "context": "Use a bureau's own report and process to verify whether relevant information appears; it does not establish that a particular vendor reports."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Business Credit",
+        "route": "/playbooks#business-credit"
+      }
+    ]
+  },
+  {
+    "id": "funding-intake-audit",
+    "route": "/playbooks/automation/funding-intake-audit",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/automation/funding-intake-audit",
+    "title": "Audit a Funding Intake Workflow",
+    "metaTitle": "Audit a Funding Intake Workflow | Distilled Solutions",
+    "metaDescription": "Map intake entry points, consent, required information, duplicate handling, human review, handoffs, and exception queues before changing systems.",
+    "summary": "Map intake entry points, consent, required information, duplicate handling, human review, handoffs, and exception queues before changing systems.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "automation",
+    "categoryTitle": "Automation",
+    "audience": "Operations leaders and system owners responsible for borrower or partner intake who need to locate avoidable rework without automating financial decisions.",
+    "outcome": "Create a current-state map, an exception inventory, and one small improvement proposal with a clear data owner and human review point.",
+    "triggers": [
+      "The same request arrives through multiple forms, inboxes, spreadsheets, or partner channels.",
+      "Staff re-enter or reconcile key fields, or cannot tell who owns the next handoff.",
+      "An automation proposal would move application data without a documented consent, access, or exception path."
+    ],
+    "evidence": [
+      "List of current intake entry points and the organization owning each one.",
+      "Consent language, collection purpose, retention practice, and current access roles.",
+      "Field definitions showing which system is authoritative for each item.",
+      "A small sample of de-identified workflow events or wait-state counts.",
+      "Existing duplicate, incomplete, correction, and exception procedures."
+    ],
+    "steps": [
+      {
+        "title": "Map the request from entry to human owner",
+        "action": "Draw each intake channel, acknowledgment, validation, review, assignment, and exception handoff in order. Mark the system and role at each step, the wait state, and any manual copy or re-entry.",
+        "completeWhen": "A reviewer can trace one request through every handoff without guessing who acts next."
+      },
+      {
+        "title": "Define consent and collection purpose",
+        "action": "For each channel, record what notice or consent applies, what information is collected, why it is needed, who can access it, how corrections are handled, and the retention owner. Escalate missing or conflicting consent wording to the responsible privacy/legal owner.",
+        "completeWhen": "Each intake field and channel has a documented purpose and access owner."
+      },
+      {
+        "title": "Name field ownership and duplicate rules",
+        "action": "Create a field list with definition, required status, source of truth, validation rule, and update authority. Define how staff identify potential duplicates and what human review is required before records are combined.",
+        "completeWhen": "No identity or applicant record is merged automatically based only on a name or reused email."
+      },
+      {
+        "title": "Inventory incomplete and exception cases",
+        "action": "List missing documents, conflicting data, consent gaps, partner handoff failures, and requests that cannot be routed. For each, specify a queue, response owner, service expectation, and a safe way to pause processing.",
+        "completeWhen": "Every identified exception has an owner, status, next action, and escalation path."
+      },
+      {
+        "title": "Choose one reversible improvement",
+        "action": "Pick the most frequent or costly re-entry point that does not require automating eligibility or credit decisions. Define a small pilot, test cases, access boundaries, a rollback path, and a human quality check before any live data is connected.",
+        "completeWhen": "The pilot has a named approver, success measure, exception test, and rollback owner."
+      }
+    ],
+    "decisionCriteria": [
+      "Automate acknowledgments, validation, and task assignment only when consent, access, ownership, and exception paths are clear.",
+      "Keep eligibility, pricing, approval, denial, lender submission, and other financial decisions with authorized human decision-makers.",
+      "If record identity, consent, or system ownership is ambiguous, pause the automation design and resolve the control first."
+    ],
+    "failureModes": [
+      "Treating a completed form as consent for every later use.",
+      "Combining applicant records automatically based only on matching name or email.",
+      "Sending exceptions into an unowned queue with no visible pause or escalation."
+    ],
+    "checklist": [
+      "All intake channels and handoffs are mapped.",
+      "Consent, purpose, and access boundaries are documented.",
+      "Field definitions and source-of-truth owners are named.",
+      "Potential duplicates require human review.",
+      "Incomplete and exception paths have owners.",
+      "The proposed pilot is reversible and leaves financial decisions human-controlled."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/funding-workflow-automation",
+      "/funding-intake-automation",
+      "/document-collection-automation"
+    ],
+    "sources": [],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Automation",
+        "route": "/playbooks#automation"
+      }
+    ]
+  },
+  {
+    "id": "funding-follow-up-workflow",
+    "route": "/playbooks/automation/funding-follow-up-workflow",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/automation/funding-follow-up-workflow",
+    "title": "Build a Funding Follow-Up Workflow",
+    "metaTitle": "Build a Funding Follow-Up Workflow | Distilled Solutions",
+    "metaDescription": "Set stage definitions, owners, status rules, communication checkpoints, and escalation paths for funding-related follow-up.",
+    "summary": "Set stage definitions, owners, status rules, communication checkpoints, and escalation paths for funding-related follow-up.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "automation",
+    "categoryTitle": "Automation",
+    "audience": "Operations teams coordinating document requests, status updates, and next actions across staff, partners, and business owners.",
+    "outcome": "Leave with a short stage map and follow-up standard that reduces dropped tasks while keeping consent, judgment, and financial decisions with people.",
+    "triggers": [
+      "Staff cannot tell whether a request is waiting on the business, an internal review, or a partner response.",
+      "Follow-up timing varies by person and undocumented promises are mistaken for completed actions.",
+      "A proposed sequence sends repeated or sensitive messages without an owner checking context and consent."
+    ],
+    "evidence": [
+      "Current stage labels and definitions used in daily work.",
+      "Who owns each stage, response, escalation, and exception.",
+      "Existing consent and communication preferences.",
+      "Document request list with purpose and completeness criteria.",
+      "Examples of stalled or reopened cases with personal details removed."
+    ],
+    "steps": [
+      {
+        "title": "Define stages by observable state",
+        "action": "Choose a small set of stages such as received, needs review, waiting on business, waiting on partner, in human review, paused, and closed. Define what evidence moves a request forward and what action reopens it.",
+        "completeWhen": "Two staff members would assign the same example request to the same stage."
+      },
+      {
+        "title": "Assign a single next-action owner",
+        "action": "For every active stage, name the role responsible for the next action, due date, communication channel, and exception recipient. Add a backup role for absence or an overdue high-impact action.",
+        "completeWhen": "Every open item has one accountable owner and a dated next step."
+      },
+      {
+        "title": "Set consent-aware checkpoints",
+        "action": "Define when the team sends an acknowledgment, a missing-item request, a progress update, and a closure message. Use approved language, respect communication preferences, and require a human to check whether a message is still accurate before sending.",
+        "completeWhen": "Each checkpoint has a purpose, approved channel, consent condition, and review owner."
+      },
+      {
+        "title": "Specify escalation and pause rules",
+        "action": "Set internal triggers for overdue actions, conflicting records, sensitive requests, and partner delays. A pause must preserve current status and explain what evidence or authorization is needed to resume.",
+        "completeWhen": "Staff can route a stalled item to a named role without implying an outcome or eligibility decision."
+      },
+      {
+        "title": "Review exceptions and stale work",
+        "action": "At a recurring operations review, inspect only status, age, owner, next action, and exception reason. Correct stale records through the approved system process and document whether the workflow rule needs adjustment.",
+        "completeWhen": "The review produces assigned actions and does not treat stale inventory as active opportunity or approval."
+      }
+    ],
+    "decisionCriteria": [
+      "Use status automation for reminders and task assignment only after stage and ownership rules are tested.",
+      "Do not send a message that asserts approval, eligibility, pricing, or lender action unless an authorized person has verified that fact.",
+      "If consent or communication preference is missing, route the case to a human review rather than increasing message frequency."
+    ],
+    "failureModes": [
+      "Creating too many stages that no one uses consistently.",
+      "Automating repeated messages without checking consent, context, or a recent response.",
+      "Using a generic overdue label without assigning who resolves the blocker."
+    ],
+    "checklist": [
+      "Every stage has an observable entry and exit condition.",
+      "Each active request has one owner and a dated next action.",
+      "Communication checkpoints are purpose- and consent-aware.",
+      "Pause, exception, backup, and escalation paths are named.",
+      "Financial outcomes stay with authorized human reviewers.",
+      "Stale work is reviewed and closed or reassigned with evidence."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/funding-workflow-automation",
+      "/funding-follow-up-automation",
+      "/automate-my-funding"
+    ],
+    "sources": [],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Automation",
+        "route": "/playbooks#automation"
+      }
+    ]
+  },
+  {
+    "id": "inventory-cash-gap-plan",
+    "route": "/playbooks/growth/inventory-cash-gap-plan",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/growth/inventory-cash-gap-plan",
+    "title": "Plan an Inventory Cash Gap",
+    "metaTitle": "Plan an Inventory Cash Gap | Distilled Solutions",
+    "metaDescription": "Compare supplier payments, lead times, sell-through, gross contribution, and collection timing before committing cash to an inventory cycle.",
+    "summary": "Compare supplier payments, lead times, sell-through, gross contribution, and collection timing before committing cash to an inventory cycle.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "growth",
+    "categoryTitle": "Growth",
+    "audience": "Retailers, distributors, manufacturers, and other operators who must fund inventory before the related customer cash is collected.",
+    "outcome": "Build a purchase-cycle worksheet that shows cash committed, expected recovery timing, downside exposure, and the evidence required before ordering.",
+    "triggers": [
+      "A supplier deposit or full payment is due before inventory can be sold or delivered.",
+      "The team is using past sell-through as a guarantee for the next order despite changing demand or lead times.",
+      "A large purchase overlaps with payroll, taxes, debt service, or customer collection delays."
+    ],
+    "evidence": [
+      "Supplier quote, payment schedule, minimum order, lead time, and cancellation or return terms.",
+      "Unit landed cost including freight, duties, handling, and expected spoilage or shrink where relevant.",
+      "Recent sales by product and period, returns, backorders, and inventory on hand.",
+      "Expected customer collection date and any deposit or marketplace settlement timing.",
+      "Cash forecast including ordinary operating obligations during the purchase cycle."
+    ],
+    "steps": [
+      {
+        "title": "Map the inventory cycle dates",
+        "action": "Record deposit, production, shipment, receipt, sell-through, invoicing, customer collection, and reorder dates. Use the supplier's current written terms and realistic operating dates, not one expected delivery date.",
+        "completeWhen": "The cash-out and cash-recovery dates are visible on one timeline."
+      },
+      {
+        "title": "Calculate total cash committed",
+        "action": "Add purchase price, freight, duties, insurance, handling, storage, expected returns, and any deposits or minimums. Separate recoverable deposits and uncertain costs rather than hiding them in a single unit number.",
+        "completeWhen": "The purchase has a documented total cash requirement and source evidence."
+      },
+      {
+        "title": "Test sell-through and collection assumptions",
+        "action": "Use recent comparable product or customer evidence, then write down changes in season, price, channel, returns, and demand. Convert units sold into dated collections after processing, invoice terms, and customer payment behavior.",
+        "completeWhen": "The sales-to-cash path is explicit and unconfirmed demand is a separate scenario."
+      },
+      {
+        "title": "Compare timing and downside exposure",
+        "action": "Roll weekly cash through the purchase and collection period. Test slower sales, lower price, delayed shipment, returns, and late collections one at a time; identify cash trapped in inventory if the plan misses.",
+        "completeWhen": "The low cash week and inventory exposure under each case are documented."
+      },
+      {
+        "title": "Set a purchase decision gate",
+        "action": "Choose the evidence and operating limit required before approval, such as verified demand, supplier terms, storage capacity, and cash after fixed obligations. Assign an approver and define when to reduce, defer, or split the order.",
+        "completeWhen": "A named decision owner can approve, resize, defer, or decline against documented conditions."
+      }
+    ],
+    "decisionCriteria": [
+      "Strong historical sell-through does not establish future demand; verify current order signals and changed conditions.",
+      "The purchase should leave a workable plan for fixed obligations and expected delays under a downside scenario.",
+      "Supplier financing or other capital options must be compared using written cost, timing, guarantees, and repayment terms."
+    ],
+    "failureModes": [
+      "Using order revenue instead of gross contribution and collected cash.",
+      "Ignoring freight, returns, storage, spoilage, or a supplier minimum.",
+      "Treating a supplier delivery estimate or customer forecast as guaranteed."
+    ],
+    "checklist": [
+      "All supplier payment and delivery terms are current and written.",
+      "Total landed cash cost is calculated.",
+      "On-hand inventory and comparable sell-through are checked.",
+      "Collection timing is modeled separately from revenue.",
+      "A slower-sales and delay case is visible.",
+      "The order has an approver, resize rule, and stop condition."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/inventory-cash-flow",
+      "/working-capital-gap",
+      "/cash-flow-forecast",
+      "/finance-business-growth"
+    ],
+    "sources": [
+      {
+        "label": "SBA: Manage your finances",
+        "href": "https://www.sba.gov/counseling/manage-your-business/",
+        "context": "General support for bookkeeping and evaluating money-in and money-out."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Growth",
+        "route": "/playbooks#growth"
+      }
+    ]
+  },
+  {
+    "id": "expansion-funding-readiness",
+    "route": "/playbooks/growth/expansion-funding-readiness",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/growth/expansion-funding-readiness",
+    "title": "Assess Expansion Funding Readiness",
+    "metaTitle": "Assess Expansion Funding Readiness | Distilled Solutions",
+    "metaDescription": "Organize expansion sources and uses, operating assumptions, milestones, runway, downside cases, and decision timing before financing discussions.",
+    "summary": "Organize expansion sources and uses, operating assumptions, milestones, runway, downside cases, and decision timing before financing discussions.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "growth",
+    "categoryTitle": "Growth",
+    "audience": "Owners planning a location, equipment, hiring, capacity, or market expansion who need a documented operating case before choosing how to fund it.",
+    "outcome": "Produce a reviewable expansion brief with itemized uses, staged milestones, cash needs, downside conditions, and unresolved questions for qualified advisors.",
+    "triggers": [
+      "The proposed expansion budget is a single round number without a dated sources-and-uses list.",
+      "Expected revenue starts later than hiring, lease, equipment, or inventory costs.",
+      "The owner is comparing funding options before testing capacity and downside assumptions."
+    ],
+    "evidence": [
+      "Quotes, lease or purchase terms, hiring plan, permits, and vendor lead times.",
+      "Current financial statements reconciled to source records and a near-term cash forecast.",
+      "Demand evidence, capacity constraints, and assumptions behind expected revenue.",
+      "Itemized one-time and recurring uses with timing and contingencies.",
+      "Existing debt, guarantees, covenants, and planned owner contributions if applicable."
+    ],
+    "steps": [
+      {
+        "title": "Define the expansion and measurable milestone",
+        "action": "Describe what changes operationally, what customer or capacity problem it addresses, and the evidence that would show the first stage is working. Separate the owner's goal from a revenue or value claim that has not been verified.",
+        "completeWhen": "The scope, accountable operator, first milestone, and review date are written down."
+      },
+      {
+        "title": "Build dated sources and uses",
+        "action": "List equipment, buildout, deposits, inventory, hiring, training, technology, professional fees, and operating cash by due date. List each proposed source separately and mark whether it is confirmed, available, conditional, or still hypothetical.",
+        "completeWhen": "Every material use has an amount source and timing; unconfirmed sources are clearly labeled."
+      },
+      {
+        "title": "Test operating assumptions and capacity",
+        "action": "Document expected volume, price, ramp time, staffing, throughput, customer retention, and dependencies. Compare assumptions with current records, supplier or customer evidence, and the people who must run the added operation.",
+        "completeWhen": "Each material assumption has evidence, an owner, and a question that would change the case."
+      },
+      {
+        "title": "Model runway and downside cases",
+        "action": "Extend the cash forecast through the expansion ramp and obligations. Test a delayed opening, lower early demand, cost overrun, or slower collection separately and show which commitments are reversible.",
+        "completeWhen": "The low cash point, repayment or fixed obligation exposure, and stop/resize options are visible."
+      },
+      {
+        "title": "Set stage gates before committing",
+        "action": "Break the plan into decision stages such as diligence, permitting, deposit, hiring, opening, and scale. Define evidence, authority, budget, and a pause condition for each. Have qualified professionals review legal, tax, financing, and contract questions.",
+        "completeWhen": "A named approver can release, defer, resize, or stop each stage based on written criteria."
+      }
+    ],
+    "decisionCriteria": [
+      "Sources and uses should reconcile by amount and date, with contingency assumptions visible.",
+      "Do not rely on an unverified loan amount, approval probability, lender threshold, or revenue guarantee.",
+      "If a downside case creates an unmanageable fixed obligation or runway gap, resize or defer and review operating alternatives."
+    ],
+    "failureModes": [
+      "Counting conditional financing or grants as committed cash.",
+      "Ignoring opening delays, ramp costs, training, or working capital after launch.",
+      "Starting the expansion before one person owns operating capacity and milestone tracking."
+    ],
+    "checklist": [
+      "The expansion scope and operator are named.",
+      "Uses and sources are itemized and dated.",
+      "Revenue and capacity assumptions have evidence notes.",
+      "Downside cases and reversibility are modeled.",
+      "Decision gates have approvers and stop conditions.",
+      "Legal, tax, and financing terms are routed for qualified review."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/fund-an-expansion",
+      "/finance-business-growth",
+      "/funding-readiness",
+      "/cash-flow-forecast"
+    ],
+    "sources": [
+      {
+        "label": "SBA: Plan your business",
+        "href": "https://www.sba.gov/counseling/plan-your-business/",
+        "context": "SBA guidance on business planning, funding requests, and financial projections; it does not establish lender approval criteria."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Growth",
+        "route": "/playbooks#growth"
+      }
+    ]
+  },
+  {
+    "id": "month-end-financeops-checklist",
+    "route": "/playbooks/financial-operations/month-end-financeops-checklist",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/financial-operations/month-end-financeops-checklist",
+    "title": "Build a Month-End FinanceOps Checklist",
+    "metaTitle": "Build a Month-End FinanceOps Checklist | Distilled Solutions",
+    "metaDescription": "Close the month with reconciled accounts, a reviewed cash position, receivables and payables follow-up, clear exceptions, and assigned next-month actions.",
+    "summary": "Close the month with reconciled accounts, a reviewed cash position, receivables and payables follow-up, clear exceptions, and assigned next-month actions.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "financial-operations",
+    "categoryTitle": "Financial Operations",
+    "audience": "Small-business owners, bookkeepers, and finance operations leads who need a repeatable close routine matched to their systems and available staff.",
+    "outcome": "Create a dated close checklist with evidence links, reviewer sign-off, open exceptions, and next-period actions without implying that one timeline fits every business.",
+    "triggers": [
+      "Reports are issued with unreconciled bank, card, payment processor, or balance-sheet accounts.",
+      "Leadership sees profit reporting but does not know what cash is available or due next.",
+      "Open receivables, payables, payroll, or tax items are missing owners or follow-up dates."
+    ],
+    "evidence": [
+      "Bank, credit-card, processor, loan, and other account statements for the period.",
+      "General ledger, trial balance, subledgers, and source transaction records.",
+      "Open invoice aging, customer disputes, vendor bills, and payment approvals.",
+      "Payroll, tax, inventory, fixed-asset, and journal-entry support appropriate to the business.",
+      "Prior close checklist and unresolved exceptions."
+    ],
+    "steps": [
+      {
+        "title": "Set cutoff and assign close owners",
+        "action": "Choose a period cutoff and list each account or schedule to reconcile. Assign preparer, reviewer, due date, and substitute owner; scale the scope to the business and have the accountant define any required reporting or tax treatment.",
+        "completeWhen": "Each close task has one preparer, reviewer where practical, and due date."
+      },
+      {
+        "title": "Reconcile cash and key balances",
+        "action": "Match bank, card, processor, debt, payroll, and other material balance-sheet accounts to statements and source records. Explain timing items, stale checks, transfers, and adjustments; attach evidence to the relevant reconciliation.",
+        "completeWhen": "Material balances tie or have a documented exception with an owner and resolution date."
+      },
+      {
+        "title": "Review receivables, payables, and obligations",
+        "action": "Review aged invoices, disputes, unapplied cash, vendor bills, recurring commitments, payroll, and tax dates. Confirm payment status from source records and assign the next collection or approval action.",
+        "completeWhen": "Every material overdue or upcoming item has a verified status and accountable next action."
+      },
+      {
+        "title": "Review results and exceptions",
+        "action": "Compare actuals with the prior period, budget, or forecast using consistent definitions. Investigate unusual movements and missing records before explaining them; do not make unsupported causal claims from one variance.",
+        "completeWhen": "Significant variances and unresolved exceptions include evidence, reviewer, and follow-up."
+      },
+      {
+        "title": "Set next-month actions and lock the record",
+        "action": "Summarize cash position and near-term obligations for authorized readers, list changes needed to the forecast or controls, and preserve the close package under the organization's retention policy. Reopen only through a documented adjustment process.",
+        "completeWhen": "A reviewer signs off the package and each next-month action has an owner and date."
+      }
+    ],
+    "decisionCriteria": [
+      "A close is complete when required reconciliations and review steps are evidenced, not merely when a report is exported.",
+      "Materiality, timing, tax treatment, and reporting requirements vary; confirm them with the responsible accountant or professional.",
+      "Use access controls and a clear adjustment process when evidence changes after close."
+    ],
+    "failureModes": [
+      "Posting a reconciliation difference to an unexplained catch-all account.",
+      "Treating an aging report as proof that an invoice is collectible or a payable is approved.",
+      "Changing locked-period figures without a traceable review record."
+    ],
+    "checklist": [
+      "The period cutoff and task owners are set.",
+      "Cash, processor, debt, and material balance-sheet accounts reconcile.",
+      "Receivable disputes and payable commitments have owners.",
+      "Payroll, tax, inventory, and journal entries have appropriate support.",
+      "Variances and exceptions have evidence and reviewer notes.",
+      "The close package and next-month actions are approved and retained."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/financial-operations",
+      "/financial-reporting",
+      "/cash-flow-analysis"
+    ],
+    "sources": [
+      {
+        "label": "IRS: Recordkeeping",
+        "href": "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "context": "IRS overview of business records that support financial statements, income, expenses, and tax reporting. Retention requirements depend on the record and situation."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Financial Operations",
+        "route": "/playbooks#financial-operations"
+      }
+    ]
+  },
+  {
+    "id": "financial-controls-for-small-business",
+    "route": "/playbooks/financial-operations/financial-controls-for-small-business",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/financial-operations/financial-controls-for-small-business",
+    "title": "Establish Small-Business Financial Controls",
+    "metaTitle": "Establish Small-Business Financial Controls | Distilled Solutions",
+    "metaDescription": "Assign approval responsibilities, system access, reconciliations, recordkeeping, and exception handling at a level the business can maintain.",
+    "summary": "Assign approval responsibilities, system access, reconciliations, recordkeeping, and exception handling at a level the business can maintain.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "financial-operations",
+    "categoryTitle": "Financial Operations",
+    "audience": "Owners and operators who need to reduce avoidable payment and recordkeeping errors while matching controls to a small team's size and risk.",
+    "outcome": "Document a practical control map with named owners, access boundaries, compensating reviews, and evidence for periodic checks.",
+    "triggers": [
+      "One person can create a vendor, approve an invoice, release payment, and reconcile the account without a second review.",
+      "Former staff, contractors, or shared credentials still have access to financial systems.",
+      "Payment changes, refunds, journal entries, or exceptions are resolved without a retained approval trail."
+    ],
+    "evidence": [
+      "List of bank, payroll, accounting, payment, and expense systems with authorized users.",
+      "Current approval thresholds and roles, if any, plus vendor onboarding procedures.",
+      "Recent payment, refund, access change, and reconciliation samples.",
+      "Record storage, backup, retention, and exception escalation practices.",
+      "Team size and role constraints that affect separation of responsibilities."
+    ],
+    "steps": [
+      {
+        "title": "List money movement and record changes",
+        "action": "Map how vendors are added, invoices approved, payments released, refunds made, payroll changed, journals posted, bank details updated, and periods closed. Note who initiates, approves, executes, and reviews each action.",
+        "completeWhen": "The owner can trace each material money movement and financial record change."
+      },
+      {
+        "title": "Set role-based access and approval",
+        "action": "Give each person only the access needed for assigned work. Separate initiation, approval, release, and reconciliation where the team allows; where it does not, name a documented owner review or independent statement review as a compensating check.",
+        "completeWhen": "Each system has an access owner, current user list, and practical approval boundary."
+      },
+      {
+        "title": "Protect sensitive changes",
+        "action": "Require a known-channel confirmation for vendor bank-detail changes, payment destination changes, new payees, and unusual refunds. Preserve who verified the request, what source they used, and who authorized the change.",
+        "completeWhen": "High-risk changes have a second confirmation step and retained evidence."
+      },
+      {
+        "title": "Define exceptions and corrections",
+        "action": "Create a route for duplicate invoices, missing approvals, unexpected differences, access incidents, and suspected fraud. Pause affected activity, preserve evidence, tell the accountable owner, and record resolution and any required professional or bank contact.",
+        "completeWhen": "Staff know where to send an exception and who can authorize resumption."
+      },
+      {
+        "title": "Review access and control evidence",
+        "action": "At a cadence suited to activity and risk, review active users, approval evidence, reconciliations, unresolved exceptions, and control overrides. Record what changed and assign remediation; do not treat this guide as a legal or regulatory control standard.",
+        "completeWhen": "A dated reviewer record shows findings, actions, and any accepted limitation."
+      }
+    ],
+    "decisionCriteria": [
+      "Controls should match transaction risk, system capability, staff size, and the business's professional obligations.",
+      "If role separation is impossible, use an independent compensating review that leaves evidence.",
+      "Ask legal, tax, audit, banking, or security professionals to interpret requirements that depend on the entity or industry."
+    ],
+    "failureModes": [
+      "Sharing credentials to avoid setting up appropriate user access.",
+      "Approving a change using only the contact information included in the change request itself.",
+      "Writing a policy that the team cannot follow and has no one assigned to review."
+    ],
+    "checklist": [
+      "Financial workflows show who initiates, approves, releases, and reviews.",
+      "Access is assigned to individual users and reviewed.",
+      "High-risk payment changes require independent confirmation.",
+      "Small-team limitations have documented compensating reviews.",
+      "Exception and incident paths name an owner.",
+      "Control evidence and remediation are retained."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/financial-operations",
+      "/payment-operations",
+      "/expense-management"
+    ],
+    "sources": [
+      {
+        "label": "IRS: Recordkeeping",
+        "href": "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "context": "IRS guidance explains that the chosen recordkeeping system should clearly show income and expenses; it does not prescribe this playbook's approval controls."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Financial Operations",
+        "route": "/playbooks#financial-operations"
+      }
+    ]
+  },
+  {
+    "id": "buyer-readiness-checklist",
+    "route": "/playbooks/acquisitions/buyer-readiness-checklist",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/acquisitions/buyer-readiness-checklist",
+    "title": "Business Acquisition Buyer Readiness",
+    "metaTitle": "Business Acquisition Buyer Readiness | Distilled Solutions",
+    "metaDescription": "Prepare target criteria, operator capacity, capital planning, diligence scope, advisor responsibilities, and decision gates before pursuing a business…",
+    "summary": "Prepare target criteria, operator capacity, capital planning, diligence scope, advisor responsibilities, and decision gates before pursuing a business purchase.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "acquisitions",
+    "categoryTitle": "Acquisitions",
+    "audience": "Prospective individual or company buyers who want a structured search and diligence plan before making a nonbinding or binding commitment.",
+    "outcome": "Leave with a buyer brief, a list of unverified assumptions, a diligence workplan, and explicit gates for continuing, renegotiating, or stopping.",
+    "triggers": [
+      "A buyer is evaluating a business based mainly on seller materials, an asking price, or a verbal earnings claim.",
+      "Target criteria and operating responsibilities are not defined before a search begins.",
+      "Capital, working capital, transition support, or diligence costs are absent from the plan."
+    ],
+    "evidence": [
+      "Buyer goals, time commitment, sector or geography criteria, and operator experience.",
+      "Available capital sources and uses, including diligence, transaction, and post-close working capital assumptions.",
+      "A target's financial statements, tax records, contracts, employee, customer, and operating records as authorized.",
+      "Transaction structure, asset/liability scope, lease, permits, and transition assumptions for professional review.",
+      "A diligence calendar with advisor owners and decision dates."
+    ],
+    "steps": [
+      {
+        "title": "Write target and walk-away criteria",
+        "action": "Define the operating role, business model, customer or geographic fit, owner time, and maximum acceptable complexity. State non-negotiable legal, ethical, concentration, or record-quality issues that end a review.",
+        "completeWhen": "A one-page brief lets the buyer reject a mismatched target before spending heavily on diligence."
+      },
+      {
+        "title": "Test operator and transition capacity",
+        "action": "Map who will run sales, staffing, finance, compliance, service delivery, and systems after closing. Identify skills or capacity gaps and what transition support must be discussed with the seller.",
+        "completeWhen": "Every critical operating responsibility has a current or planned owner."
+      },
+      {
+        "title": "Build sources, uses, and cash needs",
+        "action": "List purchase consideration, fees, diligence, taxes where advised, working capital, inventory, repairs, hiring, and transition costs by timing. Separate confirmed funds from conditional or hypothetical sources and model downside cash needs.",
+        "completeWhen": "A dated source-and-use map includes post-close operating cash and open financing questions."
+      },
+      {
+        "title": "Assign diligence by evidence owner",
+        "action": "Create workstreams for financial, tax, legal, commercial, customer, employee, technology, asset, contract, and regulatory questions as relevant. Assign a qualified advisor or internal owner, source requested, review date, and issue log for each.",
+        "completeWhen": "Each material claim can be traced to a record and a reviewer who is competent to assess it."
+      },
+      {
+        "title": "Set decision gates and preserve options",
+        "action": "Use gates for initial fit, record access, diligence findings, financing terms, definitive agreements, and closing readiness. Require professional review of binding documents and define what unresolved finding triggers a pause or revised terms.",
+        "completeWhen": "The buyer can explain what evidence supports proceeding and what condition would stop or change the transaction."
+      }
+    ],
+    "decisionCriteria": [
+      "A seller-provided statement is an input to diligence, not verified performance.",
+      "Purchase price, financing availability, transferability, and legal obligations require transaction-specific professional review.",
+      "A target should fit operator capacity and post-close cash needs under a downside case, not only an optimistic projection."
+    ],
+    "failureModes": [
+      "Committing before reviewing source records and key contracts.",
+      "Treating financing discussions or indicative interest as committed funds.",
+      "Underestimating transition, working-capital, employee, or customer-retention dependencies."
+    ],
+    "checklist": [
+      "Target criteria and walk-away rules are documented.",
+      "Operating roles and transition needs are mapped.",
+      "Sources and uses include fees and post-close cash.",
+      "Diligence workstreams have advisors, evidence, and owners.",
+      "Material claims are checked against source records.",
+      "Decision gates and stop conditions are explicit."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/buy-a-business",
+      "/business-acquisition-readiness",
+      "/due-diligence",
+      "/deal-analysis"
+    ],
+    "sources": [
+      {
+        "label": "SBA: Plan your business",
+        "href": "https://www.sba.gov/counseling/plan-your-business/",
+        "context": "SBA information about planning and buying an existing business; transaction diligence still requires case-specific review."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Acquisitions",
+        "route": "/playbooks#acquisitions"
+      }
+    ]
+  },
+  {
+    "id": "seller-due-diligence-prep",
+    "route": "/playbooks/acquisitions/seller-due-diligence-prep",
+    "canonicalUrl": "https://solutions.distilledfunding.com/playbooks/acquisitions/seller-due-diligence-prep",
+    "title": "Seller Due Diligence Preparation",
+    "metaTitle": "Seller Due Diligence Preparation | Distilled Solutions",
+    "metaDescription": "Organize financial and operating records, contracts, ownership information, dependencies, and transition questions for a controlled sale process.",
+    "summary": "Organize financial and operating records, contracts, ownership information, dependencies, and transition questions for a controlled sale process.",
+    "status": "review",
+    "indexStatus": "noindex",
+    "lastReviewed": null,
+    "provenance": {
+      "canonicalSource": "Solutions Playbooks v1",
+      "sourceFile": "data/solutions/catalog.json",
+      "treatment": "manual",
+      "notes": "New editorial content is review-required and noindex until source and editorial approval are recorded."
+    },
+    "kind": "playbook",
+    "categoryId": "acquisitions",
+    "categoryTitle": "Acquisitions",
+    "audience": "Business owners considering a sale who want to identify record gaps and protect confidential information before responding to buyer requests.",
+    "outcome": "Create an indexed readiness folder, a disclosure issue log, an access protocol, and an advisor-led plan for responding to diligence requests.",
+    "triggers": [
+      "A buyer or broker is requesting records and the seller is unsure which version is complete or current.",
+      "Financial results depend on undocumented owner add-backs, customer relationships, or key employees.",
+      "Confidential employee, customer, vendor, or contract information may be shared without an access plan."
+    ],
+    "evidence": [
+      "Period-matched financial statements, tax returns, bank reconciliations, and supporting ledgers.",
+      "Ownership, entity, license, property, insurance, debt, and contract records as applicable.",
+      "Customer and supplier concentration, recurring revenue terms, employee roles, and operating procedures.",
+      "List of open disputes, liabilities, renewals, pending obligations, and known record discrepancies.",
+      "Advisor-approved confidentiality and secure document access process."
+    ],
+    "steps": [
+      {
+        "title": "Assign a controlled document owner",
+        "action": "Name who maintains the source index, approves release, and coordinates with legal, tax, accounting, and transaction advisors. Establish secure storage, role-based access, version history, and a process for withdrawing access.",
+        "completeWhen": "Every requested item has one owner and access is limited to approved participants."
+      },
+      {
+        "title": "Reconcile financial records by period",
+        "action": "Organize statements, tax returns, bank activity, general ledger, debt, payroll, and major contracts by matching period. Document differences, amended filings, nonrecurring items, and unsupported adjustments for advisor review rather than rewriting source records.",
+        "completeWhen": "The index points to source documents and each material reconciliation issue is logged."
+      },
+      {
+        "title": "Map operational dependencies",
+        "action": "Document key customers, suppliers, employees, systems, licenses, real estate, equipment, and owner-held knowledge. Note contract assignment or change-of-control questions for legal review and identify transition support that may be required.",
+        "completeWhen": "Material dependencies have a current owner, source record, and transfer question."
+      },
+      {
+        "title": "Create an issue and request log",
+        "action": "For each buyer request, record scope, date received, owner, approved response, source version, access granted, open question, and response date. Log known problems consistently and route disclosure decisions to qualified counsel.",
+        "completeWhen": "No request is answered from memory or by an untracked file attachment."
+      },
+      {
+        "title": "Prepare a transition and access plan",
+        "action": "Separate information needed for evaluation from information needed after closing. Agree with advisors on redaction, staged access, employee/customer notification timing, and any transition services before sharing sensitive material.",
+        "completeWhen": "A written access plan protects confidential records and identifies approvals before release."
+      }
+    ],
+    "decisionCriteria": [
+      "Preparation does not promise a sale, price, or buyer outcome; it makes evidence and open questions easier to review.",
+      "Do not alter or destroy source business records to make them appear more consistent.",
+      "Use qualified legal, tax, and transaction professionals to decide disclosure, privilege, transfer, and retention issues."
+    ],
+    "failureModes": [
+      "Sending unredacted sensitive files through an unapproved channel.",
+      "Creating unsupported earnings adjustments or silently replacing source records.",
+      "Sharing customer, employee, or contract information before access and confidentiality terms are reviewed."
+    ],
+    "checklist": [
+      "A single owner maintains the data-room index.",
+      "Financial records reconcile by period or show an issue note.",
+      "Ownership, contracts, obligations, and dependencies are inventoried.",
+      "Requests, responses, approvals, and file versions are logged.",
+      "Sensitive access is limited and staged.",
+      "Disclosure and transaction questions are routed to qualified advisors."
+    ],
+    "example": null,
+    "relatedRoutes": [
+      "/sell-a-business",
+      "/seller-readiness",
+      "/due-diligence",
+      "/exit-planning"
+    ],
+    "sources": [
+      {
+        "label": "IRS: Recordkeeping",
+        "href": "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping",
+        "context": "IRS explanation of business records and supporting documentation; ask tax advisors about the records and retention periods relevant to the seller."
+      }
+    ],
+    "breadcrumbs": [
+      {
+        "label": "Home",
+        "route": "/"
+      },
+      {
+        "label": "Playbooks",
+        "route": "/playbooks"
+      },
+      {
+        "label": "Acquisitions",
+        "route": "/playbooks#acquisitions"
+      }
+    ]
+  }
+]
