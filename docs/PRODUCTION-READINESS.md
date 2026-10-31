@@ -1,5 +1,7 @@
 # Production and selective-indexing readiness
 
+The [Batch 7 canonical launch runbook](CANONICAL-LAUNCH-RUNBOOK.md) has the current 2026-10-31 production snapshot, domain/DNS evidence, nine-route editorial matrix, four authorization gates, and rollback steps. The historical snapshot below is retained for context.
+
 Reviewed against the repository and connected GitHub/Vercel state on 2026-10-30.
 
 ## Historical production state (earlier review)
