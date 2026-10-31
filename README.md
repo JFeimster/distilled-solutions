@@ -40,6 +40,7 @@ While `npm start` is running, use another terminal for `npm run audit:routes`. `
 | `npm run build` | Build the production app after validation |
 | `npm run check` | Validate, lint, typecheck, test, and build |
 | `npm run audit:routes` | Check all 84 pages and preview SEO behavior against a running production server |
+| `npm run audit:launch` | Check offline canonical, route, indexing, sitemap, and noncanonical-host launch safeguards; report external gates separately |
 
 ## Editing content and routes
 

@@ -1,10 +1,24 @@
 import { pages, canonicalRoutes } from "@/lib/solutions/pages";
 import { playbookPages } from "@/lib/solutions/playbooks";
 import { site } from "@/lib/config";
+import http from "node:http";
+import https from "node:https";
 const origin = process.env.AUDIT_ORIGIN ?? "http://127.0.0.1:3000";
 const failures: string[] = [];
 const records = [...pages, ...playbookPages];
 const byRoute = new Map(records.map((page) => [page.route, page]));
+function hostHeader(route: string, host: string): Promise<string | undefined> {
+  return new Promise((resolve, reject) => {
+    const url = new URL(route, origin);
+    const client = url.protocol === "https:" ? https : http;
+    const request = client.request(url, { method: "HEAD", headers: { host } }, (response) => {
+      response.resume();
+      resolve(response.headers["x-robots-tag"] as string | undefined);
+    });
+    request.on("error", reject);
+    request.end();
+  });
+}
 for (const route of canonicalRoutes) {
   const page = byRoute.get(route);
   if (!page) { failures.push(`${route}: missing manifest record`); continue; }
@@ -26,5 +40,11 @@ const mapResponse = await fetch(`${origin}/sitemap.xml`);
 const mapText = await mapResponse.text();
 if (!mapText.includes("<urlset")) failures.push("Sitemap XML missing urlset.");
 if (mapText.includes(site.siteUrl)) failures.push("Preview sitemap should be empty while indexing is disabled.");
+for (const route of ["/", "/business-credit-readiness", "/playbooks/cash-flow/diagnose-working-capital-gap", "/sitemap.xml"]) {
+  const alias = await hostHeader(route, "distilled-solutions.vercel.app");
+  const canonical = await hostHeader(route, "solutions.distilledfunding.com");
+  if (alias !== "noindex") failures.push(`${route}: noncanonical host missing noindex header`);
+  if (canonical !== undefined) failures.push(`${route}: canonical host unexpectedly has X-Robots-Tag`);
+}
 if (failures.length) { console.error(failures.join("\n")); process.exit(1); }
-console.log(`Production HTTP audit passed: ${canonicalRoutes.length} canonical routes (${pages.length} Solutions, ${playbookPages.length} Playbook index/pages), noindex metadata, canonicals, internal links, empty preview sitemap, and genuine 404.`);
+console.log(`Production HTTP audit passed: ${canonicalRoutes.length} canonical routes (${pages.length} Solutions, ${playbookPages.length} Playbook index/pages), noindex metadata, host-scoped noindex headers, canonicals, internal links, empty preview sitemap, and genuine 404.`);

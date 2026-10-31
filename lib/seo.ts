@@ -3,6 +3,7 @@ import { site } from "@/lib/config";
 import { getBreadcrumbs } from "@/lib/solutions/pages";
 import type { SolutionPage } from "@/schemas/solutions";
 import type { PlaybookPage } from "@/schemas/playbooks";
+import type { MetadataRoute } from "next";
 
 type IndexablePage = Pick<SolutionPage | PlaybookPage, "status" | "indexStatus" | "lastReviewed">;
 export function isIndexable(
@@ -11,6 +12,14 @@ export function isIndexable(
   deploymentEnvironment = process.env.VERCEL_ENV
 ) {
   return deploymentEnvironment === "production" && enabled && page.status === "index" && page.indexStatus === "index" && page.lastReviewed !== null;
+}
+export function indexableSitemapEntries(
+  records: (SolutionPage | PlaybookPage)[],
+  enabled = process.env.ALLOW_INDEXING === "true",
+  deploymentEnvironment = process.env.VERCEL_ENV
+): MetadataRoute.Sitemap {
+  return records.filter((page) => isIndexable(page, enabled, deploymentEnvironment))
+    .map((page) => ({ url: page.canonicalUrl, lastModified: page.lastReviewed! }));
 }
 export function playbookMetadata(page: PlaybookPage): Metadata {
   const indexable = isIndexable(page);

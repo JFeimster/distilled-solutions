@@ -6,7 +6,9 @@ import canonicalRoutes from "../data/solutions/solutions.routes.manifest.json";
 import navigation from "../data/solutions/solutions.navigation.manifest.json";
 import { pages, getPage, getBreadcrumbs } from "../lib/solutions/pages";
 import { validateSolutions } from "../lib/solutions/validate";
-import { isIndexable, pageMetadata, safeJsonLd, structuredData } from "../lib/seo";
+import { indexableSitemapEntries, isIndexable, pageMetadata, safeJsonLd, structuredData } from "../lib/seo";
+import { playbookPages } from "../lib/solutions/playbooks";
+import robots from "../app/robots";
 
 test("all 71 canonical records match the route contract and solution-family counts", () => {
   assert.equal(pages.length, 71);
@@ -48,6 +50,20 @@ test("indexing requires production, explicit enablement, both editorial approval
   assert.equal(isIndexable({ ...approved, status: "review" }, true, "production"), false);
   assert.equal(isIndexable(approved, false, "production"), false);
   assert.equal(isIndexable(approved, true, "production"), true);
+});
+test("sitemap uses only fully approved production records and their actual review dates", () => {
+  const solution = { ...pages[0]!, status: "index" as const, indexStatus: "index" as const, lastReviewed: "2026-10-23" };
+  const playbook = { ...playbookPages[1]!, status: "index" as const, indexStatus: "index" as const, lastReviewed: "2026-10-24" };
+  const incomplete = { ...playbookPages[2]!, status: "index" as const, indexStatus: "noindex" as const, lastReviewed: "2026-10-24" };
+  const cohort = [solution, playbook, incomplete, pages[1]!, playbookPages[0]!];
+  assert.deepEqual(indexableSitemapEntries(cohort, false, "production"), []);
+  assert.deepEqual(indexableSitemapEntries(cohort, true, "preview"), []);
+  assert.deepEqual(indexableSitemapEntries(cohort, true, undefined), []);
+  assert.deepEqual(indexableSitemapEntries(cohort, true, "production"), [
+    { url: solution.canonicalUrl, lastModified: "2026-10-23" },
+    { url: playbook.canonicalUrl, lastModified: "2026-10-24" }
+  ]);
+  assert.deepEqual(robots(), { rules: { userAgent: "*", allow: "/" }, sitemap: "https://solutions.distilledfunding.com/sitemap.xml", host: "https://solutions.distilledfunding.com" });
 });
 test("metadata and JSON-LD carry canonical SEO without unsupported rating claims", () => {
   const page = getPage("business-acquisition-financing")!;
